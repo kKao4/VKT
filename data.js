@@ -219,3 +219,66 @@ const dataCollections = [
     href: "",
   },
 ];
+
+const dataDocuments = [
+  {
+    img: "./assets/image/document-1.png",
+    download: 300,
+    title: "Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ",
+    href: "/",
+  },
+  {
+    img: "./assets/image/document-1.png",
+    download: 300,
+    title: "Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ",
+    href: "/",
+  },
+  {
+    img: "./assets/image/document-1.png",
+    download: 300,
+    title: "Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ",
+    href: "/",
+  },
+  {
+    img: "./assets/image/document-1.png",
+    download: 300,
+    title: "Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ",
+    href: "/",
+  },
+  {
+    img: "./assets/image/document-1.png",
+    download: 300,
+    title: "Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ",
+    href: "/",
+  },
+  {
+    img: "./assets/image/document-1.png",
+    download: 300,
+    title: "Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ",
+    href: "/",
+  },
+  {
+    img: "./assets/image/document-1.png",
+    download: 300,
+    title: "Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ",
+    href: "/",
+  },
+  {
+    img: "./assets/image/document-1.png",
+    download: 300,
+    title: "Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ",
+    href: "/",
+  },
+  {
+    img: "./assets/image/document-1.png",
+    download: 300,
+    title: "Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ",
+    href: "/",
+  },
+  {
+    img: "./assets/image/document-1.png",
+    download: 300,
+    title: "Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ",
+    href: "/",
+  },
+];
