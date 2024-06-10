@@ -229,8 +229,8 @@ function init() {
   // SECTION: section 4
   const activeIndexElement = document.querySelector(".swiper-active-slide");
   const totalIndexElement = document.querySelector(".swiper-total-slide");
-  const swiperBrand1 = new kKao4PaginationSwapSwiper(
-    ".swiper-brand-1",
+  const swiperBrand = new kKao4PaginationSwapSwiper(
+    ".swiper-brand",
     {
       slidesPerViewAndGroup: 3,
       activeStyle: { backgroundColor: "#262626" },
@@ -252,33 +252,14 @@ function init() {
       },
     }
   );
-  // const swiperBrand2 = new Swiper(".swiper-brand-2", {
-  //   slidesPerView: 6,
-  //   slidesPerGroup: 6,
-  //   speed: 800,
-  //   spaceBetween: (window.innerWidth / 100) * 1.5,
-  //   controller: {
-  //     control: swiperBrand1,
-  //   },
-  // });
-  // const swiperBrand3 = new Swiper(".swiper-brand-3", {
-  //   slidesPerView: 6,
-  //   slidesPerGroup: 6,
-  //   speed: 800,
-  //   spaceBetween: (window.innerWidth / 100) * 1.5,
-  //   controller: {
-  //     control: swiperBrand1,
-  //   },
-  // });
-  // swiperBrand1.controller.control = [swiperBrand2, swiperBrand3];
-  // totalIndexElement.textContent = formatNumber(
-  //   Math.round(swiperBrand1.slides.length / swiperBrand1.slidesPerViewDynamic())
-  // );
-  // swiperBrand1.on("slideChange", (swiper) => {
-  //   activeIndexElement.textContent = formatNumber(
-  //     Math.round(swiper.realIndex / swiperBrand1.slidesPerViewDynamic() + 1)
-  //   );
-  // });
+  totalIndexElement.textContent = formatNumber(
+    Math.round(swiperBrand.slides.length / swiperBrand.slidesPerViewDynamic())
+  );
+  swiperBrand.on("slideChange", (swiper) => {
+    activeIndexElement.textContent = formatNumber(
+      Math.round(swiper.realIndex / swiperBrand.slidesPerViewDynamic() + 1)
+    );
+  });
 
   // SECTION: section 5
   const buttons1 = document.querySelector(".section-5").querySelectorAll(".btn-1");
