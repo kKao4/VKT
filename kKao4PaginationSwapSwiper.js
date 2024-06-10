@@ -1,3 +1,5 @@
+// kKao4: Nếu code chạy xin đừng động vào ( ͡° ͜ʖ ͡° )
+
 class kKao4PaginationSwapSwiper {
   constructor(className, options, swiperOptions) {
     this.className = className.startsWith(".") ? className.slice(1) : className;

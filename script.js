@@ -1,4 +1,7 @@
 function init() {
+  gsap.registerPlugin(ScrollToPlugin);
+
+  // SECTION: header
   const categoryMenuContainer = document.querySelector(".category-menu-container");
   const fieldMenuContainer = document.querySelector(".field-menu-container");
   const categoryMenuOverlay = document.querySelector(".category-menu-overlay");
@@ -76,7 +79,6 @@ function init() {
   searchInput.addEventListener("focus", openSearchDropdown);
   searchInput.addEventListener("blur", closeSearchDropdown);
   searchInput.addEventListener("input", (e) => {
-    console.log(e.target.value);
     if (e.target.value) {
       searchDropdownNoValue.style.display = "none";
       searchDropdownHasValue.style.display = "block";
@@ -89,14 +91,14 @@ function init() {
   notificationTabContainer.addEventListener("mouseleave", closeNotificationTab);
   notificationTabOverlay.addEventListener("mouseenter", closeNotificationTab);
 
-  doiTacKinhDoanh.menu.forEach((item) => {
-    detailMenuContainer.innerHTML += `
-    <a href="${item.href}" class="category-menu-nav-link">
-      ${item.content}
-      <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
-      <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div>
-    </a>`;
-  });
+  // doiTacKinhDoanh.menu.forEach((item) => {
+  //   detailMenuContainer.innerHTML += `
+  //   <a href="${item.href}" class="category-menu-nav-link">
+  //     ${item.content}
+  //     <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+  //     <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div>
+  //   </a>`;
+  // });
   const menuItems = document.querySelectorAll(".category-menu-list-item");
   const detailMenuItems = document.querySelectorAll(".category-menu-nav-container");
   menuItems.forEach((menuItem) => {
@@ -144,85 +146,85 @@ function init() {
       nextEl: ".swiper-resources-next-btn",
     },
   });
-  const slideResources = document.querySelector(".swiper-resources").querySelector(".swiper-wrapper");
-  dataSlideResources.forEach((item, i) => {
-    slideResources.innerHTML += `<div class="swiper-slide swiper-slide-${variants[i % 8].color} ${
-      item.follow ? "swiper-slide-follow" : ""
-    }">
-    <div class="icon-container">
-      ${variants[i % 8].icon}
-    </div>
-    <p class="swiper-slide-title">${item.text}</p>
-    <button class="follow-btn">
-      ${
-        item.follow
-          ? `<svg xmlns="http://www.w3.org/2000/svg" width="9" height="8" viewBox="0 0 9 8" fill="none">
-  <path d="M3.35436 7.09152C3.17605 7.09152 3.05717 7.03209 2.9383 6.91321L0.441981 4.41689C0.204236 4.17915 0.204236 3.82253 0.441981 3.58479C0.679725 3.34704 1.03634 3.34704 1.27409 3.58479L3.35436 5.66505L7.99038 1.08846C8.22813 0.85072 8.58474 0.85072 8.82249 1.08846C9.06023 1.32621 9.06023 1.68283 8.82249 1.92057L3.77041 6.97265C3.71097 7.03209 3.53266 7.09152 3.35436 7.09152Z" fill="white"/>
-</svg>`
-          : `<svg xmlns="http://www.w3.org/2000/svg" width="9" height="10" viewBox="0 0 9 10" fill="none">
-        <path
-          d="M1.28516 4.99944H4.49944M4.49944 4.99944H7.71373M4.49944 4.99944V8.21373M4.49944 4.99944V1.78516"
-          stroke="white"
-          stroke-width="1.3"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </svg>`
-      }
-      ${item.follow ? "Đang theo dõi" : "Theo dõi"}
-      <div class="swiper-slide-btn-deco"></div>
-    </button>
-  </div>`;
-  });
+  // const slideResources = document.querySelector(".swiper-resources").querySelector(".swiper-wrapper");
+  //   dataSlideResources.forEach((item, i) => {
+  //     slideResources.innerHTML += `<div class="swiper-slide swiper-slide-${variants[i % 8].color} ${
+  //       item.follow ? "swiper-slide-follow" : ""
+  //     }">
+  //     <div class="icon-container">
+  //       ${variants[i % 8].icon}
+  //     </div>
+  //     <p class="swiper-slide-title">${item.text}</p>
+  //     <button class="follow-btn">
+  //       ${
+  //         item.follow
+  //           ? `<svg xmlns="http://www.w3.org/2000/svg" width="9" height="8" viewBox="0 0 9 8" fill="none">
+  //   <path d="M3.35436 7.09152C3.17605 7.09152 3.05717 7.03209 2.9383 6.91321L0.441981 4.41689C0.204236 4.17915 0.204236 3.82253 0.441981 3.58479C0.679725 3.34704 1.03634 3.34704 1.27409 3.58479L3.35436 5.66505L7.99038 1.08846C8.22813 0.85072 8.58474 0.85072 8.82249 1.08846C9.06023 1.32621 9.06023 1.68283 8.82249 1.92057L3.77041 6.97265C3.71097 7.03209 3.53266 7.09152 3.35436 7.09152Z" fill="white"/>
+  // </svg>`
+  //           : `<svg xmlns="http://www.w3.org/2000/svg" width="9" height="10" viewBox="0 0 9 10" fill="none">
+  //         <path
+  //           d="M1.28516 4.99944H4.49944M4.49944 4.99944H7.71373M4.49944 4.99944V8.21373M4.49944 4.99944V1.78516"
+  //           stroke="white"
+  //           stroke-width="1.3"
+  //           stroke-linecap="round"
+  //           stroke-linejoin="round"
+  //         />
+  //       </svg>`
+  //       }
+  //       ${item.follow ? "Đang theo dõi" : "Theo dõi"}
+  //       <div class="swiper-slide-btn-deco"></div>
+  //     </button>
+  //   </div>`;
+  //   });
 
   // SECTION: section 3
-  const majorContainer = document.querySelector(".major-container");
-  const renderMajor = () => {
-    dataMajor.forEach((major, i) => {
-      majorContainer.innerHTML += `<button class="major-item animate-fadeIn animate-slower major-item-${
-        variants[i % 8].color
-      } ${major.follow ? "major-item-followed" : ""} ${major.update ? "major-item-updating" : ""}">
-        ${
-          major.update
-            ? `<img src="./assets/svg/home/update.svg" alt="" class="major-item-update-icon" />`
-            : `<div class="major-item-follow">
-        <div class="major-item-follow-content">
-        ${
-          major.follow
-            ? `<svg xmlns="http://www.w3.org/2000/svg" width="11" height="9" viewBox="0 0 11 9" fill="none">
-        <path
-          d="M4.13631 8.25895C3.91954 8.25895 3.77502 8.18669 3.63051 8.04218L0.59568 5.00735C0.306648 4.71832 0.306648 4.28477 0.59568 3.99574C0.884711 3.70671 1.31826 3.70671 1.60729 3.99574L4.13631 6.52476L9.77242 0.960914C10.0615 0.671883 10.495 0.671883 10.784 0.960914C11.0731 1.24995 11.0731 1.68349 10.784 1.97252L4.64212 8.11443C4.56986 8.18669 4.35308 8.25895 4.13631 8.25895Z"
-          fill="#F04145"
-        />
-      </svg>`
-            : `<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
-        <path
-          d="M1.85547 6.4993H6.49833M6.49833 6.4993H11.1412M6.49833 6.4993V11.1422M6.49833 6.4993V1.85645"
-          stroke="#CA653C"
-          stroke-width="1.3"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </svg>`
-        }
-        <p>${major.follow ? "Đang theo dõi" : "Theo dõi"}</p>
-        </div>
-        </div>`
-        }
-        <div class="major-item-icon">
-        ${variants[i % 8].icon}
-        </div>
-        <p class="major-item-title">${major.update ? `ĐANG CẬP NHẬT` : major.text}</p>
-      </button>`;
-    });
-  };
-  renderMajor();
-  const showMoreButton = document.querySelector(".section-3").querySelector(".show-more-btn");
-  showMoreButton.addEventListener("click", () => {
-    dataMajor = [...dataMajor, ...dataMajor.slice(0, 32)];
-    majorContainer.innerHTML = "";
-    renderMajor();
-  });
+  // const majorContainer = document.querySelector(".major-container");
+  // const renderMajor = () => {
+  //   dataMajor.forEach((major, i) => {
+  //     majorContainer.innerHTML += `<button class="major-item animate-fadeIn animate-slower major-item-${
+  //       variants[i % 8].color
+  //     } ${major.follow ? "major-item-followed" : ""} ${major.update ? "major-item-updating" : ""}">
+  //       ${
+  //         major.update
+  //           ? `<img src="./assets/svg/home/update.svg" alt="" class="major-item-update-icon" />`
+  //           : `<div class="major-item-follow">
+  //       <div class="major-item-follow-content">
+  //       ${
+  //         major.follow
+  //           ? `<svg xmlns="http://www.w3.org/2000/svg" width="11" height="9" viewBox="0 0 11 9" fill="none">
+  //       <path
+  //         d="M4.13631 8.25895C3.91954 8.25895 3.77502 8.18669 3.63051 8.04218L0.59568 5.00735C0.306648 4.71832 0.306648 4.28477 0.59568 3.99574C0.884711 3.70671 1.31826 3.70671 1.60729 3.99574L4.13631 6.52476L9.77242 0.960914C10.0615 0.671883 10.495 0.671883 10.784 0.960914C11.0731 1.24995 11.0731 1.68349 10.784 1.97252L4.64212 8.11443C4.56986 8.18669 4.35308 8.25895 4.13631 8.25895Z"
+  //         fill="#F04145"
+  //       />
+  //     </svg>`
+  //           : `<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+  //       <path
+  //         d="M1.85547 6.4993H6.49833M6.49833 6.4993H11.1412M6.49833 6.4993V11.1422M6.49833 6.4993V1.85645"
+  //         stroke="#CA653C"
+  //         stroke-width="1.3"
+  //         stroke-linecap="round"
+  //         stroke-linejoin="round"
+  //       />
+  //     </svg>`
+  //       }
+  //       <p>${major.follow ? "Đang theo dõi" : "Theo dõi"}</p>
+  //       </div>
+  //       </div>`
+  //       }
+  //       <div class="major-item-icon">
+  //       ${variants[i % 8].icon}
+  //       </div>
+  //       <p class="major-item-title">${major.update ? `ĐANG CẬP NHẬT` : major.text}</p>
+  //     </button>`;
+  //   });
+  // };
+  // renderMajor();
+  // const showMoreButton = document.querySelector(".section-3").querySelector(".show-more-btn");
+  // showMoreButton.addEventListener("click", () => {
+  //   dataMajor = [...dataMajor, ...dataMajor.slice(0, 32)];
+  //   majorContainer.innerHTML = "";
+  //   renderMajor();
+  // });
 
   // SECTION: section 4
   const activeIndexElement = document.querySelector(".swiper-active-slide");
@@ -250,33 +252,33 @@ function init() {
       },
     }
   );
-  const swiperBrand2 = new Swiper(".swiper-brand-2", {
-    slidesPerView: 6,
-    slidesPerGroup: 6,
-    speed: 800,
-    spaceBetween: (window.innerWidth / 100) * 1.5,
-    controller: {
-      control: swiperBrand1,
-    },
-  });
-  const swiperBrand3 = new Swiper(".swiper-brand-3", {
-    slidesPerView: 6,
-    slidesPerGroup: 6,
-    speed: 800,
-    spaceBetween: (window.innerWidth / 100) * 1.5,
-    controller: {
-      control: swiperBrand1,
-    },
-  });
-  swiperBrand1.controller.control = [swiperBrand2, swiperBrand3];
-  totalIndexElement.textContent = formatNumber(
-    Math.round(swiperBrand1.slides.length / swiperBrand1.slidesPerViewDynamic())
-  );
-  swiperBrand1.on("slideChange", (swiper) => {
-    activeIndexElement.textContent = formatNumber(
-      Math.round(swiper.realIndex / swiperBrand1.slidesPerViewDynamic() + 1)
-    );
-  });
+  // const swiperBrand2 = new Swiper(".swiper-brand-2", {
+  //   slidesPerView: 6,
+  //   slidesPerGroup: 6,
+  //   speed: 800,
+  //   spaceBetween: (window.innerWidth / 100) * 1.5,
+  //   controller: {
+  //     control: swiperBrand1,
+  //   },
+  // });
+  // const swiperBrand3 = new Swiper(".swiper-brand-3", {
+  //   slidesPerView: 6,
+  //   slidesPerGroup: 6,
+  //   speed: 800,
+  //   spaceBetween: (window.innerWidth / 100) * 1.5,
+  //   controller: {
+  //     control: swiperBrand1,
+  //   },
+  // });
+  // swiperBrand1.controller.control = [swiperBrand2, swiperBrand3];
+  // totalIndexElement.textContent = formatNumber(
+  //   Math.round(swiperBrand1.slides.length / swiperBrand1.slidesPerViewDynamic())
+  // );
+  // swiperBrand1.on("slideChange", (swiper) => {
+  //   activeIndexElement.textContent = formatNumber(
+  //     Math.round(swiper.realIndex / swiperBrand1.slidesPerViewDynamic() + 1)
+  //   );
+  // });
 
   // SECTION: section 5
   const buttons1 = document.querySelector(".section-5").querySelectorAll(".btn-1");
@@ -378,70 +380,147 @@ function init() {
       btn2.classList.toggle("btn-2-active");
     });
   });
-  const collectionsContainer = document.querySelector(".collections-container");
-  dataCollections.forEach((collection) => {
-    collectionsContainer.innerHTML += `<a href="${collection.href}" class="collection-item">
-            <div class="image-container">
-              <img src="${collection.img}" alt="" />
-            </div>
-            <div class="rate-container">
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                <path
-                  d="M7 0.5L9.0161 4.72507L13.6574 5.33688L10.2621 8.55993L11.1145 13.1631L7 10.93L2.8855 13.1631L3.73788 8.55993L0.342604 5.33688L4.9839 4.72507L7 0.5Z"
-                  fill="#FF6B00"
-                />
-              </svg>
-              <p class="star">${collection.star}</p>
-              <p class="review">(${collection.review} lượt đánh giá)</p>
-            </div>
-            <p class="download-count">${collection.download}+ lượt tải xuống</p>
-            <h4>${collection.title}</h4>
-            <button class="download-btn">
-              Tải xuống
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                <path
-                  d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
-                  stroke="#0B4523"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </button>
-          </a>`;
-  });
+  // const collectionsContainer = document.querySelector(".collections-container");
+  // dataCollections.forEach((collection) => {
+  //   collectionsContainer.innerHTML += `<a href="${collection.href}" class="collection-item">
+  //           <div class="image-container">
+  //             <img src="${collection.img}" alt="" />
+  //           </div>
+  //           <div class="rate-container">
+  //             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+  //               <path
+  //                 d="M7 0.5L9.0161 4.72507L13.6574 5.33688L10.2621 8.55993L11.1145 13.1631L7 10.93L2.8855 13.1631L3.73788 8.55993L0.342604 5.33688L4.9839 4.72507L7 0.5Z"
+  //                 fill="#FF6B00"
+  //               />
+  //             </svg>
+  //             <p class="star">${collection.star}</p>
+  //             <p class="review">(${collection.review} lượt đánh giá)</p>
+  //           </div>
+  //           <p class="download-count">${collection.download}+ lượt tải xuống</p>
+  //           <h4>${collection.title}</h4>
+  //           <button class="download-btn">
+  //             Tải xuống
+  //             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+  //               <path
+  //                 d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
+  //                 stroke="#0B4523"
+  //                 stroke-width="1.5"
+  //                 stroke-linecap="round"
+  //                 stroke-linejoin="round"
+  //               />
+  //             </svg>
+  //           </button>
+  //         </a>`;
+  // });
   // SECTION: section 6
   const swiperDocument = new Swiper(".swiper-document", {
     slidesPerView: 5,
     slidesPerGroup: 1,
+    speed: 800,
     spaceBetween: (window.innerWidth / 100) * 1.25,
     navigation: {
       prevEl: ".swiper-document-prev-btn",
       nextEl: ".swiper-document-next-btn",
     },
   });
-  const swiperWrapperDocument = document.querySelector(".swiper-document").querySelector(".swiper-wrapper");
-  dataDocuments.forEach((document) => {
-    swiperWrapperDocument.innerHTML += `<div class="swiper-slide">
-                <div class="image-container">
-                  <img src="${document.img}" alt="" />
-                </div>
-                <p class="download-count">${document.download}+ lượt tải xuống</p>
-                <h4>${document.title}</h4>
-                <button class="download-btn">
-                  Tải xuống
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                    <path
-                      d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
-                      stroke="#0B4523"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </button>
-              </div>`;
+  // const swiperWrapperDocument = document.querySelector(".swiper-document").querySelector(".swiper-wrapper");
+  // dataDocuments.forEach((document) => {
+  //   swiperWrapperDocument.innerHTML += `<div class="swiper-slide">
+  //               <div class="image-container">
+  //                 <img src="${document.img}" alt="" />
+  //               </div>
+  //               <p class="download-count">${document.download}+ lượt tải xuống</p>
+  //               <h4>${document.title}</h4>
+  //               <button class="download-btn">
+  //                 Tải xuống
+  //                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+  //                   <path
+  //                     d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
+  //                     stroke="#0B4523"
+  //                     stroke-width="1.5"
+  //                     stroke-linecap="round"
+  //                     stroke-linejoin="round"
+  //                   />
+  //                 </svg>
+  //               </button>
+  //             </div>`;
+  // });
+  // SECTION: section 7
+  const trademarkContainerNoiThat = document.querySelector(".trademark-images-container-scroll-noi-that");
+  const trademarkContainerNgoaiThat = document.querySelector(".trademark-images-container-scroll-ngoai-that");
+  const trademarkContainerNoiTangCanhQuan = document.querySelector(
+    ".trademark-images-container-scroll-noi-tang-canh-quan"
+  );
+  // dataTrademarkNoiThat.forEach((trademark) => {
+  //   trademarkContainerNoiThat.innerHTML += `<img src="${trademark.img}" alt="" style="width: ${trademark.width}"  />`;
+  // });
+  // dataTrademarkNgoaiThat.forEach((trademark) => {
+  //   trademarkContainerNgoaiThat.innerHTML += `<img src="${trademark.img}" alt="" style="width: ${trademark.width}"  />`;
+  // });
+  // dataTrademarkNoiTangCanhQuan.forEach((trademark) => {
+  //   trademarkContainerNoiTangCanhQuan.innerHTML += `<img src="${trademark.img}" alt="" style="width: ${trademark.width}"  />`;
+  // });
+  const autoKillFunction1 = () => {
+    const tl = gsap.timeline({});
+    tl.to(trademarkContainerNoiThat, { scrollTo: { y: 0, autoKill: true }, duration: 1 }, "+=1");
+    tl.to(trademarkContainerNoiThat, {
+      duration: 12,
+      scrollTo: { y: "max", autoKill: true, onAutoKill: autoKillFunction1 },
+      repeat: -1,
+      yoyo: true,
+      ease: "none",
+      repeatDelay: 0.8,
+    });
+  };
+  const autoKillFunction2 = () => {
+    const tl = gsap.timeline({});
+    tl.to(trademarkContainerNgoaiThat, { scrollTo: { y: 0, autoKill: true }, duration: 1 }, "+=1");
+    tl.to(trademarkContainerNgoaiThat, {
+      duration: 12,
+      scrollTo: { y: "max", autoKill: true, onAutoKill: autoKillFunction2 },
+      repeat: -1,
+      yoyo: true,
+      ease: "none",
+      repeatDelay: 0.8,
+    });
+  };
+  const autoKillFunction3 = () => {
+    const tl = gsap.timeline({});
+    tl.to(trademarkContainerNoiTangCanhQuan, { scrollTo: { y: 0, autoKill: true }, duration: 1 }, "+=1");
+    tl.to(trademarkContainerNoiTangCanhQuan, {
+      duration: 12,
+      scrollTo: { y: "max", autoKill: true, onAutoKill: autoKillFunction3 },
+      repeat: -1,
+      yoyo: true,
+      ease: "none",
+      repeatDelay: 0.8,
+    });
+  };
+  gsap.to(trademarkContainerNoiThat, {
+    duration: 12,
+    scrollTo: { y: "max", autoKill: true, onAutoKill: autoKillFunction1 },
+    repeat: -1,
+    yoyo: true,
+    ease: "none",
+    repeatDelay: 0.8,
   });
+  gsap.to(trademarkContainerNgoaiThat, {
+    duration: 12,
+    scrollTo: { y: "max", autoKill: true, onAutoKill: autoKillFunction2 },
+    repeat: -1,
+    yoyo: true,
+    ease: "none",
+    repeatDelay: 0.8,
+  });
+  gsap.to(trademarkContainerNoiTangCanhQuan, {
+    duration: 12,
+    scrollTo: { y: "max", autoKill: true, onAutoKill: autoKillFunction3 },
+    repeat: -1,
+    yoyo: true,
+    ease: "none",
+    repeatDelay: 0.8,
+  });
+  // SECTION: footer
 }
 
 window.addEventListener("DOMContentLoaded", init);
