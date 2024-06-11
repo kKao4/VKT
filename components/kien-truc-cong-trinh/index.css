@@ -1,0 +1,81 @@
+/* SECTION: section Các đối tác tuyệt vời của chúng tôi */
+.section-great-partner {
+  background-color: #edf2ee;
+  padding: 2.81rem 0;
+}
+
+.btn-1 svg {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.swiper-great-partner-container {
+  position: relative;
+  padding-top: 1.38rem;
+}
+
+.swiper-great-partner .swiper-slide {
+  display: flex;
+  flex-direction: column;
+}
+
+.swiper-great-partner .swiper-slide .image-container {
+  height: 9.8rem;
+  border-radius: 0.5rem;
+  outline: 1px solid var(--grey-200);
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+}
+
+.swiper-great-partner .swiper-slide .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-great-partner .swiper-slide h4 {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  color: var(--grey-800);
+  margin-bottom: 0.5rem;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.125rem;
+  text-decoration-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.swiper-great-partner .swiper-slide:hover h4 {
+  text-decoration-color: var(--library-title);
+  color: var(--library-title);
+}
+
+.swiper-great-partner .contact-btn {
+  padding: 0.25rem 1rem;
+  border-radius: 9999px;
+  background-color: var(--library-title);
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  color: #fff;
+}
+
+.swiper-great-partner .rate-container {
+  margin-bottom: 0.675rem;
+}
+
+.section-interest-project {
+  padding-top: 2.5rem;
+}
+
+/* SECTION: Thể loại công trình được quan tâm nhất */
+.swiper-interest-project-container {
+  position: relative;
+}
+
+.swiper-interest-project .swiper-slide img {
+  height: 15.5rem;
+}

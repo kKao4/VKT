@@ -22,35 +22,35 @@ const doiTacKinhDoanh = {
 const variants = [
   {
     color: "red",
-    icon: `<img src="./assets/svg/home/red.svg" alt='' />`,
+    icon: `<img src="./assets/svg/trang-chu/red.svg" alt='' />`,
   },
   {
     color: "yellow",
-    icon: `<img src="./assets/svg/home/yellow.svg" alt='' />`,
+    icon: `<img src="./assets/svg/trang-chu/yellow.svg" alt='' />`,
   },
   {
     color: "lightgreen",
-    icon: `<img src="./assets/svg/home/lightgreen.svg" alt='' />`,
+    icon: `<img src="./assets/svg/trang-chu/lightgreen.svg" alt='' />`,
   },
   {
     color: "green",
-    icon: `<img src="./assets/svg/home/green.svg" alt='' />`,
+    icon: `<img src="./assets/svg/trang-chu/green.svg" alt='' />`,
   },
   {
     color: "blue",
-    icon: `<img src="./assets/svg/home/blue.svg" alt='' />`,
+    icon: `<img src="./assets/svg/trang-chu/blue.svg" alt='' />`,
   },
   {
     color: "brown",
-    icon: `<img src="./assets/svg/home/brown.svg" alt='' />`,
+    icon: `<img src="./assets/svg/trang-chu/brown.svg" alt='' />`,
   },
   {
     color: "orange",
-    icon: `<img src="./assets/svg/home/orange.svg" alt='' />`,
+    icon: `<img src="./assets/svg/trang-chu/orange.svg" alt='' />`,
   },
   {
     color: "gray",
-    icon: `<img src="./assets/svg/home/gray.svg" alt='' />`,
+    icon: `<img src="./assets/svg/trang-chu/gray.svg" alt='' />`,
   },
 ];
 const dataSlideResources = [

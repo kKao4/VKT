@@ -1,4 +1,5 @@
-// kKao4: Nếu code chạy xin đừng động vào ( ͡° ͜ʖ ͡° )
+// Author: kKao4
+// P/s: Nếu code chạy xin đừng động vào ( ͡° ͜ʖ ͡° )
 
 class kKao4PaginationSwapSwiper {
   constructor(className, options, swiperOptions) {

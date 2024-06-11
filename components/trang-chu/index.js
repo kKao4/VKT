@@ -1,146 +1,12 @@
 function init() {
   gsap.registerPlugin(ScrollToPlugin);
 
-  // SECTION: header
-  const categoryMenuContainer = document.querySelector(".category-menu-container");
-  const fieldMenuContainer = document.querySelector(".field-menu-container");
-  const categoryMenuOverlay = document.querySelector(".category-menu-overlay");
-  const fieldMenuOverlay = document.querySelector(".field-menu-overlay");
-  const categoryButton = document.querySelector(".category-btn");
-  const categoryMenu = document.querySelector(".category-menu");
-  const fieldMenu = document.querySelector(".field-menu");
-  const fieldMenuListContainer = document.querySelector(".field-menu-list-container");
-  const categoryMenuListContainer = document.querySelector(".category-menu-list-container");
-  const headerDetailMenuContainer = document.querySelector(".header-detail-menu-container");
-  const detailMenuContainer = document
-    .querySelector(".header-detail-menu-container")
-    .querySelector("[data-menu='doi-tac-kinh-doanh']");
-  const fieldMenuButton = document.querySelector(".field-menu-btn");
-  const searchDropdownContainer = document.querySelector(".search-dropdown-container");
-  const searchInput = document.querySelector(".form-search-bar-input");
-  const searchDropdownNoValue = document.querySelector(".search-input-no-value");
-  const searchDropdownHasValue = document.querySelector(".search-input-has-value");
-  const notificationButton = document.querySelector(".notification-btn");
-  const notificationContainer = document.querySelector(".notification-tab-container");
-  const notificationTabContainer = document.querySelector(".notification-tab-container");
-  const notificationTabOverlay = document.querySelector(".notification-tab-overlay");
-  const searchDropdownBox = document.querySelector(".search-dropdown-box");
-  const notificationBox = document.querySelector(".notification-box");
-
-  function openCategoryMenu() {
-    if (!searchDropdownContainer.classList.contains("search-dropdown-container-open")) {
-      fieldMenuContainer.classList.remove("field-menu-container-open");
-      categoryMenuContainer.classList.add("category-menu-container-open");
-      categoryMenuListContainer.style.maxHeight = categoryMenuListContainer.scrollHeight + "px";
-      headerDetailMenuContainer.style.maxHeight = categoryMenuListContainer.scrollHeight + "px";
-    }
-  }
-  function closeCategoryMenu() {
-    categoryMenuContainer.classList.remove("category-menu-container-open");
-    categoryMenuListContainer.style.maxHeight = null;
-    headerDetailMenuContainer.style.maxHeight = null;
-  }
-  function openFieldMenu() {
-    if (!searchDropdownContainer.classList.contains("search-dropdown-container-open")) {
-      categoryMenuContainer.classList.remove("category-menu-container-open");
-      fieldMenuContainer.classList.add("field-menu-container-open");
-      fieldMenuListContainer.style.maxHeight = fieldMenuListContainer.scrollHeight + "px";
-    }
-  }
-  function closeFieldMenu() {
-    fieldMenuContainer.classList.remove("field-menu-container-open");
-    fieldMenuListContainer.style.maxHeight = null;
-  }
-  function closeSearchDropdown() {
-    searchDropdownContainer.classList.remove("search-dropdown-container-open");
-    searchDropdownBox.style.maxHeight = null;
-  }
-  function openSearchDropdown() {
-    categoryMenuContainer.classList.remove("category-menu-container-open");
-    fieldMenuContainer.classList.remove("field-menu-container-open");
-    searchDropdownContainer.classList.add("search-dropdown-container-open");
-    searchDropdownBox.style.maxHeight = searchDropdownBox.scrollHeight + "px";
-  }
-  function openNotificationTab() {
-    notificationContainer.classList.add("notification-tab-container-open");
-    notificationBox.style.maxHeight = notificationBox.scrollHeight + "px";
-  }
-  function closeNotificationTab() {
-    notificationContainer.classList.remove("notification-tab-container-open");
-    notificationBox.style.maxHeight = null;
-  }
-
-  categoryButton.addEventListener("mouseenter", openCategoryMenu);
-  categoryMenu.addEventListener("mouseleave", closeCategoryMenu);
-  fieldMenuButton.addEventListener("mouseenter", openFieldMenu);
-  fieldMenu.addEventListener("mouseleave", closeFieldMenu);
-  categoryMenuOverlay.addEventListener("mouseenter", closeCategoryMenu);
-  fieldMenuOverlay.addEventListener("mouseenter", closeFieldMenu);
-  searchInput.addEventListener("focus", openSearchDropdown);
-  searchInput.addEventListener("blur", closeSearchDropdown);
-  searchInput.addEventListener("input", (e) => {
-    if (e.target.value) {
-      searchDropdownNoValue.style.display = "none";
-      searchDropdownHasValue.style.display = "block";
-    } else {
-      searchDropdownNoValue.style.display = "block";
-      searchDropdownHasValue.style.display = "none";
-    }
-  });
-  notificationButton.addEventListener("mouseenter", openNotificationTab);
-  notificationTabContainer.addEventListener("mouseleave", closeNotificationTab);
-  notificationTabOverlay.addEventListener("mouseenter", closeNotificationTab);
-
-  // doiTacKinhDoanh.menu.forEach((item) => {
-  //   detailMenuContainer.innerHTML += `
-  //   <a href="${item.href}" class="category-menu-nav-link">
-  //     ${item.content}
-  //     <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
-  //     <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div>
-  //   </a>`;
-  // });
-  const menuItems = document.querySelectorAll(".category-menu-list-item");
-  const detailMenuItems = document.querySelectorAll(".category-menu-nav-container");
-  menuItems.forEach((menuItem) => {
-    menuItem.addEventListener("mouseenter", () => {
-      detailMenuItems.forEach((detailMenuItem) => {
-        if (menuItem.getAttribute("data-menu") === detailMenuItem.getAttribute("data-menu")) {
-          detailMenuItem.style.opacity = 1;
-          detailMenuItem.style.pointerEvents = "all";
-        } else {
-          detailMenuItem.style.opacity = 0;
-          detailMenuItem.style.pointerEvents = "none";
-        }
-      });
-    });
-  });
-
-  // SECTION: banner
-  const swiperBanner = new kKao4PaginationSwapSwiper(
-    ".swiper-banner",
-    {
-      slidesPerViewAndGroup: 4,
-      activeStyle: { backgroundColor: "#262626" },
-      normalStyle: { backgroundColor: "#ececec" },
-    },
-    {
-      speed: 800,
-      slidesPerView: 4,
-      spaceBetween: (window.innerWidth / 100) * 1.17,
-      slidesPerGroup: 4,
-      loop: true,
-      autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-      },
-    }
-  );
-
   // SECTION: section 2
   const swiperResources = new Swiper(".swiper-resources", {
     slidesPerView: 8,
     spaceBetween: (window.innerWidth / 100) * 1,
     loop: true,
+    speed: 600,
     navigation: {
       prevEl: ".swiper-resources-prev-btn",
       nextEl: ".swiper-resources-next-btn",
@@ -186,7 +52,7 @@ function init() {
   //     } ${major.follow ? "major-item-followed" : ""} ${major.update ? "major-item-updating" : ""}">
   //       ${
   //         major.update
-  //           ? `<img src="./assets/svg/home/update.svg" alt="" class="major-item-update-icon" />`
+  //           ? `<img src="./assets/svg/trang-chu/update.svg" alt="" class="major-item-update-icon" />`
   //           : `<div class="major-item-follow">
   //       <div class="major-item-follow-content">
   //       ${
@@ -219,50 +85,15 @@ function init() {
   //   });
   // };
   // renderMajor();
-  // const showMoreButton = document.querySelector(".section-3").querySelector(".show-more-btn");
+  // const showMoreButton = document.querySelector(".what-you-care-container").querySelector(".show-more-btn");
   // showMoreButton.addEventListener("click", () => {
   //   dataMajor = [...dataMajor, ...dataMajor.slice(0, 32)];
   //   majorContainer.innerHTML = "";
   //   renderMajor();
   // });
 
-  // SECTION: section 4
-  const activeIndexElement = document.querySelector(".swiper-active-slide");
-  const totalIndexElement = document.querySelector(".swiper-total-slide");
-  const swiperBrand = new kKao4PaginationSwapSwiper(
-    ".swiper-brand",
-    {
-      slidesPerViewAndGroup: 3,
-      activeStyle: { backgroundColor: "#262626" },
-      normalStyle: { backgroundColor: "#ececec" },
-    },
-    {
-      slidesPerView: 3,
-      slidesPerGroup: 3,
-      speed: 800,
-      loop: true,
-      spaceBetween: (window.innerWidth / 100) * 1.5,
-      navigation: {
-        prevEl: ".swiper-brand-prev-btn",
-        nextEl: ".swiper-brand-next-btn",
-      },
-      autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-      },
-    }
-  );
-  totalIndexElement.textContent = formatNumber(
-    Math.round(swiperBrand.slides.length / swiperBrand.slidesPerViewDynamic())
-  );
-  swiperBrand.on("slideChange", (swiper) => {
-    activeIndexElement.textContent = formatNumber(
-      Math.round(swiper.realIndex / swiperBrand.slidesPerViewDynamic() + 1)
-    );
-  });
-
   // SECTION: section 5
-  const buttons1 = document.querySelector(".section-5").querySelectorAll(".btn-1");
+  const buttons1 = document.querySelector(".section-collections").querySelectorAll(".btn-1");
   buttons1.forEach((btn1) => {
     btn1.addEventListener("click", () => {
       buttons1.forEach((btn) => btn.classList.remove("btn-1-active"));
@@ -354,7 +185,7 @@ function init() {
       }
     });
   });
-  const buttons2 = document.querySelector(".section-5").querySelectorAll(".btn-2");
+  const buttons2 = document.querySelector(".section-collections").querySelectorAll(".btn-2");
   buttons2.forEach((btn2) => {
     btn2.addEventListener("click", () => {
       buttons2.forEach((btn) => btn.classList.remove("btn-2-active"));
@@ -393,39 +224,7 @@ function init() {
   //           </button>
   //         </a>`;
   // });
-  // SECTION: section 6
-  const swiperDocument = new Swiper(".swiper-document", {
-    slidesPerView: 5,
-    slidesPerGroup: 1,
-    speed: 800,
-    spaceBetween: (window.innerWidth / 100) * 1.25,
-    navigation: {
-      prevEl: ".swiper-document-prev-btn",
-      nextEl: ".swiper-document-next-btn",
-    },
-  });
-  // const swiperWrapperDocument = document.querySelector(".swiper-document").querySelector(".swiper-wrapper");
-  // dataDocuments.forEach((document) => {
-  //   swiperWrapperDocument.innerHTML += `<div class="swiper-slide">
-  //               <div class="image-container">
-  //                 <img src="${document.img}" alt="" />
-  //               </div>
-  //               <p class="download-count">${document.download}+ lượt tải xuống</p>
-  //               <h4>${document.title}</h4>
-  //               <button class="download-btn">
-  //                 Tải xuống
-  //                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-  //                   <path
-  //                     d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
-  //                     stroke="#0B4523"
-  //                     stroke-width="1.5"
-  //                     stroke-linecap="round"
-  //                     stroke-linejoin="round"
-  //                   />
-  //                 </svg>
-  //               </button>
-  //             </div>`;
-  // });
+
   // SECTION: section 7
   const trademarkContainerNoiThat = document.querySelector(".trademark-images-container-scroll-noi-that");
   const trademarkContainerNgoaiThat = document.querySelector(".trademark-images-container-scroll-ngoai-that");
@@ -441,65 +240,58 @@ function init() {
   // dataTrademarkNoiTangCanhQuan.forEach((trademark) => {
   //   trademarkContainerNoiTangCanhQuan.innerHTML += `<img src="${trademark.img}" alt="" style="width: ${trademark.width}"  />`;
   // });
-  const autoKillFunction1 = () => {
-    const tl = gsap.timeline({});
-    tl.to(trademarkContainerNoiThat, { scrollTo: { y: 0, autoKill: true }, duration: 1 }, "+=1");
-    tl.to(trademarkContainerNoiThat, {
-      duration: 12,
-      scrollTo: { y: "max", autoKill: true, onAutoKill: autoKillFunction1 },
+  const autoScrollContainerNoiThat = (duration = 12) => {
+    gsap.to(trademarkContainerNoiThat, {
+      duration,
+      scrollTo: { y: "max", autoKill: true },
       repeat: -1,
       yoyo: true,
       ease: "none",
       repeatDelay: 0.8,
     });
   };
-  const autoKillFunction2 = () => {
-    const tl = gsap.timeline({});
-    tl.to(trademarkContainerNgoaiThat, { scrollTo: { y: 0, autoKill: true }, duration: 1 }, "+=1");
-    tl.to(trademarkContainerNgoaiThat, {
-      duration: 12,
-      scrollTo: { y: "max", autoKill: true, onAutoKill: autoKillFunction2 },
+  const autoScrollContainerNgoaiThat = (duration = 12) => {
+    gsap.to(trademarkContainerNgoaiThat, {
+      duration,
+      scrollTo: { y: "max", autoKill: true },
       repeat: -1,
       yoyo: true,
       ease: "none",
       repeatDelay: 0.8,
     });
   };
-  const autoKillFunction3 = () => {
-    const tl = gsap.timeline({});
-    tl.to(trademarkContainerNoiTangCanhQuan, { scrollTo: { y: 0, autoKill: true }, duration: 1 }, "+=1");
-    tl.to(trademarkContainerNoiTangCanhQuan, {
-      duration: 12,
-      scrollTo: { y: "max", autoKill: true, onAutoKill: autoKillFunction3 },
+  const autoScrollContainerNoiTangCanhQuan = (duration = 12) => {
+    gsap.to(trademarkContainerNoiTangCanhQuan, {
+      duration,
+      scrollTo: { y: "max", autoKill: true },
       repeat: -1,
       yoyo: true,
       ease: "none",
       repeatDelay: 0.8,
     });
   };
-  gsap.to(trademarkContainerNoiThat, {
-    duration: 12,
-    scrollTo: { y: "max", autoKill: true, onAutoKill: autoKillFunction1 },
-    repeat: -1,
-    yoyo: true,
-    ease: "none",
-    repeatDelay: 0.8,
+  autoScrollContainerNoiThat();
+  autoScrollContainerNgoaiThat();
+  autoScrollContainerNoiTangCanhQuan();
+
+  trademarkContainerNoiThat.addEventListener("mouseenter", () => {
+    gsap.killTweensOf(trademarkContainerNoiThat);
   });
-  gsap.to(trademarkContainerNgoaiThat, {
-    duration: 12,
-    scrollTo: { y: "max", autoKill: true, onAutoKill: autoKillFunction2 },
-    repeat: -1,
-    yoyo: true,
-    ease: "none",
-    repeatDelay: 0.8,
+  trademarkContainerNoiThat.addEventListener("mouseleave", () => {
+    console.log(trademarkContainerNoiThat.scrollTop + "  / " + trademarkContainerNoiThat.offsetHeight);
+    autoScrollContainerNoiThat();
   });
-  gsap.to(trademarkContainerNoiTangCanhQuan, {
-    duration: 12,
-    scrollTo: { y: "max", autoKill: true, onAutoKill: autoKillFunction3 },
-    repeat: -1,
-    yoyo: true,
-    ease: "none",
-    repeatDelay: 0.8,
+  trademarkContainerNgoaiThat.addEventListener("mouseenter", () => {
+    gsap.killTweensOf(trademarkContainerNgoaiThat);
+  });
+  trademarkContainerNgoaiThat.addEventListener("mouseleave", () => {
+    autoScrollContainerNgoaiThat();
+  });
+  trademarkContainerNoiTangCanhQuan.addEventListener("mouseenter", () => {
+    gsap.killTweensOf(trademarkContainerNoiTangCanhQuan);
+  });
+  trademarkContainerNoiTangCanhQuan.addEventListener("mouseleave", () => {
+    autoScrollContainerNoiTangCanhQuan();
   });
   // SECTION: footer
 }
