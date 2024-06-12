@@ -1,0 +1,23 @@
+.nothing-found-container {
+  padding: 11.25rem 0 8.88rem 0;
+  width: 48.3rem;
+  margin: auto;
+}
+
+.nothing-found-container img {
+  width: 10.625rem;
+  height: 10.625rem;
+  object-fit: cover;
+  margin: auto;
+  margin-bottom: 1.88rem;
+}
+
+.nothing-found-container h4 {
+  color: var(--grey-900);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  text-align: center;
+  margin-bottom: 1.75rem;
+}

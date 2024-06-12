@@ -573,43 +573,6 @@
   height: 2.3125rem;
 }
 
-.show-more-btn {
-  height: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 120%;
-  color: #0b4523;
-  width: 100%;
-  border-radius: 0.25rem;
-  border: 1px solid #0b4523;
-  box-shadow: 0px 0px 20px 0px rgba(198, 255, 189, 0.25);
-  transition: all 0.3s ease;
-}
-
-.show-more-btn svg {
-  margin-left: 0.5rem;
-  width: 0.625rem;
-  height: 0.625rem;
-  transition: all 0.3s ease;
-}
-
-.show-more-btn svg rect {
-  transition: all 0.3s ease;
-}
-
-.show-more-btn:hover {
-  background-color: #0b4523;
-  color: #fff;
-}
-
-.show-more-btn:hover svg rect {
-  fill: #fff;
-}
-
 .pagination-container {
   width: fit-content;
   display: flex;

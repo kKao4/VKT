@@ -226,74 +226,34 @@ function init() {
   // });
 
   // SECTION: section 7
-  const trademarkContainerNoiThat = document.querySelector(".trademark-images-container-scroll-noi-that");
-  const trademarkContainerNgoaiThat = document.querySelector(".trademark-images-container-scroll-ngoai-that");
-  const trademarkContainerNoiTangCanhQuan = document.querySelector(
-    ".trademark-images-container-scroll-noi-tang-canh-quan"
-  );
-  // dataTrademarkNoiThat.forEach((trademark) => {
-  //   trademarkContainerNoiThat.innerHTML += `<img src="${trademark.img}" alt="" style="width: ${trademark.width}"  />`;
-  // });
-  // dataTrademarkNgoaiThat.forEach((trademark) => {
-  //   trademarkContainerNgoaiThat.innerHTML += `<img src="${trademark.img}" alt="" style="width: ${trademark.width}"  />`;
-  // });
-  // dataTrademarkNoiTangCanhQuan.forEach((trademark) => {
-  //   trademarkContainerNoiTangCanhQuan.innerHTML += `<img src="${trademark.img}" alt="" style="width: ${trademark.width}"  />`;
-  // });
-  const autoScrollContainerNoiThat = (duration = 12) => {
-    gsap.to(trademarkContainerNoiThat, {
-      duration,
-      scrollTo: { y: "max", autoKill: true },
-      repeat: -1,
-      yoyo: true,
-      ease: "none",
-      repeatDelay: 0.8,
-    });
-  };
-  const autoScrollContainerNgoaiThat = (duration = 12) => {
-    gsap.to(trademarkContainerNgoaiThat, {
-      duration,
-      scrollTo: { y: "max", autoKill: true },
-      repeat: -1,
-      yoyo: true,
-      ease: "none",
-      repeatDelay: 0.8,
-    });
-  };
-  const autoScrollContainerNoiTangCanhQuan = (duration = 12) => {
-    gsap.to(trademarkContainerNoiTangCanhQuan, {
-      duration,
-      scrollTo: { y: "max", autoKill: true },
-      repeat: -1,
-      yoyo: true,
-      ease: "none",
-      repeatDelay: 0.8,
-    });
-  };
-  autoScrollContainerNoiThat();
-  autoScrollContainerNgoaiThat();
-  autoScrollContainerNoiTangCanhQuan();
-
-  trademarkContainerNoiThat.addEventListener("mouseenter", () => {
-    gsap.killTweensOf(trademarkContainerNoiThat);
+  const trademarkImagesScrollContainer = document.querySelector(".trademark-images-container-scroll");
+  let once = false;
+  window.addEventListener("scroll", () => {
+    if (!once) {
+      const rect = trademarkImagesScrollContainer.getBoundingClientRect();
+      if (Math.floor(rect.height) >= Math.floor(window.innerHeight)) {
+        if (
+          Math.floor(rect.top) <= Math.floor(window.innerHeight - window.innerHeight * 1) &&
+          Math.floor(rect.bottom) >= Math.floor(window.innerHeight * 1)
+        ) {
+          kKao4AutoScrollElement(".trademark-images-container-scroll-noi-that");
+          kKao4AutoScrollElement(".trademark-images-container-scroll-ngoai-that");
+          kKao4AutoScrollElement(".trademark-images-container-scroll-noi-tang-canh-quan");
+          once = true;
+        }
+      } else if (Math.floor(rect.height) < Math.floor(window.innerHeight)) {
+        if (
+          window.innerHeight - Math.floor(rect.top) >= Math.floor(rect.height * 0) &&
+          Math.floor(rect.bottom) >= Math.floor(rect.height * 0)
+        ) {
+          kKao4AutoScrollElement(".trademark-images-container-scroll-noi-that");
+          kKao4AutoScrollElement(".trademark-images-container-scroll-ngoai-that");
+          kKao4AutoScrollElement(".trademark-images-container-scroll-noi-tang-canh-quan");
+          once = true;
+        }
+      }
+    }
   });
-  trademarkContainerNoiThat.addEventListener("mouseleave", () => {
-    console.log(trademarkContainerNoiThat.scrollTop + "  / " + trademarkContainerNoiThat.offsetHeight);
-    autoScrollContainerNoiThat();
-  });
-  trademarkContainerNgoaiThat.addEventListener("mouseenter", () => {
-    gsap.killTweensOf(trademarkContainerNgoaiThat);
-  });
-  trademarkContainerNgoaiThat.addEventListener("mouseleave", () => {
-    autoScrollContainerNgoaiThat();
-  });
-  trademarkContainerNoiTangCanhQuan.addEventListener("mouseenter", () => {
-    gsap.killTweensOf(trademarkContainerNoiTangCanhQuan);
-  });
-  trademarkContainerNoiTangCanhQuan.addEventListener("mouseleave", () => {
-    autoScrollContainerNoiTangCanhQuan();
-  });
-  // SECTION: footer
 }
 
 window.addEventListener("DOMContentLoaded", init);

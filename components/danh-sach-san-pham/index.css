@@ -1,0 +1,45 @@
+.banner {
+  padding-bottom: 3.12rem;
+}
+
+.banner-text-container, .banner-text-container p {
+  margin-bottom: 0
+}
+
+.banner-sub-follow-container {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.sub-follow-btn-container {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.sub-follow-btn-container > * + * {
+  margin-left: 1rem;
+}
+
+.sub-follow-btn-container button {
+  width: 7.85rem;
+  height: 2rem;
+  padding: 0.38rem 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  font-size: 0.90538rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  color: var(--library-title);
+  border-radius: 9999px;
+}
+
+.sub-follow-btn-container button svg {
+  margin-right: 0.53rem;
+  width: 1rem;
+  height: 1rem;
+}

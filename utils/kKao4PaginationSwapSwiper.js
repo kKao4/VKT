@@ -1,5 +1,34 @@
 // Author: kKao4
-// P/s: Nếu code chạy xin đừng động vào ( ͡° ͜ʖ ͡° )
+// P/s: Nếu code chạy xin đừng động vào, chỉ nên custom parameters ( ͡° ͜ʖ ͡° )
+
+// Parameters:
+
+// Name                     | Type           | Default           | Description
+// slidesPerViewAndGroup    | number         |                   | số slide cho 1 lần hiển thị và chạy
+// normalStyle              | CSSProperties  |                   | style mặc định của pagination bar
+// activeStyle              | CSSProperties  |                   | style khi active của pagination bar
+
+// Usage:
+
+// const swiperBanner = new kKao4PaginationSwapSwiper(
+//   ".swiper-banner",
+//   {
+//     slidesPerViewAndGroup: 4,
+//     activeStyle: { backgroundColor: "#262626" },
+//     normalStyle: { backgroundColor: "#ececec" },
+//   },
+//   {
+//     speed: 800,
+//     slidesPerView: 4,
+//     spaceBetween: (window.innerWidth / 100) * 1.17,
+//     slidesPerGroup: 4,
+//     loop: true,
+//     autoplay: {
+//       delay: 4000,
+//       disableOnInteraction: false,
+//     },
+//   }
+// );
 
 class kKao4PaginationSwapSwiper {
   constructor(className, options, swiperOptions) {
@@ -18,7 +47,9 @@ class kKao4PaginationSwapSwiper {
     const swiper = new Swiper(`.${this.className}`, this.swiperOptions);
 
     const paginationContainer = document.querySelector(`.${this.className}-pagination-container`);
-    paginationContainer.innerHTML = ""; // Reset pagination container
+
+    // reset pagination container
+    paginationContainer.innerHTML = "";
 
     // render all pagination bars
     swiper.slides.forEach((item, i) => {

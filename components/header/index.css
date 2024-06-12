@@ -4,6 +4,7 @@ header {
   left: 0;
   z-index: 99;
   width: 100%;
+  transition: all 0.5s ease;
 }
 
 .secondary-header-container {
@@ -43,7 +44,7 @@ header {
 .header-logo {
   width: 7.25rem;
   height: 3rem;
-  margin-right: 3rem;
+  margin-right: 1.5rem;
 }
 
 .category-btn .hamburger-bar-icon {
@@ -102,7 +103,7 @@ header {
   position: absolute;
   top: 0rem;
   padding-top: 8rem;
-  left: 9.25rem;
+  left: 8rem;
   width: fit-content;
   height: fit-content;
   border-radius: 0.5rem;
@@ -114,7 +115,7 @@ header {
   position: absolute;
   top: 0rem;
   padding-top: 8rem;
-  left: 28.5rem;
+  left: 27rem;
   width: fit-content;
   height: fit-content;
   border-radius: 0.5rem;
@@ -158,16 +159,16 @@ header {
 .notification-tab-container > svg {
   position: absolute;
   top: 8.5rem;
-  left: 74.25rem;
+  left: 70.5rem;
   width: 1.625rem;
   height: 1.25rem;
-  transform: translateY(-90%);
+  transform: translateY(-60%);
 }
 
 .notification-tab {
   position: absolute;
   top: 0;
-  left: 72.25rem;
+  left: 66rem;
   width: fit-content;
   height: fit-content;
   padding-top: 8.5rem;
@@ -468,7 +469,7 @@ header {
 
 .form-search-bar {
   height: 3rem;
-  margin-left: 1.5rem;
+  margin-left: 1.25rem;
   padding-left: 0.75rem;
   outline: 1px solid var(--green-700);
   border-radius: 0.25rem;
@@ -542,7 +543,7 @@ header {
 .notification-btn {
   width: 1.4375rem;
   height: 1.56319rem;
-  margin-left: 8rem;
+  margin-left: 6rem;
   position: relative;
 }
 
@@ -819,4 +820,19 @@ header {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   row-gap: 0.88rem;
+}
+
+.sign-in-up-container-btn {
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem;
+}
+
+.sign-in-up-container-btn {
+  margin-left: auto;
+}
+
+.sign-in-up-container-btn > * + * {
+  margin-left: 0.5rem;
+  width: 8.15rem;
 }

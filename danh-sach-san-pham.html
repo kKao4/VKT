@@ -1,0 +1,1019 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./components/header/index.css" />
+    <link rel="stylesheet" href="./components/footer/index.css" />
+    <link rel="stylesheet" href="./components/trang-chu/banner/index.css" />
+    <link rel="stylesheet" href="./components/danh-sach-san-pham/index.css" />
+    <title>VKT</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <!-- secondary header -->
+      <div class="secondary-header-container">
+        <nav>
+          <a href="/" class="nav-header-link">Nhãn hàng</a>
+          <a href="/" class="nav-header-link">Tài liệu</a>
+          <a href="/" class="nav-header-link">Về chúng tôi</a>
+        </nav>
+      </div>
+      <!-- primary header -->
+      <div class="primary-header-container">
+        <a href="/" class="">
+          <img src="./assets/image/header/logo.png" alt="viện kiến trúc" class="header-logo" />
+        </a>
+        <button class="category-btn">
+          <img src="./assets/svg/header/hamburger.svg" alt="Danh mục" class="hamburger-bar-icon" />
+          <p>Danh mục</p>
+          <img src="./assets/svg/header/dropdown.svg" alt="Danh mục" class="dropdown-icon" />
+        </button>
+        <!-- search & field menu -->
+        <form class="form-search-bar">
+          <button type="button" class="field-menu-btn">
+            Lĩnh vực
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path
+                d="M7.51192 10.8296C7.27795 11.2123 6.72205 11.2123 6.48808 10.8296L3.01146 5.14244C2.76705 4.74263 3.05479 4.22949 3.52338 4.22949L10.4766 4.22949C10.9452 4.22949 11.2329 4.74263 10.9885 5.14244L7.51192 10.8296Z"
+                fill="#0B4523"
+              />
+            </svg>
+          </button>
+          <div class="form-search-bar-divider"></div>
+          <input type="text" placeholder="Tìm kiếm" class="form-search-bar-input" />
+          <button type="submit" class="form-search-submit-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none" st>
+              <path
+                d="M22.75 22.75L18.0375 18.0375M20.5833 11.9167C20.5833 16.7031 16.7031 20.5833 11.9167 20.5833C7.1302 20.5833 3.25 16.7031 3.25 11.9167C3.25 7.1302 7.1302 3.25 11.9167 3.25C16.7031 3.25 20.5833 7.1302 20.5833 11.9167Z"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </form>
+        <!-- notification button -->
+        <button class="notification-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="26" viewBox="0 0 23 26" fill="none">
+            <path
+              d="M11.5 25.9998C13.5826 25.9998 15.3248 24.5327 15.7249 22.5907H7.27513C7.67542 24.5327 9.41757 25.9998 11.5 25.9998ZM19.5634 12.3623C19.5588 12.3623 19.5634 12.2615 19.5634 12.2615C17 12.0154 14.4366 10.6547 13 8.49982C11.1846 5.77675 11.5 2.49982 12 0.999817C11.7469 0.97606 11.7598 0.999817 11.5 0.999817C7.05445 0.999817 3.45053 4.561 3.45053 8.95431V12.1225C3.45053 14.3713 2.45353 16.4941 0.704369 17.9554C0.121351 18.4476 -0.137385 19.2315 0.0718673 19.9964C0.315672 20.8862 1.20572 21.4544 2.1396 21.4544H20.8547C21.8344 21.4544 22.7579 20.8271 22.9567 19.8782C23.1109 19.1442 22.8464 18.4111 22.2703 17.9328C20.5982 16.5476 19.6312 14.5122 19.5634 12.3623Z"
+              fill="#0B4523"
+            />
+          </svg>
+          <p class="notification-content">3</p>
+        </button>
+        <!-- account -->
+        <div class="account-container">
+          <div class="avatar-container">
+            <img src="./assets/image/header/someguy.jpg" alt="some guy" class="avatar" />
+          </div>
+          <div class="account-detail-container">
+            <a href="/" class="account-name">Nguyễn Đạt</a>
+            <div class="account-rank-container">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path
+                  d="M5.9998 7.21875V9.84375H4.30293C4.19043 9.84375 4.14355 9.66563 4.24668 9.6L4.25605 9.59063C4.70605 9.29063 5.3248 8.70938 5.48418 8.325C5.63418 7.94063 5.6248 7.21875 5.6248 7.21875H5.9998ZM7.69668 9.85313H5.9998V7.21875H6.3748C6.3748 7.21875 6.35605 7.94063 6.51543 8.33438C6.66543 8.71875 7.29355 9.3 7.74355 9.6L7.75293 9.60938C7.84668 9.675 7.80918 9.85313 7.69668 9.85313Z"
+                  fill="#DCEAE1"
+                />
+                <path
+                  d="M8.57812 10.4613V10.5645C8.57812 10.6676 8.50313 10.752 8.41875 10.752H6V9.81445H7.97812C8.08125 9.81445 8.175 9.86133 8.24063 9.9457L8.50312 10.2551C8.55 10.3113 8.57812 10.3863 8.57812 10.4613ZM6 9.82383V10.7613H3.58125C3.4875 10.7613 3.42188 10.677 3.42188 10.5738V10.4707C3.42188 10.3957 3.45 10.3207 3.49687 10.2645L3.76875 9.95508C3.84375 9.8707 3.9375 9.82383 4.03125 9.82383H6Z"
+                  fill="#DCEAE1"
+                />
+                <path
+                  d="M4.43477 5.68086C4.41602 5.85898 4.25664 5.98086 4.08789 5.96211L1.72539 5.74648C0.928516 5.67148 0.319141 5.07148 0.319141 4.34961L0.150391 2.43711C0.150391 1.94023 0.609766 1.53711 1.18164 1.53711H2.85977C3.00977 1.53711 3.12227 1.65898 3.12227 1.79961V1.98711C3.12227 2.13711 3.00039 2.24961 2.85977 2.24961H1.73477C1.32227 2.24961 0.984766 2.54023 0.984766 2.90586L1.12539 3.99336C1.12539 4.54648 1.59414 5.00586 2.20352 5.06211L4.15352 5.24023C4.33164 5.25898 4.46289 5.41836 4.44414 5.59648L4.43477 5.68086Z"
+                  fill="#DCEAE1"
+                />
+                <path
+                  d="M7.56585 5.68086C7.5846 5.85898 7.74397 5.98086 7.91272 5.96211L10.2752 5.74648C11.0721 5.67148 11.6815 5.07148 11.6815 4.34961L11.8502 2.43711C11.8502 1.94023 11.3908 1.53711 10.819 1.53711H9.14085C8.99085 1.53711 8.87835 1.65898 8.87835 1.79961V1.98711C8.87835 2.13711 9.00022 2.24961 9.14085 2.24961H10.2658C10.6783 2.24961 11.0158 2.54023 11.0158 2.90586L10.8752 3.99336C10.8752 4.54648 10.4065 5.00586 9.7971 5.06211L7.8471 5.24023C7.66897 5.25898 7.53772 5.41836 7.55647 5.59648L7.56585 5.68086Z"
+                  fill="#DCEAE1"
+                />
+                <path
+                  d="M9.64688 1.22813V5.11875C9.64688 5.33438 9.5625 5.54063 9.4125 5.69063L7.5 7.6125L6.5625 8.55938C6.40312 8.71875 6.19687 8.79375 6 8.79375C5.79375 8.79375 5.5875 8.71875 5.4375 8.55938L4.5 7.6125L2.57812 5.69063C2.42812 5.54063 2.34375 5.33438 2.34375 5.11875V1.22813C2.34375 0.675 2.75625 0.20625 3.30937 0.15C3.40312 0.140625 3.49688 0.13125 3.6 0.121875C4.19063 0.05625 4.99688 0 5.99063 0C6.98438 0 7.79062 0.05625 8.39062 0.1125C8.49375 0.121875 8.5875 0.13125 8.68125 0.140625C9.225 0.20625 9.64688 0.665625 9.64688 1.22813Z"
+                  fill="#DCEAE1"
+                />
+                <path
+                  d="M8.39023 0.1125V4.99687C8.39023 5.12812 8.33398 5.25 8.24023 5.34375L6.98398 6.51562L6.36523 7.0875C6.26211 7.18125 6.13086 7.22812 5.99023 7.22812C5.85898 7.22812 5.71836 7.18125 5.61523 7.0875L4.99648 6.51562L3.74961 5.34375C3.65586 5.25 3.59961 5.12812 3.59961 4.99687V0.1125C4.19023 0.05625 4.99648 0 5.99023 0C6.98398 0 7.79023 0.05625 8.39023 0.1125Z"
+                  fill="white"
+                  fill-opacity="0.666667"
+                />
+                <path
+                  d="M8.39023 0.1125V4.99687C8.39023 5.12812 8.33398 5.25 8.24023 5.34375L6.98398 6.51562L6.36523 7.0875C6.26211 7.18125 6.13086 7.22812 5.99023 7.22812V0C6.98398 0 7.79023 0.05625 8.39023 0.1125Z"
+                  fill="white"
+                  fill-opacity="0.666667"
+                />
+                <path
+                  d="M9.79688 11.5676V11.7176C9.79688 11.8676 9.69375 11.9895 9.55313 11.9895H6V10.6113H8.90625C9.05625 10.6113 9.19688 10.677 9.3 10.7988L9.69375 11.2582C9.75938 11.352 9.79688 11.4551 9.79688 11.5676ZM6 10.6207V11.9988H2.44688C2.31563 11.9988 2.20312 11.877 2.20312 11.727V11.577C2.20312 11.4645 2.24063 11.3613 2.30625 11.277L2.7 10.8176C2.80312 10.6957 2.94375 10.6301 3.09375 10.6301H6V10.6207Z"
+                  fill="#DCEAE1"
+                />
+              </svg>
+              Thành viên kim cương
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- category menu -->
+    <div class="category-menu-container">
+      <div class="category-menu">
+        <img src="./assets/svg/header/arrow-up.svg" alt="Danh mục" class="category-menu-arrow-up-icon" />
+        <!-- header left list -->
+        <ul class="category-menu-list-container">
+          <!-- kien truc -->
+          <li class="category-menu-list-item category-menu-list-item-kien-truc" data-menu="kien-truc-cong-trinh">
+            <img src="./assets/svg/trang-chu/red.svg" alt="Kiến trúc công trình" class="category-menu-icon" />
+            <p>Kiến trúc công trình</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="category-menu-arrow-right-icon"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="M6.00008 12.6668L10.6667 8.00016L6.00008 3.3335"
+                stroke="#CF3C3F"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </li>
+          <div class="category-menu-divider"></div>
+          <!-- noi that -->
+          <li class="category-menu-list-item category-menu-list-item-noi-that" data-menu="noi-that">
+            <img src="./assets/svg/trang-chu/yellow.svg" alt="Nội thất" class="category-menu-icon" />
+            <p>Nội thất</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="category-menu-arrow-right-icon"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="M6.00008 12.6668L10.6667 8.00016L6.00008 3.3335"
+                stroke="#e66000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </li>
+          <div class="category-menu-divider"></div>
+          <!-- quy hoach -->
+          <li class="category-menu-list-item category-menu-list-item-quy-hoach" data-menu="quy-hoach">
+            <img src="./assets/svg/trang-chu/lightgreen.svg" alt="Quy hoạch" class="category-menu-icon" />
+            <p>Quy hoạch</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="category-menu-arrow-right-icon"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="M6.00008 12.6668L10.6667 8.00016L6.00008 3.3335"
+                stroke="#019898"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </li>
+          <div class="category-menu-divider"></div>
+          <!-- sinh vien -->
+          <li class="category-menu-list-item category-menu-list-item-sinh-vien" data-menu="sinh-vien">
+            <img src="./assets/svg/trang-chu/green.svg" alt="Sinh viên" class="category-menu-icon" />
+            <p>Sinh viên</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="category-menu-arrow-right-icon"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="M6.00008 12.6668L10.6667 8.00016L6.00008 3.3335"
+                stroke="#019898"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </li>
+          <div class="category-menu-divider"></div>
+          <!-- bao ton -->
+          <li class="category-menu-list-item category-menu-list-item-bao-ton" data-menu="bao-ton">
+            <img src="./assets/svg/trang-chu/blue.svg" alt="Bảo tồn" class="category-menu-icon" />
+            <p>Bảo tồn</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="category-menu-arrow-right-icon"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="M6.00008 12.6668L10.6667 8.00016L6.00008 3.3335"
+                stroke="#036bb0"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </li>
+          <div class="category-menu-divider"></div>
+          <!-- canh quan -->
+          <li class="category-menu-list-item category-menu-list-item-canh-quan" data-menu="canh-quan">
+            <img src="./assets/svg/trang-chu/brown.svg" alt="Cảnh quan" class="category-menu-icon" />
+            <p>Cảnh quan</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="category-menu-arrow-right-icon"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="M6.00008 12.6668L10.6667 8.00016L6.00008 3.3335"
+                stroke="#685e4b"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </li>
+          <div class="category-menu-divider"></div>
+          <!-- doi tac kinh doanh -->
+          <li class="category-menu-list-item category-menu-list-item-doi-tac-kinh-doanh" data-menu="doi-tac-kinh-doanh">
+            <img src="./assets/svg/trang-chu/gray.svg" alt="Cảnh quan" class="category-menu-icon" />
+            <p>Đối tác kinh doanh</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="category-menu-arrow-right-icon"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="M6.00008 12.6668L10.6667 8.00016L6.00008 3.3335"
+                stroke="#737373"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </li>
+          <div class="category-menu-divider"></div>
+          <!-- quan li nha nuoc -->
+          <li class="category-menu-list-item category-menu-list-item-quan-li-nha-nuoc" data-menu="quan-li-nha-nuoc">
+            <img src="./assets/svg/trang-chu/orange.svg" alt="Cảnh quan" class="category-menu-icon" />
+            <p>Quản lí nhà nước</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="category-menu-arrow-right-icon"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="M6.00008 12.6668L10.6667 8.00016L6.00008 3.3335"
+                stroke="#b45631"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </li>
+        </ul>
+        <div class="header-detail-menu-container">
+          <nav class="category-menu-nav-container" data-menu="kien-truc-cong-trinh">
+            <a href="/" class="category-menu-nav-link">
+              Kiến trúc công trình
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div>
+            </a>
+            <a href="/" class="category-menu-nav-link"
+              >Kiến trúc công trình
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div>
+            </a>
+            <a href="/" class="category-menu-nav-link"
+              >Kiến trúc công trình
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <div class="category-menu-nav-divider"></div>
+            <a href="/" class="category-menu-nav-link"
+              >Kiến trúc công trình
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Kiến trúc công trình
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Kiến trúc công trình
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Kiến trúc công trình
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Kiến trúc công trình
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Kiến trúc công trình
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Kiến trúc công trình
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Kiến trúc công trình
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Kiến trúc công trình
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+          </nav>
+          <nav class="category-menu-nav-container category-menu-nav-container-not-first" data-menu="noi-that">
+            <a href="/" class="category-menu-nav-link">
+              Nội thất
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div>
+            </a>
+            <a href="/" class="category-menu-nav-link"
+              >Nội thất
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div>
+            </a>
+            <a href="/" class="category-menu-nav-link"
+              >Nội thất
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <div class="category-menu-nav-divider"></div>
+            <a href="/" class="category-menu-nav-link"
+              >Nội thất
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Nội thất
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Nội thất
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+          </nav>
+          <nav class="category-menu-nav-container category-menu-nav-container-not-first" data-menu="quy-hoach">
+            <a href="/" class="category-menu-nav-link">
+              Quy hoạch
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div>
+            </a>
+            <a href="/" class="category-menu-nav-link"
+              >Quy hoạch
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div>
+            </a>
+            <a href="/" class="category-menu-nav-link"
+              >Quy hoạch
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <div class="category-menu-nav-divider"></div>
+            <a href="/" class="category-menu-nav-link"
+              >Quy hoạch
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Quy hoạch
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Quy hoạch
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+          </nav>
+          <nav class="category-menu-nav-container category-menu-nav-container-not-first" data-menu="sinh-vien">
+            <a href="/" class="category-menu-nav-link">
+              Sinh viên
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div>
+            </a>
+            <a href="/" class="category-menu-nav-link"
+              >Sinh viên
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div>
+            </a>
+            <a href="/" class="category-menu-nav-link"
+              >Sinh viên
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <div class="category-menu-nav-divider"></div>
+            <a href="/" class="category-menu-nav-link"
+              >Sinh viên
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Sinh viên
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Sinh viên
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+          </nav>
+          <nav class="category-menu-nav-container category-menu-nav-container-not-first" data-menu="bao-ton">
+            <a href="/" class="category-menu-nav-link">
+              Bảo tồn
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div>
+            </a>
+            <a href="/" class="category-menu-nav-link"
+              >Bảo tồn
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div>
+            </a>
+            <a href="/" class="category-menu-nav-link"
+              >Bảo tồn
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <div class="category-menu-nav-divider"></div>
+            <a href="/" class="category-menu-nav-link"
+              >Bảo tồn
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Bảo tồn
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Bảo tồn
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+          </nav>
+          <nav class="category-menu-nav-container category-menu-nav-container-not-first" data-menu="canh-quan">
+            <a href="/" class="category-menu-nav-link">
+              Cảnh quan
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div>
+            </a>
+            <a href="/" class="category-menu-nav-link"
+              >Cảnh quan
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div>
+            </a>
+            <a href="/" class="category-menu-nav-link"
+              >Cảnh quan
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <div class="category-menu-nav-divider"></div>
+            <a href="/" class="category-menu-nav-link"
+              >Cảnh quan
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Cảnh quan
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Cảnh quan
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+          </nav>
+          <nav class="category-menu-nav-container category-menu-nav-container-not-first" data-menu="doi-tac-kinh-doanh">
+            <a href="/" class="category-menu-nav-link">
+              Đối tác kinh doanh
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div>
+            </a>
+            <a href="/" class="category-menu-nav-link">
+              Đối tác kinh doanh
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div>
+            </a>
+            <a href="/" class="category-menu-nav-link"
+              >Đối tác kinh doanh
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <div class="category-menu-nav-divider"></div>
+            <a href="/" class="category-menu-nav-link"
+              >Đối tác kinh doanh
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Đối tác kinh doanh
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Đối tác kinh doanh
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+          </nav>
+          <nav class="category-menu-nav-container category-menu-nav-container-not-first" data-menu="quan-li-nha-nuoc">
+            <a href="/" class="category-menu-nav-link">
+              Quản lí nhà nước
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div>
+            </a>
+            <a href="/" class="category-menu-nav-link"
+              >Quản lí nhà nước
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div>
+            </a>
+            <a href="/" class="category-menu-nav-link"
+              >Quản lí nhà nước
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <div class="category-menu-nav-divider"></div>
+            <a href="/" class="category-menu-nav-link"
+              >Quản lí nhà nước
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Quản lí nhà nước
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Quản lí nhà nước
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+          </nav>
+        </div>
+      </div>
+      <div class="category-menu-overlay"></div>
+    </div>
+
+    <!-- field menu -->
+    <div class="field-menu-container">
+      <div class="field-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="11" viewBox="0 0 14 11" fill="none">
+          <path
+            d="M5.27244 1.96153C6.0442 0.638515 7.9558 0.638518 8.72756 1.96153L14 11H0L5.27244 1.96153Z"
+            fill="white"
+          />
+        </svg>
+        <nav class="field-menu-list-container">
+          <!-- kien truc -->
+          <a href="/" class="field-menu-list-item field-menu-list-item-kien-truc" data-menu="kien-truc-cong-trinh">
+            <img src="./assets/svg/trang-chu/red.svg" alt="Kiến trúc công trình" class="field-menu-icon" />
+            <p>Kiến trúc công trình</p>
+          </a>
+          <div class="field-menu-divider"></div>
+          <!-- noi that -->
+          <a href="/" class="field-menu-list-item field-menu-list-item-noi-that" data-menu="noi-that">
+            <img src="./assets/svg/trang-chu/orange.svg" alt="Nội thất" class="field-menu-icon" />
+            <p>Nội thất</p>
+          </a>
+          <div class="field-menu-divider"></div>
+          <!-- quy hoach -->
+          <a href="/" class="field-menu-list-item field-menu-list-item-quy-hoach" data-menu="quy-hoach">
+            <img src="./assets/svg/trang-chu/lightgreen.svg" alt="Quy hoạch" class="field-menu-icon" />
+            <p>Quy hoạch</p>
+          </a>
+          <div class="field-menu-divider"></div>
+          <!-- sinh vien -->
+          <a href="/" class="field-menu-list-item field-menu-list-item-sinh-vien" data-menu="sinh-vien">
+            <img src="./assets/svg/trang-chu/green.svg" alt="Sinh viên" class="field-menu-icon" />
+            <p>Sinh viên</p>
+          </a>
+          <div class="field-menu-divider"></div>
+          <!-- bao ton -->
+          <a href="/" class="field-menu-list-item field-menu-list-item-bao-ton" data-menu="bao-ton">
+            <img src="./assets/svg/trang-chu/blue.svg" alt="Bảo tồn" class="field-menu-icon" />
+            <p>Bảo tồn</p>
+          </a>
+          <div class="field-menu-divider"></div>
+          <!-- canh quan -->
+          <a href="/" class="field-menu-list-item field-menu-list-item-canh-quan" data-menu="canh-quan">
+            <img src="./assets/svg/trang-chu/brown.svg" alt="Cảnh quan" class="field-menu-icon" />
+            <p>Cảnh quan</p>
+          </a>
+          <div class="field-menu-divider"></div>
+          <!-- doi tac kinh doanh -->
+          <a
+            href="/"
+            class="field-menu-list-item field-menu-list-item-doi-tac-kinh-doanh"
+            data-menu="doi-tac-kinh-doanh"
+          >
+            <img src="./assets/svg/trang-chu/gray.svg" alt="Cảnh quan" class="field-menu-icon" />
+            <p>Đối tác kinh doanh</p>
+          </a>
+          <div class="field-menu-divider"></div>
+          <!-- quan li nha nuoc -->
+          <a href="/" class="field-menu-list-item field-menu-list-item-quan-li-nha-nuoc" data-menu="quan-li-nha-nuoc">
+            <img src="./assets/svg/trang-chu/orange.svg" alt="Cảnh quan" class="field-menu-icon" />
+            <p>Quản lí nhà nước</p>
+          </a>
+        </nav>
+      </div>
+      <div class="field-menu-overlay"></div>
+    </div>
+
+    <!-- search dropdown -->
+    <div class="search-dropdown-container">
+      <div class="search-dropdown">
+        <div class="search-dropdown-box">
+          <div class="search-input-no-value">
+            <p class="search-dropdown-title">LỊCH SỬ TÌM KIẾM</p>
+            <div class="history-search-container">
+              <a href="/" class="history-search-item">
+                Gạch Lattice
+                <button class="delete-history-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path
+                      d="M15 15L10 10M10 10L5 5M10 10L15 5M10 10L5 15"
+                      stroke="#A9A9A9"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </a>
+              <a href="/" class="history-search-item">
+                Gạch Tanada
+                <button class="delete-history-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path
+                      d="M15 15L10 10M10 10L5 5M10 10L15 5M10 10L5 15"
+                      stroke="#A9A9A9"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </a>
+              <a href="/" class="history-search-item">
+                Gạch 255 Viz Color
+                <button class="delete-history-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path
+                      d="M15 15L10 10M10 10L5 5M10 10L15 5M10 10L5 15"
+                      stroke="#A9A9A9"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </a>
+              <a href="/" class="history-search-item">
+                Gạch Fishbone Mosaic
+                <button class="delete-history-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path
+                      d="M15 15L10 10M10 10L5 5M10 10L15 5M10 10L5 15"
+                      stroke="#A9A9A9"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </a>
+            </div>
+            <div class="search-dropdown-divider"></div>
+            <p class="search-dropdown-title">GỢI Ý CHO BẠN</p>
+            <div class="suggest-search-container">
+              <a href="/" class="suggest-search-item">
+                <div class="image-container">
+                  <img src="./assets/image/header/suggest-1.jpg" alt="" />
+                </div>
+                <div class="suggest-detail-container">
+                  <p class="suggest-detail-name">Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ.</p>
+                  <div class="suggest-detail-rate">
+                    <div class="suggest-detail-star-container">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
+                        <path
+                          d="M7 0L9.0161 4.22507L13.6574 4.83688L10.2621 8.05993L11.1145 12.6631L7 10.43L2.8855 12.6631L3.73788 8.05993L0.342604 4.83688L4.9839 4.22507L7 0Z"
+                          fill="#FF6B00"
+                        />
+                      </svg>
+                      4.8
+                    </div>
+                    <p class="suggest-detail-review">(20 lượt đánh giá)</p>
+                  </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                  <path
+                    d="M8.24935 17.4168L14.666 11.0002L8.24935 4.5835"
+                    stroke="#A9A9A9"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <a href="/" class="suggest-search-item">
+                <div class="image-container">
+                  <img src="./assets/image/header/suggest-2.jpg" alt="" />
+                </div>
+                <div class="suggest-detail-container">
+                  <p class="suggest-detail-name">Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ.</p>
+                  <div class="suggest-detail-rate">
+                    <div class="suggest-detail-star-container">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
+                        <path
+                          d="M7 0L9.0161 4.22507L13.6574 4.83688L10.2621 8.05993L11.1145 12.6631L7 10.43L2.8855 12.6631L3.73788 8.05993L0.342604 4.83688L4.9839 4.22507L7 0Z"
+                          fill="#FF6B00"
+                        />
+                      </svg>
+                      4.8
+                    </div>
+                    <p class="suggest-detail-review">(20 lượt đánh giá)</p>
+                  </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                  <path
+                    d="M8.24935 17.4168L14.666 11.0002L8.24935 4.5835"
+                    stroke="#A9A9A9"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <a href="/" class="suggest-search-item">
+                <div class="image-container">
+                  <img src="./assets/image/header/suggest-3.jpg" alt="" />
+                </div>
+                <div class="suggest-detail-container">
+                  <p class="suggest-detail-name">Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ.</p>
+                  <div class="suggest-detail-rate">
+                    <div class="suggest-detail-star-container">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
+                        <path
+                          d="M7 0L9.0161 4.22507L13.6574 4.83688L10.2621 8.05993L11.1145 12.6631L7 10.43L2.8855 12.6631L3.73788 8.05993L0.342604 4.83688L4.9839 4.22507L7 0Z"
+                          fill="#FF6B00"
+                        />
+                      </svg>
+                      4.8
+                    </div>
+                    <p class="suggest-detail-review">(20 lượt đánh giá)</p>
+                  </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                  <path
+                    d="M8.24935 17.4168L14.666 11.0002L8.24935 4.5835"
+                    stroke="#A9A9A9"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="search-input-has-value">
+            <p class="search-dropdown-title">CÓ PHẢI BẠN MUỐN TÌM</p>
+            <div class="search-value-container">
+              <a href="/" class="search-value-item">Gạc</a>
+              <a href="/" class="search-value-item">Gạch Tanada</a>
+              <a href="/" class="search-value-item">Gạch 255 Viz Color</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="search-dropdown-overlay"></div>
+    </div>
+
+    <!-- notification tab -->
+    <div class="notification-tab-container">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="19" viewBox="0 0 26 19" fill="none">
+        <path
+          d="M11.3231 1.57983C12.1118 0.366465 13.8882 0.366462 14.6769 1.57983L26 19H0L11.3231 1.57983Z"
+          fill="white"
+        />
+      </svg>
+      <div class="notification-tab">
+        <div class="notification-box">
+          <div class="notification-title">
+            <h3>Thông báo</h3>
+            <div class="btn-container">
+              <button class="show-all-btn">Tất cả</button>
+              <button class="not-read-btn">Chưa đọc</button>
+            </div>
+          </div>
+          <div class="notification-container">
+            <a href="/" class="notification-item notification-item-unread">
+              <div class="image-container">
+                <img src="./assets/image/header/notification-1.jpg" alt="" />
+              </div>
+              <div class="notification-item-content">
+                <b>Tài liệu mới đăng tải!</b>
+                <p>Đừng bỏ lỡ bản vẽ chi tiết mới của cửa sổ kiến trúc</p>
+              </div>
+            </a>
+            <a href="/" class="notification-item">
+              <div class="image-container">
+                <img src="./assets/image/header/notification-1.jpg" alt="" />
+              </div>
+              <div class="notification-item-content">
+                <b>Tài liệu mới đăng tải!</b>
+                <p>Đừng bỏ lỡ bản vẽ chi tiết mới của cửa sổ kiến trúc</p>
+              </div>
+            </a>
+            <a href="/" class="notification-item">
+              <div class="image-container">
+                <img src="./assets/image/header/notification-1.jpg" alt="" />
+              </div>
+              <div class="notification-item-content">
+                <b>Tài liệu mới đăng tải!</b>
+                <p>Đừng bỏ lỡ bản vẽ chi tiết mới của cửa sổ kiến trúc</p>
+              </div>
+            </a>
+            <a href="/" class="notification-item">
+              <div class="image-container">
+                <img src="./assets/image/header/notification-1.jpg" alt="" />
+              </div>
+              <div class="notification-item-content">
+                <b>Tài liệu mới đăng tải!</b>
+                <p>Đừng bỏ lỡ bản vẽ chi tiết mới của cửa sổ kiến trúc</p>
+              </div>
+            </a>
+            <a href="/" class="notification-item">
+              <div class="image-container">
+                <img src="./assets/image/header/notification-1.jpg" alt="" />
+              </div>
+              <div class="notification-item-content">
+                <b>Tài liệu mới đăng tải!</b>
+                <p>Đừng bỏ lỡ bản vẽ chi tiết mới của cửa sổ kiến trúc</p>
+              </div>
+            </a>
+            <a href="/" class="notification-item">
+              <div class="image-container">
+                <img src="./assets/image/header/notification-1.jpg" alt="" />
+              </div>
+              <div class="notification-item-content">
+                <b>Tài liệu mới đăng tải!</b>
+                <p>Đừng bỏ lỡ bản vẽ chi tiết mới của cửa sổ kiến trúc</p>
+              </div>
+            </a>
+            <a href="/" class="notification-item">
+              <div class="image-container">
+                <img src="./assets/image/header/notification-1.jpg" alt="" />
+              </div>
+              <div class="notification-item-content">
+                <b>Tài liệu mới đăng tải!</b>
+                <p>Đừng bỏ lỡ bản vẽ chi tiết mới của cửa sổ kiến trúc</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="notification-tab-overlay"></div>
+    </div>
+
+    <!-- SECTION: banner -->
+    <section class="banner smaller-banner">
+      <div class="container">
+        <img src="./assets/image/trang-chu/banner-background.jpg" alt="" class="banner-background" />
+        <div class="breadcrumb-container">
+          <a href="/" class="breadcrumb-link">TRANG CHỦ /</a>
+          <a href="/" class="breadcrumb-link">KIẾN TRÚC CÔNG TRÌNH /</a>
+          <a href="/kien-truc-cong-trinh" class="breadcrumb-link breadcrumb-link-active">DANH SÁCH SẢN PHẨM</a>
+        </div>
+        <div class="banner-sub-follow-container">
+          <div class="banner-text-container banner-text-container-right">
+            <h1>Triển khai kiến trúc công trình</h1>
+              <p>
+                "Triển khai kiến Trúc Công Trình" chúng tôi đã tổng hợp những thông tin hữu ích và độc đáo nhất về quá
+                trình biến ý tưởng kiến trúc thành hiện thực. Dành cho cả những người mới bắt đầu và chuyên gia, chúng
+                tôi hứa mang đến cho bạn sự chi tiết và sáng tạo. Hãy đồng hành cùng chúng tôi để tạo ra những kiệt tác
+                kiến trúc đẹp mắt và ấn tượng!
+              </p>
+          </div>
+          <div class="sub-follow-btn-container">
+            <button>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M2.8584 7.99894H8.03214M8.03214 7.99894H13.2059M8.03214 7.99894V13.1727M8.03214 7.99894V2.8252"
+                  stroke="#015121"
+                  stroke-width="1.56937"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Theo dõi
+            </button>
+            <button>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                <path
+                  d="M0.918795 15.9194C0.783556 15.9195 0.653451 15.8676 0.555302 15.7746C0.457154 15.6815 0.398444 15.5544 0.391276 15.4194C0.385996 15.3153 -0.0396098 5.22911 8.83949 3.8414V0.60606C8.83951 0.503324 8.86951 0.402825 8.92579 0.316879C8.98207 0.230932 9.06221 0.163271 9.15637 0.122187C9.25054 0.0811022 9.35464 0.0683787 9.45593 0.0855751C9.55721 0.102772 9.65128 0.149141 9.72661 0.219002L17.1193 7.08361C17.1724 7.13312 17.2147 7.19303 17.2437 7.25962C17.2727 7.32621 17.2876 7.39805 17.2876 7.47066C17.2876 7.54328 17.2727 7.61512 17.2437 7.68171C17.2147 7.7483 17.1724 7.80821 17.1193 7.85772L9.72661 14.7223C9.65128 14.7922 9.55721 14.8386 9.45593 14.8558C9.35464 14.873 9.25054 14.8602 9.15637 14.8191C9.06221 14.7781 8.98207 14.7104 8.92579 14.6245C8.86951 14.5385 8.83951 14.438 8.83949 14.3353V11.149H8.83052C7.35727 11.149 3.04049 11.5092 1.40935 15.5878C1.37009 15.6858 1.30237 15.7697 1.21493 15.8288C1.12749 15.8879 1.02434 15.9195 0.918795 15.9194ZM9.89559 1.81687V4.30239C9.89557 4.43172 9.84808 4.55655 9.76214 4.6532C9.6762 4.74986 9.55777 4.8116 9.42932 4.82674C3.47824 5.52693 1.94373 10.3601 1.56143 13.2359C4.35902 9.74126 9.35328 10.1083 9.41137 10.1125C9.54341 10.1235 9.66649 10.1837 9.75619 10.2812C9.84589 10.3788 9.89565 10.5064 9.89559 10.6389V13.1245L15.984 7.47066L9.89559 1.81687Z"
+                  fill="#015121"
+                />
+              </svg>
+              Chia sẻ
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: footer -->
+    <footer class="footer">
+      <div class="container">
+        <nav class="footer-link-container">
+          <a href="/" class="footer-link"
+            >Trang chủ
+            <div class="footer-link-deco"></div>
+          </a>
+          <a href="/" class="footer-link">Tài nguyên</a>
+          <a href="/" class="footer-link">Nhãn hàng</a>
+          <a href="/" class="footer-link">Tài liệu</a>
+          <a href="/" class="footer-link">Điều khoản</a>
+        </nav>
+        <div class="info-container">
+          <div class="info-item">
+            <img src="./assets/svg/footer/email.svg" alt="" />
+            <div class="info-content">
+              <h4>E-MAIL US</h4>
+              <p>info@vienkientruc.vn</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <img src="./assets/svg/footer/support.svg" alt="" />
+            <div class="info-content">
+              <h4>SUPPORT 27/7</h4>
+              <p>02438262179</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <img src="./assets/svg/footer/location.svg" alt="" />
+            <div class="info-content">
+              <h4>ĐỊA CHỈ</h4>
+              <p>40 P. Tăng Bạt Hổ, Phạm Đình Hổ, Hai Bà Trưng, Hà Nội</p>
+            </div>
+          </div>
+        </div>
+        <p class="dev-team">@2024 VKT | Designed by OKHUB Agency</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <script src="./utils/formatNumber.js"></script>
+    <script src="./utils/data.js"></script>
+    <script src="./components/header/index.js"></script>
+    <script src="./components/danh-sach-san-pham/index.js"></script>
+  </body>
+</html>

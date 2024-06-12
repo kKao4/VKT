@@ -51,7 +51,7 @@
   margin-bottom: 2rem;
 }
 
-.banner-text-container button {
+.banner-text-container button.register-free {
   width: 100%;
   padding: 0.75rem 1.875rem;
   border-radius: 0.25rem;
@@ -98,26 +98,4 @@
   width: 2rem;
   height: 0.25rem;
   background-color: #ececec;
-}
-
-.breadcrumb-container {
-  display: flex;
-  align-items: center;
-}
-
-.breadcrumb-container > * + * {
-  margin-left: 0.44rem;
-}
-
-.breadcrumb-link {
-  font-size: 0.875rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 120%;
-  color: #fff;
-  opacity: 0.5;
-}
-
-.breadcrumb-link-active {
-  opacity: 1;
 }

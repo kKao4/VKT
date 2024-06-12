@@ -1,4 +1,5 @@
 function init() {
+  const header = document.querySelector("header");
   const categoryMenuContainer = document.querySelector(".category-menu-container");
   const fieldMenuContainer = document.querySelector(".field-menu-container");
   const categoryMenuOverlay = document.querySelector(".category-menu-overlay");
@@ -67,6 +68,19 @@ function init() {
     notificationBox.style.maxHeight = null;
   }
 
+  let lastScrollTop = document.documentElement.scrollTop;
+  function detectDirection() {
+    const scrollTopPosition = document.documentElement.scrollTop;
+    if (scrollTopPosition < lastScrollTop) {
+      header.style.transform = "none";
+      header.style.opacity = 1;
+    } else if (scrollTopPosition > lastScrollTop) {
+      header.style.transform = "translateY(-100%)";
+      header.style.opacity = 0;
+    }
+    lastScrollTop = scrollTopPosition <= 0 ? 0 : scrollTopPosition;
+  }
+  window.addEventListener("scroll", detectDirection);
   categoryButton.addEventListener("mouseenter", openCategoryMenu);
   categoryMenu.addEventListener("mouseleave", closeCategoryMenu);
   fieldMenuButton.addEventListener("mouseenter", openFieldMenu);
@@ -74,7 +88,7 @@ function init() {
   categoryMenuOverlay.addEventListener("mouseenter", closeCategoryMenu);
   fieldMenuOverlay.addEventListener("mouseenter", closeFieldMenu);
   searchInput.addEventListener("focus", openSearchDropdown);
-  searchInput.addEventListener("blur", closeSearchDropdown);
+  searchDropdownBox.addEventListener("mouseleave", closeSearchDropdown);
   searchInput.addEventListener("input", (e) => {
     if (e.target.value) {
       searchDropdownNoValue.style.display = "none";

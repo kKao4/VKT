@@ -356,3 +356,165 @@ p.heading-description {
   right: -1rem;
   transform: translate(100%, -50%);
 }
+
+.contained-btn,
+.outlined-btn {
+  padding: 0.75rem 1.88rem;
+  align-items: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  color: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0px 0px 20px 0px rgba(198, 255, 189, 0.25);
+  background-color: var(--green-700);
+  margin: auto;
+  display: block;
+  height: 3rem;
+}
+
+.outlined-btn {
+  background-color: #fff;
+  color: var(--green-700);
+  outline: 1px solid var(--green-700);
+}
+
+.breadcrumb-container {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-container > * + * {
+  margin-left: 0.44rem;
+}
+
+.breadcrumb-link {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.breadcrumb-link-active {
+  opacity: 1;
+}
+
+.breadcrumb-container-black .breadcrumb-link {
+  color: var(--grey-800);
+}
+
+.collection-item {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.collection-item .image-container {
+  border-radius: 0.25rem;
+  outline: 1px solid var(--grey-200);
+  height: 13.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.collection-item .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection-item .download-count {
+  color: var(--grey-400);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 0.38rem;
+}
+
+.collection-item h4 {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  color: #0c482f;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  margin-bottom: 0.75rem;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.125rem;
+  text-decoration-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.collection-item h4:hover {
+  text-decoration-color: #0c482f;
+}
+
+.collection-item .download-btn {
+  border-radius: 0.25rem;
+  background: rgba(19, 115, 58, 0.2);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 128.6%;
+  color: var(--green-600);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.3125rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.collection-item .download-btn svg {
+  margin-left: 0.25rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.collection-item .download-btn:hover {
+  background: rgba(19, 115, 58, 0.4);
+}
+
+.show-more-btn {
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%;
+  color: #0b4523;
+  width: 100%;
+  border-radius: 0.25rem;
+  border: 1px solid #0b4523;
+  box-shadow: 0px 0px 20px 0px rgba(198, 255, 189, 0.25);
+  transition: all 0.3s ease;
+}
+
+.show-more-btn svg {
+  margin-left: 0.5rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  transition: all 0.3s ease;
+}
+
+.show-more-btn svg rect {
+  transition: all 0.3s ease;
+}
+
+.show-more-btn:hover {
+  background-color: #0b4523;
+  color: #fff;
+}
+
+.show-more-btn:hover svg rect {
+  fill: #fff;
+}

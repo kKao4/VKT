@@ -1,5 +1,5 @@
 function init() {
-  /* SECTION: section Các đối tác tuyệt vời của chúng tôi */
+  /* SECTION: section các đối tác tuyệt vời của chúng tôi */
   const swiperGreatPartner = new Swiper(".swiper-great-partner", {
     slidesPerView: 8,
     slidesPerGroup: 1,
@@ -11,7 +11,7 @@ function init() {
       nextEl: ".swiper-great-partner-next-btn",
     },
   });
-  /* SECTION: Thể loại công trình được quan tâm nhất */
+  /* SECTION: section thể loại công trình được quan tâm nhất */
   const swiperInterestProject = new Swiper(".swiper-interest-project", {
     slidesPerView: 4,
     slidesPerGroup: 1,
@@ -22,6 +22,31 @@ function init() {
       prevEl: ".swiper-interest-project-prev-btn",
       nextEl: ".swiper-interest-project-next-btn",
     },
+  });
+  // SECTION: section thương hiệu uy tín trên thị trường
+  const trademarkImagesScrollContainer = document.querySelector(".trademark-images-container-scroll");
+  let once = false;
+  window.addEventListener("scroll", () => {
+    if (!once) {
+      const rect = trademarkImagesScrollContainer.getBoundingClientRect();
+      if (Math.floor(rect.height) >= Math.floor(window.innerHeight)) {
+        if (
+          Math.floor(rect.top) <= Math.floor(window.innerHeight - window.innerHeight * 1) &&
+          Math.floor(rect.bottom) >= Math.floor(window.innerHeight * 1)
+        ) {
+          kKao4AutoScrollElement(".trademark-images-container-scroll");
+          once = true;
+        }
+      } else if (Math.floor(rect.height) < Math.floor(window.innerHeight)) {
+        if (
+          window.innerHeight - Math.floor(rect.top) >= Math.floor(rect.height * 0) &&
+          Math.floor(rect.bottom) >= Math.floor(rect.height * 0)
+        ) {
+          kKao4AutoScrollElement(".trademark-images-container-scroll");
+          once = true;
+        }
+      }
+    }
   });
 }
 
