@@ -125,6 +125,31 @@ function init() {
       });
     });
   });
+  const openModalMenuButton = document.querySelector(".open-modal-menu-btn");
+  const closeModalMenuButton = document.querySelector(".close-modal-menu-btn");
+  const modalMenu = document.querySelector(".modal-menu");
+  const accordionContainers = document.querySelectorAll(".accordion-container");
+  const accordionContents = document.querySelectorAll(".accordion-content");
+  openModalMenuButton.addEventListener("click", () => {
+    modalMenu.classList.add("modal-menu-open");
+  });
+  closeModalMenuButton.addEventListener("click", () => {
+    modalMenu.classList.remove("modal-menu-open");
+  });
+  accordionContainers.forEach((accordion, i) => {
+    accordion.addEventListener("click", () => {
+      const icon = accordion.querySelector("svg");
+      if (accordionContents[i].style.maxHeight) {
+        accordionContents[i].style.maxHeight = null;
+        accordionContents[i].style.opacity = 0;
+        icon.style.transform = "none";
+      } else {
+        accordionContents[i].style.maxHeight = accordionContents[i].scrollHeight + "px";
+        accordionContents[i].style.opacity = 1;
+        icon.style.transform = "rotateX(180deg)";
+      }
+    });
+  });
 }
 
 window.addEventListener("DOMContentLoaded", init);

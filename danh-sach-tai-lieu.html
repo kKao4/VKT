@@ -1,0 +1,1761 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./components/header/index.css" />
+    <link rel="stylesheet" href="./components/footer/index.css" />
+    <link rel="stylesheet" href="./components/trang-chu/banner/index.css" />
+    <link rel="stylesheet" href="./components/danh-sach-tai-lieu/index.css" />
+    <title>VKT</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <!-- secondary header -->
+      <div class="secondary-header-container">
+        <nav>
+          <a href="/" class="nav-header-link">Nhãn hàng</a>
+          <a href="/" class="nav-header-link">Tài liệu</a>
+          <a href="/" class="nav-header-link">Về chúng tôi</a>
+        </nav>
+      </div>
+      <!-- primary header -->
+      <div class="primary-header-container">
+        <a href="/" class="">
+          <img src="./assets/image/header/logo.png" alt="viện kiến trúc" class="header-logo" />
+        </a>
+        <button class="category-btn">
+          <img src="./assets/svg/header/hamburger.svg" alt="Danh mục" class="hamburger-bar-icon" />
+          <p>Danh mục</p>
+          <img src="./assets/svg/header/dropdown.svg" alt="Danh mục" class="dropdown-icon" />
+        </button>
+        <!-- search & field menu -->
+        <form class="form-search-bar">
+          <button type="button" class="field-menu-btn">
+            Lĩnh vực
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path
+                d="M7.51192 10.8296C7.27795 11.2123 6.72205 11.2123 6.48808 10.8296L3.01146 5.14244C2.76705 4.74263 3.05479 4.22949 3.52338 4.22949L10.4766 4.22949C10.9452 4.22949 11.2329 4.74263 10.9885 5.14244L7.51192 10.8296Z"
+                fill="#0B4523"
+              />
+            </svg>
+          </button>
+          <div class="form-search-bar-divider"></div>
+          <input type="text" placeholder="Tìm kiếm" class="form-search-bar-input" />
+          <button type="submit" class="form-search-submit-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none" st>
+              <path
+                d="M22.75 22.75L18.0375 18.0375M20.5833 11.9167C20.5833 16.7031 16.7031 20.5833 11.9167 20.5833C7.1302 20.5833 3.25 16.7031 3.25 11.9167C3.25 7.1302 7.1302 3.25 11.9167 3.25C16.7031 3.25 20.5833 7.1302 20.5833 11.9167Z"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </form>
+        <!-- notification button -->
+        <button class="notification-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="26" viewBox="0 0 23 26" fill="none">
+            <path
+              d="M11.5 25.9998C13.5826 25.9998 15.3248 24.5327 15.7249 22.5907H7.27513C7.67542 24.5327 9.41757 25.9998 11.5 25.9998ZM19.5634 12.3623C19.5588 12.3623 19.5634 12.2615 19.5634 12.2615C17 12.0154 14.4366 10.6547 13 8.49982C11.1846 5.77675 11.5 2.49982 12 0.999817C11.7469 0.97606 11.7598 0.999817 11.5 0.999817C7.05445 0.999817 3.45053 4.561 3.45053 8.95431V12.1225C3.45053 14.3713 2.45353 16.4941 0.704369 17.9554C0.121351 18.4476 -0.137385 19.2315 0.0718673 19.9964C0.315672 20.8862 1.20572 21.4544 2.1396 21.4544H20.8547C21.8344 21.4544 22.7579 20.8271 22.9567 19.8782C23.1109 19.1442 22.8464 18.4111 22.2703 17.9328C20.5982 16.5476 19.6312 14.5122 19.5634 12.3623Z"
+              fill="#0B4523"
+            />
+          </svg>
+          <p class="notification-content">3</p>
+        </button>
+        <!-- account -->
+        <div class="account-container">
+          <div class="avatar-container">
+            <img src="./assets/image/header/someguy.jpg" alt="some guy" class="avatar" />
+          </div>
+          <div class="account-detail-container">
+            <a href="/" class="account-name">Nguyễn Đạt</a>
+            <div class="account-rank-container">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path
+                  d="M5.9998 7.21875V9.84375H4.30293C4.19043 9.84375 4.14355 9.66563 4.24668 9.6L4.25605 9.59063C4.70605 9.29063 5.3248 8.70938 5.48418 8.325C5.63418 7.94063 5.6248 7.21875 5.6248 7.21875H5.9998ZM7.69668 9.85313H5.9998V7.21875H6.3748C6.3748 7.21875 6.35605 7.94063 6.51543 8.33438C6.66543 8.71875 7.29355 9.3 7.74355 9.6L7.75293 9.60938C7.84668 9.675 7.80918 9.85313 7.69668 9.85313Z"
+                  fill="#DCEAE1"
+                />
+                <path
+                  d="M8.57812 10.4613V10.5645C8.57812 10.6676 8.50313 10.752 8.41875 10.752H6V9.81445H7.97812C8.08125 9.81445 8.175 9.86133 8.24063 9.9457L8.50312 10.2551C8.55 10.3113 8.57812 10.3863 8.57812 10.4613ZM6 9.82383V10.7613H3.58125C3.4875 10.7613 3.42188 10.677 3.42188 10.5738V10.4707C3.42188 10.3957 3.45 10.3207 3.49687 10.2645L3.76875 9.95508C3.84375 9.8707 3.9375 9.82383 4.03125 9.82383H6Z"
+                  fill="#DCEAE1"
+                />
+                <path
+                  d="M4.43477 5.68086C4.41602 5.85898 4.25664 5.98086 4.08789 5.96211L1.72539 5.74648C0.928516 5.67148 0.319141 5.07148 0.319141 4.34961L0.150391 2.43711C0.150391 1.94023 0.609766 1.53711 1.18164 1.53711H2.85977C3.00977 1.53711 3.12227 1.65898 3.12227 1.79961V1.98711C3.12227 2.13711 3.00039 2.24961 2.85977 2.24961H1.73477C1.32227 2.24961 0.984766 2.54023 0.984766 2.90586L1.12539 3.99336C1.12539 4.54648 1.59414 5.00586 2.20352 5.06211L4.15352 5.24023C4.33164 5.25898 4.46289 5.41836 4.44414 5.59648L4.43477 5.68086Z"
+                  fill="#DCEAE1"
+                />
+                <path
+                  d="M7.56585 5.68086C7.5846 5.85898 7.74397 5.98086 7.91272 5.96211L10.2752 5.74648C11.0721 5.67148 11.6815 5.07148 11.6815 4.34961L11.8502 2.43711C11.8502 1.94023 11.3908 1.53711 10.819 1.53711H9.14085C8.99085 1.53711 8.87835 1.65898 8.87835 1.79961V1.98711C8.87835 2.13711 9.00022 2.24961 9.14085 2.24961H10.2658C10.6783 2.24961 11.0158 2.54023 11.0158 2.90586L10.8752 3.99336C10.8752 4.54648 10.4065 5.00586 9.7971 5.06211L7.8471 5.24023C7.66897 5.25898 7.53772 5.41836 7.55647 5.59648L7.56585 5.68086Z"
+                  fill="#DCEAE1"
+                />
+                <path
+                  d="M9.64688 1.22813V5.11875C9.64688 5.33438 9.5625 5.54063 9.4125 5.69063L7.5 7.6125L6.5625 8.55938C6.40312 8.71875 6.19687 8.79375 6 8.79375C5.79375 8.79375 5.5875 8.71875 5.4375 8.55938L4.5 7.6125L2.57812 5.69063C2.42812 5.54063 2.34375 5.33438 2.34375 5.11875V1.22813C2.34375 0.675 2.75625 0.20625 3.30937 0.15C3.40312 0.140625 3.49688 0.13125 3.6 0.121875C4.19063 0.05625 4.99688 0 5.99063 0C6.98438 0 7.79062 0.05625 8.39062 0.1125C8.49375 0.121875 8.5875 0.13125 8.68125 0.140625C9.225 0.20625 9.64688 0.665625 9.64688 1.22813Z"
+                  fill="#DCEAE1"
+                />
+                <path
+                  d="M8.39023 0.1125V4.99687C8.39023 5.12812 8.33398 5.25 8.24023 5.34375L6.98398 6.51562L6.36523 7.0875C6.26211 7.18125 6.13086 7.22812 5.99023 7.22812C5.85898 7.22812 5.71836 7.18125 5.61523 7.0875L4.99648 6.51562L3.74961 5.34375C3.65586 5.25 3.59961 5.12812 3.59961 4.99687V0.1125C4.19023 0.05625 4.99648 0 5.99023 0C6.98398 0 7.79023 0.05625 8.39023 0.1125Z"
+                  fill="white"
+                  fill-opacity="0.666667"
+                />
+                <path
+                  d="M8.39023 0.1125V4.99687C8.39023 5.12812 8.33398 5.25 8.24023 5.34375L6.98398 6.51562L6.36523 7.0875C6.26211 7.18125 6.13086 7.22812 5.99023 7.22812V0C6.98398 0 7.79023 0.05625 8.39023 0.1125Z"
+                  fill="white"
+                  fill-opacity="0.666667"
+                />
+                <path
+                  d="M9.79688 11.5676V11.7176C9.79688 11.8676 9.69375 11.9895 9.55313 11.9895H6V10.6113H8.90625C9.05625 10.6113 9.19688 10.677 9.3 10.7988L9.69375 11.2582C9.75938 11.352 9.79688 11.4551 9.79688 11.5676ZM6 10.6207V11.9988H2.44688C2.31563 11.9988 2.20312 11.877 2.20312 11.727V11.577C2.20312 11.4645 2.24063 11.3613 2.30625 11.277L2.7 10.8176C2.80312 10.6957 2.94375 10.6301 3.09375 10.6301H6V10.6207Z"
+                  fill="#DCEAE1"
+                />
+              </svg>
+              Thành viên kim cương
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- category menu -->
+    <div class="category-menu-container">
+      <div class="category-menu">
+        <img src="./assets/svg/header/arrow-up.svg" alt="Danh mục" class="category-menu-arrow-up-icon" />
+        <!-- header left list -->
+        <ul class="category-menu-list-container">
+          <!-- kien truc -->
+          <li class="category-menu-list-item category-menu-list-item-kien-truc" data-menu="kien-truc-cong-trinh">
+            <img src="./assets/svg/trang-chu/red.svg" alt="Kiến trúc công trình" class="category-menu-icon" />
+            <p>Kiến trúc công trình</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="category-menu-arrow-right-icon"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="M6.00008 12.6668L10.6667 8.00016L6.00008 3.3335"
+                stroke="#CF3C3F"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </li>
+          <div class="category-menu-divider"></div>
+          <!-- noi that -->
+          <li class="category-menu-list-item category-menu-list-item-noi-that" data-menu="noi-that">
+            <img src="./assets/svg/trang-chu/yellow.svg" alt="Nội thất" class="category-menu-icon" />
+            <p>Nội thất</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="category-menu-arrow-right-icon"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="M6.00008 12.6668L10.6667 8.00016L6.00008 3.3335"
+                stroke="#e66000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </li>
+          <div class="category-menu-divider"></div>
+          <!-- quy hoach -->
+          <li class="category-menu-list-item category-menu-list-item-quy-hoach" data-menu="quy-hoach">
+            <img src="./assets/svg/trang-chu/lightgreen.svg" alt="Quy hoạch" class="category-menu-icon" />
+            <p>Quy hoạch</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="category-menu-arrow-right-icon"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="M6.00008 12.6668L10.6667 8.00016L6.00008 3.3335"
+                stroke="#019898"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </li>
+          <div class="category-menu-divider"></div>
+          <!-- sinh vien -->
+          <li class="category-menu-list-item category-menu-list-item-sinh-vien" data-menu="sinh-vien">
+            <img src="./assets/svg/trang-chu/green.svg" alt="Sinh viên" class="category-menu-icon" />
+            <p>Sinh viên</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="category-menu-arrow-right-icon"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="M6.00008 12.6668L10.6667 8.00016L6.00008 3.3335"
+                stroke="#019898"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </li>
+          <div class="category-menu-divider"></div>
+          <!-- bao ton -->
+          <li class="category-menu-list-item category-menu-list-item-bao-ton" data-menu="bao-ton">
+            <img src="./assets/svg/trang-chu/blue.svg" alt="Bảo tồn" class="category-menu-icon" />
+            <p>Bảo tồn</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="category-menu-arrow-right-icon"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="M6.00008 12.6668L10.6667 8.00016L6.00008 3.3335"
+                stroke="#036bb0"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </li>
+          <div class="category-menu-divider"></div>
+          <!-- canh quan -->
+          <li class="category-menu-list-item category-menu-list-item-canh-quan" data-menu="canh-quan">
+            <img src="./assets/svg/trang-chu/brown.svg" alt="Cảnh quan" class="category-menu-icon" />
+            <p>Cảnh quan</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="category-menu-arrow-right-icon"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="M6.00008 12.6668L10.6667 8.00016L6.00008 3.3335"
+                stroke="#685e4b"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </li>
+          <div class="category-menu-divider"></div>
+          <!-- doi tac kinh doanh -->
+          <li class="category-menu-list-item category-menu-list-item-doi-tac-kinh-doanh" data-menu="doi-tac-kinh-doanh">
+            <img src="./assets/svg/trang-chu/gray.svg" alt="Cảnh quan" class="category-menu-icon" />
+            <p>Đối tác kinh doanh</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="category-menu-arrow-right-icon"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="M6.00008 12.6668L10.6667 8.00016L6.00008 3.3335"
+                stroke="#737373"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </li>
+          <div class="category-menu-divider"></div>
+          <!-- quan li nha nuoc -->
+          <li class="category-menu-list-item category-menu-list-item-quan-li-nha-nuoc" data-menu="quan-li-nha-nuoc">
+            <img src="./assets/svg/trang-chu/orange.svg" alt="Cảnh quan" class="category-menu-icon" />
+            <p>Quản lí nhà nước</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="category-menu-arrow-right-icon"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="M6.00008 12.6668L10.6667 8.00016L6.00008 3.3335"
+                stroke="#b45631"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </li>
+        </ul>
+        <div class="header-detail-menu-container">
+          <nav class="category-menu-nav-container" data-menu="kien-truc-cong-trinh">
+            <a href="/" class="category-menu-nav-link">
+              Kiến trúc công trình
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div>
+            </a>
+            <a href="/" class="category-menu-nav-link"
+              >Kiến trúc công trình
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div>
+            </a>
+            <a href="/" class="category-menu-nav-link"
+              >Kiến trúc công trình
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <div class="category-menu-nav-divider"></div>
+            <a href="/" class="category-menu-nav-link"
+              >Kiến trúc công trình
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Kiến trúc công trình
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Kiến trúc công trình
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Kiến trúc công trình
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Kiến trúc công trình
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Kiến trúc công trình
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Kiến trúc công trình
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Kiến trúc công trình
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Kiến trúc công trình
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+          </nav>
+          <nav class="category-menu-nav-container category-menu-nav-container-not-first" data-menu="noi-that">
+            <a href="/" class="category-menu-nav-link">
+              Nội thất
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div>
+            </a>
+            <a href="/" class="category-menu-nav-link"
+              >Nội thất
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div>
+            </a>
+            <a href="/" class="category-menu-nav-link"
+              >Nội thất
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <div class="category-menu-nav-divider"></div>
+            <a href="/" class="category-menu-nav-link"
+              >Nội thất
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Nội thất
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Nội thất
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+          </nav>
+          <nav class="category-menu-nav-container category-menu-nav-container-not-first" data-menu="quy-hoach">
+            <a href="/" class="category-menu-nav-link">
+              Quy hoạch
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div>
+            </a>
+            <a href="/" class="category-menu-nav-link"
+              >Quy hoạch
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div>
+            </a>
+            <a href="/" class="category-menu-nav-link"
+              >Quy hoạch
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <div class="category-menu-nav-divider"></div>
+            <a href="/" class="category-menu-nav-link"
+              >Quy hoạch
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Quy hoạch
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Quy hoạch
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+          </nav>
+          <nav class="category-menu-nav-container category-menu-nav-container-not-first" data-menu="sinh-vien">
+            <a href="/" class="category-menu-nav-link">
+              Sinh viên
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div>
+            </a>
+            <a href="/" class="category-menu-nav-link"
+              >Sinh viên
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div>
+            </a>
+            <a href="/" class="category-menu-nav-link"
+              >Sinh viên
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <div class="category-menu-nav-divider"></div>
+            <a href="/" class="category-menu-nav-link"
+              >Sinh viên
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Sinh viên
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Sinh viên
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+          </nav>
+          <nav class="category-menu-nav-container category-menu-nav-container-not-first" data-menu="bao-ton">
+            <a href="/" class="category-menu-nav-link">
+              Bảo tồn
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div>
+            </a>
+            <a href="/" class="category-menu-nav-link"
+              >Bảo tồn
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div>
+            </a>
+            <a href="/" class="category-menu-nav-link"
+              >Bảo tồn
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <div class="category-menu-nav-divider"></div>
+            <a href="/" class="category-menu-nav-link"
+              >Bảo tồn
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Bảo tồn
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Bảo tồn
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+          </nav>
+          <nav class="category-menu-nav-container category-menu-nav-container-not-first" data-menu="canh-quan">
+            <a href="/" class="category-menu-nav-link">
+              Cảnh quan
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div>
+            </a>
+            <a href="/" class="category-menu-nav-link"
+              >Cảnh quan
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div>
+            </a>
+            <a href="/" class="category-menu-nav-link"
+              >Cảnh quan
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <div class="category-menu-nav-divider"></div>
+            <a href="/" class="category-menu-nav-link"
+              >Cảnh quan
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Cảnh quan
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Cảnh quan
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+          </nav>
+          <nav class="category-menu-nav-container category-menu-nav-container-not-first" data-menu="doi-tac-kinh-doanh">
+            <a href="/" class="category-menu-nav-link">
+              Đối tác kinh doanh
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div>
+            </a>
+            <a href="/" class="category-menu-nav-link">
+              Đối tác kinh doanh
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div>
+            </a>
+            <a href="/" class="category-menu-nav-link"
+              >Đối tác kinh doanh
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <div class="category-menu-nav-divider"></div>
+            <a href="/" class="category-menu-nav-link"
+              >Đối tác kinh doanh
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Đối tác kinh doanh
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Đối tác kinh doanh
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+          </nav>
+          <nav class="category-menu-nav-container category-menu-nav-container-not-first" data-menu="quan-li-nha-nuoc">
+            <a href="/" class="category-menu-nav-link">
+              Quản lí nhà nước
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div>
+            </a>
+            <a href="/" class="category-menu-nav-link"
+              >Quản lí nhà nước
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div>
+            </a>
+            <a href="/" class="category-menu-nav-link"
+              >Quản lí nhà nước
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <div class="category-menu-nav-divider"></div>
+            <a href="/" class="category-menu-nav-link"
+              >Quản lí nhà nước
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Quản lí nhà nước
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+            <a href="/" class="category-menu-nav-link"
+              >Quản lí nhà nước
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-1"></div>
+              <div class="category-menu-nav-link-deco category-menu-nav-link-deco-2"></div
+            ></a>
+          </nav>
+        </div>
+      </div>
+      <div class="category-menu-overlay"></div>
+    </div>
+
+    <!-- field menu -->
+    <div class="field-menu-container">
+      <div class="field-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="11" viewBox="0 0 14 11" fill="none">
+          <path
+            d="M5.27244 1.96153C6.0442 0.638515 7.9558 0.638518 8.72756 1.96153L14 11H0L5.27244 1.96153Z"
+            fill="white"
+          />
+        </svg>
+        <nav class="field-menu-list-container">
+          <!-- kien truc -->
+          <a href="/" class="field-menu-list-item field-menu-list-item-kien-truc" data-menu="kien-truc-cong-trinh">
+            <img src="./assets/svg/trang-chu/red.svg" alt="Kiến trúc công trình" class="field-menu-icon" />
+            <p>Kiến trúc công trình</p>
+          </a>
+          <div class="field-menu-divider"></div>
+          <!-- noi that -->
+          <a href="/" class="field-menu-list-item field-menu-list-item-noi-that" data-menu="noi-that">
+            <img src="./assets/svg/trang-chu/orange.svg" alt="Nội thất" class="field-menu-icon" />
+            <p>Nội thất</p>
+          </a>
+          <div class="field-menu-divider"></div>
+          <!-- quy hoach -->
+          <a href="/" class="field-menu-list-item field-menu-list-item-quy-hoach" data-menu="quy-hoach">
+            <img src="./assets/svg/trang-chu/lightgreen.svg" alt="Quy hoạch" class="field-menu-icon" />
+            <p>Quy hoạch</p>
+          </a>
+          <div class="field-menu-divider"></div>
+          <!-- sinh vien -->
+          <a href="/" class="field-menu-list-item field-menu-list-item-sinh-vien" data-menu="sinh-vien">
+            <img src="./assets/svg/trang-chu/green.svg" alt="Sinh viên" class="field-menu-icon" />
+            <p>Sinh viên</p>
+          </a>
+          <div class="field-menu-divider"></div>
+          <!-- bao ton -->
+          <a href="/" class="field-menu-list-item field-menu-list-item-bao-ton" data-menu="bao-ton">
+            <img src="./assets/svg/trang-chu/blue.svg" alt="Bảo tồn" class="field-menu-icon" />
+            <p>Bảo tồn</p>
+          </a>
+          <div class="field-menu-divider"></div>
+          <!-- canh quan -->
+          <a href="/" class="field-menu-list-item field-menu-list-item-canh-quan" data-menu="canh-quan">
+            <img src="./assets/svg/trang-chu/brown.svg" alt="Cảnh quan" class="field-menu-icon" />
+            <p>Cảnh quan</p>
+          </a>
+          <div class="field-menu-divider"></div>
+          <!-- doi tac kinh doanh -->
+          <a
+            href="/"
+            class="field-menu-list-item field-menu-list-item-doi-tac-kinh-doanh"
+            data-menu="doi-tac-kinh-doanh"
+          >
+            <img src="./assets/svg/trang-chu/gray.svg" alt="Cảnh quan" class="field-menu-icon" />
+            <p>Đối tác kinh doanh</p>
+          </a>
+          <div class="field-menu-divider"></div>
+          <!-- quan li nha nuoc -->
+          <a href="/" class="field-menu-list-item field-menu-list-item-quan-li-nha-nuoc" data-menu="quan-li-nha-nuoc">
+            <img src="./assets/svg/trang-chu/orange.svg" alt="Cảnh quan" class="field-menu-icon" />
+            <p>Quản lí nhà nước</p>
+          </a>
+        </nav>
+      </div>
+      <div class="field-menu-overlay"></div>
+    </div>
+
+    <!-- search dropdown -->
+    <div class="search-dropdown-container">
+      <div class="search-dropdown">
+        <div class="search-dropdown-box">
+          <div class="search-input-no-value">
+            <p class="search-dropdown-title">LỊCH SỬ TÌM KIẾM</p>
+            <div class="history-search-container">
+              <a href="/" class="history-search-item">
+                Gạch Lattice
+                <button class="delete-history-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path
+                      d="M15 15L10 10M10 10L5 5M10 10L15 5M10 10L5 15"
+                      stroke="#A9A9A9"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </a>
+              <a href="/" class="history-search-item">
+                Gạch Tanada
+                <button class="delete-history-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path
+                      d="M15 15L10 10M10 10L5 5M10 10L15 5M10 10L5 15"
+                      stroke="#A9A9A9"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </a>
+              <a href="/" class="history-search-item">
+                Gạch 255 Viz Color
+                <button class="delete-history-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path
+                      d="M15 15L10 10M10 10L5 5M10 10L15 5M10 10L5 15"
+                      stroke="#A9A9A9"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </a>
+              <a href="/" class="history-search-item">
+                Gạch Fishbone Mosaic
+                <button class="delete-history-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path
+                      d="M15 15L10 10M10 10L5 5M10 10L15 5M10 10L5 15"
+                      stroke="#A9A9A9"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </a>
+            </div>
+            <div class="search-dropdown-divider"></div>
+            <p class="search-dropdown-title">GỢI Ý CHO BẠN</p>
+            <div class="suggest-search-container">
+              <a href="/" class="suggest-search-item">
+                <div class="image-container">
+                  <img src="./assets/image/header/suggest-1.jpg" alt="" />
+                </div>
+                <div class="suggest-detail-container">
+                  <p class="suggest-detail-name">Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ.</p>
+                  <div class="suggest-detail-rate">
+                    <div class="suggest-detail-star-container">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
+                        <path
+                          d="M7 0L9.0161 4.22507L13.6574 4.83688L10.2621 8.05993L11.1145 12.6631L7 10.43L2.8855 12.6631L3.73788 8.05993L0.342604 4.83688L4.9839 4.22507L7 0Z"
+                          fill="#FF6B00"
+                        />
+                      </svg>
+                      4.8
+                    </div>
+                    <p class="suggest-detail-review">(20 lượt đánh giá)</p>
+                  </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                  <path
+                    d="M8.24935 17.4168L14.666 11.0002L8.24935 4.5835"
+                    stroke="#A9A9A9"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <a href="/" class="suggest-search-item">
+                <div class="image-container">
+                  <img src="./assets/image/header/suggest-2.jpg" alt="" />
+                </div>
+                <div class="suggest-detail-container">
+                  <p class="suggest-detail-name">Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ.</p>
+                  <div class="suggest-detail-rate">
+                    <div class="suggest-detail-star-container">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
+                        <path
+                          d="M7 0L9.0161 4.22507L13.6574 4.83688L10.2621 8.05993L11.1145 12.6631L7 10.43L2.8855 12.6631L3.73788 8.05993L0.342604 4.83688L4.9839 4.22507L7 0Z"
+                          fill="#FF6B00"
+                        />
+                      </svg>
+                      4.8
+                    </div>
+                    <p class="suggest-detail-review">(20 lượt đánh giá)</p>
+                  </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                  <path
+                    d="M8.24935 17.4168L14.666 11.0002L8.24935 4.5835"
+                    stroke="#A9A9A9"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <a href="/" class="suggest-search-item">
+                <div class="image-container">
+                  <img src="./assets/image/header/suggest-3.jpg" alt="" />
+                </div>
+                <div class="suggest-detail-container">
+                  <p class="suggest-detail-name">Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ.</p>
+                  <div class="suggest-detail-rate">
+                    <div class="suggest-detail-star-container">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
+                        <path
+                          d="M7 0L9.0161 4.22507L13.6574 4.83688L10.2621 8.05993L11.1145 12.6631L7 10.43L2.8855 12.6631L3.73788 8.05993L0.342604 4.83688L4.9839 4.22507L7 0Z"
+                          fill="#FF6B00"
+                        />
+                      </svg>
+                      4.8
+                    </div>
+                    <p class="suggest-detail-review">(20 lượt đánh giá)</p>
+                  </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                  <path
+                    d="M8.24935 17.4168L14.666 11.0002L8.24935 4.5835"
+                    stroke="#A9A9A9"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="search-input-has-value">
+            <p class="search-dropdown-title">CÓ PHẢI BẠN MUỐN TÌM</p>
+            <div class="search-value-container">
+              <a href="/" class="search-value-item">Gạc</a>
+              <a href="/" class="search-value-item">Gạch Tanada</a>
+              <a href="/" class="search-value-item">Gạch 255 Viz Color</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="search-dropdown-overlay"></div>
+    </div>
+
+    <!-- notification tab -->
+    <div class="notification-tab-container">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="19" viewBox="0 0 26 19" fill="none">
+        <path
+          d="M11.3231 1.57983C12.1118 0.366465 13.8882 0.366462 14.6769 1.57983L26 19H0L11.3231 1.57983Z"
+          fill="white"
+        />
+      </svg>
+      <div class="notification-tab">
+        <div class="notification-box">
+          <div class="notification-title">
+            <h3>Thông báo</h3>
+            <div class="btn-container">
+              <button class="show-all-btn">Tất cả</button>
+              <button class="not-read-btn">Chưa đọc</button>
+            </div>
+          </div>
+          <div class="notification-container">
+            <a href="/" class="notification-item notification-item-unread">
+              <div class="image-container">
+                <img src="./assets/image/header/notification-1.jpg" alt="" />
+              </div>
+              <div class="notification-item-content">
+                <b>Tài liệu mới đăng tải!</b>
+                <p>Đừng bỏ lỡ bản vẽ chi tiết mới của cửa sổ kiến trúc</p>
+              </div>
+            </a>
+            <a href="/" class="notification-item">
+              <div class="image-container">
+                <img src="./assets/image/header/notification-1.jpg" alt="" />
+              </div>
+              <div class="notification-item-content">
+                <b>Tài liệu mới đăng tải!</b>
+                <p>Đừng bỏ lỡ bản vẽ chi tiết mới của cửa sổ kiến trúc</p>
+              </div>
+            </a>
+            <a href="/" class="notification-item">
+              <div class="image-container">
+                <img src="./assets/image/header/notification-1.jpg" alt="" />
+              </div>
+              <div class="notification-item-content">
+                <b>Tài liệu mới đăng tải!</b>
+                <p>Đừng bỏ lỡ bản vẽ chi tiết mới của cửa sổ kiến trúc</p>
+              </div>
+            </a>
+            <a href="/" class="notification-item">
+              <div class="image-container">
+                <img src="./assets/image/header/notification-1.jpg" alt="" />
+              </div>
+              <div class="notification-item-content">
+                <b>Tài liệu mới đăng tải!</b>
+                <p>Đừng bỏ lỡ bản vẽ chi tiết mới của cửa sổ kiến trúc</p>
+              </div>
+            </a>
+            <a href="/" class="notification-item">
+              <div class="image-container">
+                <img src="./assets/image/header/notification-1.jpg" alt="" />
+              </div>
+              <div class="notification-item-content">
+                <b>Tài liệu mới đăng tải!</b>
+                <p>Đừng bỏ lỡ bản vẽ chi tiết mới của cửa sổ kiến trúc</p>
+              </div>
+            </a>
+            <a href="/" class="notification-item">
+              <div class="image-container">
+                <img src="./assets/image/header/notification-1.jpg" alt="" />
+              </div>
+              <div class="notification-item-content">
+                <b>Tài liệu mới đăng tải!</b>
+                <p>Đừng bỏ lỡ bản vẽ chi tiết mới của cửa sổ kiến trúc</p>
+              </div>
+            </a>
+            <a href="/" class="notification-item">
+              <div class="image-container">
+                <img src="./assets/image/header/notification-1.jpg" alt="" />
+              </div>
+              <div class="notification-item-content">
+                <b>Tài liệu mới đăng tải!</b>
+                <p>Đừng bỏ lỡ bản vẽ chi tiết mới của cửa sổ kiến trúc</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="notification-tab-overlay"></div>
+    </div>
+
+    <!-- SECTION: banner -->
+    <section class="banner smaller-banner">
+      <div class="container">
+        <img src="./assets/image/trang-chu/banner-background.jpg" alt="" class="banner-background" />
+        <div class="breadcrumb-container">
+          <a href="/" class="breadcrumb-link">TRANG CHỦ /</a>
+          <a href="/kien-truc-cong-trinh" class="breadcrumb-link breadcrumb-link-active">TÀI LIỆU ĐÀO TẠO</a>
+        </div>
+        <div class="banner-text-container banner-text-container-right">
+          <h1>Tài liệu đào tạo</h1>
+          <p>
+            Chúng tôi cung cấp cho bạn các khoá đào tạo trong lĩnh vực Kiến trúc công trình như dựng hình, triển khai,
+            diễn hoạ nội thất và kiến trúc. Không chỉ học về các phần mềm và kỹ năng, chúng tôi giúp học viên nắm được
+            các phương pháp làm việc chuyên nghiệp, sử dụng các phần mềm nhanh hơn và hiệu quả hơn với tư duy BIM.
+          </p>
+        </div>
+        <div class="swiper swiper-banner">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/image/trang-chu/banner-1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/image/trang-chu/banner-2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/image/trang-chu/banner-3.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/image/trang-chu/banner-4.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/image/trang-chu/banner-5.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/image/trang-chu/banner-6.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/image/trang-chu/banner-7.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/image/trang-chu/banner-8.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/image/trang-chu/banner-9.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/image/trang-chu/banner-10.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/image/trang-chu/banner-11.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/image/trang-chu/banner-12.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/image/trang-chu/banner-13.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/image/trang-chu/banner-14.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/image/trang-chu/banner-15.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/image/trang-chu/banner-16.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-banner-pagination-container"></div>
+      </div>
+    </section>
+
+    <!-- SECTION: section 2 -->
+    <section class="section-most-download-documents">
+      <div class="container">
+        <div class="heading-container">
+          <h2>Tài liệu được tải nhiều nhất</h2>
+        </div>
+        <p class="heading-description">Các tài liệu mới được cập nhật</p>
+        <div class="documents-container">
+          <a href="/" class="document-item">
+            <div class="image-container">
+              <img src="./assets/image/trang-chu/document-1.jpg" alt="" />
+            </div>
+            <p class="download-count">300+ lượt tải xuống</p>
+            <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
+            <button class="download-btn">
+              Tải xuống
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                <path
+                  d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
+                  stroke="#0B4523"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </a>
+          <a href="/" class="document-item">
+            <div class="image-container">
+              <img src="./assets/image/trang-chu/document-1.jpg" alt="" />
+            </div>
+            <p class="download-count">300+ lượt tải xuống</p>
+            <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
+            <button class="download-btn">
+              Tải xuống
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                <path
+                  d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
+                  stroke="#0B4523"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </a>
+          <a href="/" class="document-item">
+            <div class="image-container">
+              <img src="./assets/image/trang-chu/document-1.jpg" alt="" />
+            </div>
+            <p class="download-count">300+ lượt tải xuống</p>
+            <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
+            <button class="download-btn">
+              Tải xuống
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                <path
+                  d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
+                  stroke="#0B4523"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </a>
+          <a href="/" class="document-item">
+            <div class="image-container">
+              <img src="./assets/image/trang-chu/document-1.jpg" alt="" />
+            </div>
+            <p class="download-count">300+ lượt tải xuống</p>
+            <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
+            <button class="download-btn">
+              Tải xuống
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                <path
+                  d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
+                  stroke="#0B4523"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </a>
+          <a href="/" class="document-item">
+            <div class="image-container">
+              <img src="./assets/image/trang-chu/document-1.jpg" alt="" />
+            </div>
+            <p class="download-count">300+ lượt tải xuống</p>
+            <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
+            <button class="download-btn">
+              Tải xuống
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                <path
+                  d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
+                  stroke="#0B4523"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: section 3 -->
+    <section class="section-documents">
+      <div class="container">
+        <div class="heading-container">
+          <h2>Tài liệu đào tạo</h2>
+        </div>
+        <p class="heading-description">Thu nạp kiến thức từ kho tài liệu khổng lồ</p>
+        <div class="btn-1-container">
+          <button class="btn-1 btn-1-active">
+            <svg
+              class="btn-1-icon btn-1-icon-sofa"
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="23"
+              viewBox="0 0 28 23"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_5691_87491)">
+                <path
+                  d="M24.4557 15.4877L24.5142 15.4536L24.5334 15.3887L25.2867 12.8395L27.0566 11.6647V15.9646L18.6774 20.6422V18.8572L24.4557 15.4877Z"
+                  fill="#B0CCC2"
+                  stroke="white"
+                  stroke-width="0.341204"
+                />
+                <path
+                  d="M0.980172 10.8115V9.10466L18.3475 18.8385V20.6983L0.980172 10.8115Z"
+                  fill="#D5E5E0"
+                  stroke="white"
+                  stroke-width="0.341204"
+                />
+                <path
+                  d="M6.98115 5.29175L7.60969 2.69111L25.0257 12.7088L24.2659 15.1279L6.98115 5.29175Z"
+                  fill="#D5E5E0"
+                  stroke="white"
+                  stroke-width="0.341204"
+                />
+                <path
+                  d="M9.46324 16.2687L0.408203 11.1507V8.59164L6.48689 5.1405L7.19948 2.21651L9.46324 0.914551L18.5183 6.03261L27.5733 11.1507V16.2687L18.5183 21.3868L9.46324 16.2687Z"
+                  stroke="white"
+                  stroke-width="0.682408"
+                />
+                <path
+                  d="M18.3563 5.84717L15.8165 7.18574L15.4292 10.029L9.24023 13.5416V15.8833"
+                  stroke="white"
+                  stroke-width="0.682408"
+                />
+                <path d="M1.51822 11.686L0.835938 14.3124" stroke="white" stroke-width="0.682408" />
+                <path d="M16.8678 20.1025L16.1855 22.9502" stroke="white" stroke-width="0.682408" />
+                <path d="M26.4189 16.9087L27.1012 18.7732" stroke="white" stroke-width="0.682408" />
+              </g>
+              <defs>
+                <clipPath id="clip0_5691_87491">
+                  <rect width="27.9525" height="22.5805" fill="white" transform="translate(0.0146484 0.461426)" />
+                </clipPath>
+              </defs>
+            </svg>
+            Kiến trúc công trình
+            <svg
+              class="arrow-down-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="10"
+              viewBox="0 0 26 10"
+              fill="none"
+            >
+              <path d="M13.3574 10L2.53211 0.25L24.1827 0.249998L13.3574 10Z" fill="#015121" />
+            </svg>
+          </button>
+          <button class="btn-1">
+            <svg
+              class="btn-1-icon btn-1-icon-sofa"
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="23"
+              viewBox="0 0 28 23"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_5691_87491)">
+                <path
+                  d="M24.4557 15.4877L24.5142 15.4536L24.5334 15.3887L25.2867 12.8395L27.0566 11.6647V15.9646L18.6774 20.6422V18.8572L24.4557 15.4877Z"
+                  fill="#B0CCC2"
+                  stroke="white"
+                  stroke-width="0.341204"
+                />
+                <path
+                  d="M0.980172 10.8115V9.10466L18.3475 18.8385V20.6983L0.980172 10.8115Z"
+                  fill="#D5E5E0"
+                  stroke="white"
+                  stroke-width="0.341204"
+                />
+                <path
+                  d="M6.98115 5.29175L7.60969 2.69111L25.0257 12.7088L24.2659 15.1279L6.98115 5.29175Z"
+                  fill="#D5E5E0"
+                  stroke="white"
+                  stroke-width="0.341204"
+                />
+                <path
+                  d="M9.46324 16.2687L0.408203 11.1507V8.59164L6.48689 5.1405L7.19948 2.21651L9.46324 0.914551L18.5183 6.03261L27.5733 11.1507V16.2687L18.5183 21.3868L9.46324 16.2687Z"
+                  stroke="white"
+                  stroke-width="0.682408"
+                />
+                <path
+                  d="M18.3563 5.84717L15.8165 7.18574L15.4292 10.029L9.24023 13.5416V15.8833"
+                  stroke="white"
+                  stroke-width="0.682408"
+                />
+                <path d="M1.51822 11.686L0.835938 14.3124" stroke="white" stroke-width="0.682408" />
+                <path d="M16.8678 20.1025L16.1855 22.9502" stroke="white" stroke-width="0.682408" />
+                <path d="M26.4189 16.9087L27.1012 18.7732" stroke="white" stroke-width="0.682408" />
+              </g>
+              <defs>
+                <clipPath id="clip0_5691_87491">
+                  <rect width="27.9525" height="22.5805" fill="white" transform="translate(0.0146484 0.461426)" />
+                </clipPath>
+              </defs>
+            </svg>
+            Nội thất
+            <svg
+              class="arrow-down-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="10"
+              viewBox="0 0 26 10"
+              fill="none"
+            >
+              <path d="M13.3574 10L2.53211 0.25L24.1827 0.249998L13.3574 10Z" fill="#015121" />
+            </svg>
+          </button>
+          <button class="btn-1">
+            <svg
+              class="btn-1-icon btn-1-icon-sofa"
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="23"
+              viewBox="0 0 28 23"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_5691_87491)">
+                <path
+                  d="M24.4557 15.4877L24.5142 15.4536L24.5334 15.3887L25.2867 12.8395L27.0566 11.6647V15.9646L18.6774 20.6422V18.8572L24.4557 15.4877Z"
+                  fill="#B0CCC2"
+                  stroke="white"
+                  stroke-width="0.341204"
+                />
+                <path
+                  d="M0.980172 10.8115V9.10466L18.3475 18.8385V20.6983L0.980172 10.8115Z"
+                  fill="#D5E5E0"
+                  stroke="white"
+                  stroke-width="0.341204"
+                />
+                <path
+                  d="M6.98115 5.29175L7.60969 2.69111L25.0257 12.7088L24.2659 15.1279L6.98115 5.29175Z"
+                  fill="#D5E5E0"
+                  stroke="white"
+                  stroke-width="0.341204"
+                />
+                <path
+                  d="M9.46324 16.2687L0.408203 11.1507V8.59164L6.48689 5.1405L7.19948 2.21651L9.46324 0.914551L18.5183 6.03261L27.5733 11.1507V16.2687L18.5183 21.3868L9.46324 16.2687Z"
+                  stroke="white"
+                  stroke-width="0.682408"
+                />
+                <path
+                  d="M18.3563 5.84717L15.8165 7.18574L15.4292 10.029L9.24023 13.5416V15.8833"
+                  stroke="white"
+                  stroke-width="0.682408"
+                />
+                <path d="M1.51822 11.686L0.835938 14.3124" stroke="white" stroke-width="0.682408" />
+                <path d="M16.8678 20.1025L16.1855 22.9502" stroke="white" stroke-width="0.682408" />
+                <path d="M26.4189 16.9087L27.1012 18.7732" stroke="white" stroke-width="0.682408" />
+              </g>
+              <defs>
+                <clipPath id="clip0_5691_87491">
+                  <rect width="27.9525" height="22.5805" fill="white" transform="translate(0.0146484 0.461426)" />
+                </clipPath>
+              </defs>
+            </svg>
+            Quy hoạch
+            <svg
+              class="arrow-down-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="10"
+              viewBox="0 0 26 10"
+              fill="none"
+            >
+              <path d="M13.3574 10L2.53211 0.25L24.1827 0.249998L13.3574 10Z" fill="#015121" />
+            </svg>
+          </button>
+          <button class="btn-1 btn-1-crane">
+            <div class="btn-1-icon-container">
+              <svg
+                class="btn-1-icon btn-1-icon-crane"
+                xmlns="http://www.w3.org/2000/svg"
+                width="31"
+                height="30"
+                viewBox="0 0 31 30"
+                fill="none"
+              >
+                <path d="M18.9777 26.0078H26.8479L27.5833 27.4676H18.2207L18.9777 26.0078Z" fill="#D5E5E0" />
+                <path
+                  d="M28.3574 9.67776V7.46329H27.8337L26.0057 3.06257V2H19.736V2.90741L6.97846 7.46329H2.35742V9.67776H6.72147V13.8857C6.19778 14.0221 5.81471 14.4781 5.81471 15.0282C5.81471 15.5783 6.20263 16.0344 6.72147 16.1707V17.3132H7.03665C7.28879 17.3132 7.4973 17.5107 7.4973 17.7552C7.4973 17.9996 7.28879 18.1971 7.03665 18.1971C6.7845 18.1971 6.58085 17.9949 6.58085 17.7552H5.95048C5.95048 18.1266 6.14929 18.451 6.44992 18.6391L4.87887 20.1624H3.83635V24.6995H10.2321V20.1624H9.18957L7.61852 18.6438C7.91915 18.4557 8.12281 18.1313 8.12281 17.7599C8.12281 17.285 7.79308 16.8807 7.34698 16.749V16.1707C7.87066 16.0344 8.25858 15.5783 8.25858 15.0282C8.25858 14.4781 7.87066 14.0221 7.34698 13.8857V9.67776H19.736V25.4564H18.582L17.4764 28H28.2604L27.1549 25.4564H26.0008V9.67776H28.3526H28.3574ZM9.60173 24.0882H4.46671V20.7736H9.60173V24.0882ZM5.77107 20.1624L7.03665 18.9353L8.30222 20.1624H5.77592H5.77107ZM7.63307 15.0235C7.63307 15.3432 7.36637 15.6018 7.03665 15.6018C6.70692 15.6018 6.44023 15.3432 6.44023 15.0235C6.44023 14.7038 6.70692 14.4452 7.03665 14.4452C7.36637 14.4452 7.63307 14.7038 7.63307 15.0235ZM22.4272 12.0991L20.3712 14.0926V10.1056L22.4272 12.0991ZM20.8173 9.67306H24.9341L22.8781 11.6665L20.8222 9.67306H20.8173ZM22.8733 12.5316L25.2444 14.8307L22.8733 17.1298L20.5021 14.8307L22.8733 12.5316ZM20.3712 15.5689L22.4272 17.5624L20.3712 19.5559V15.5689ZM22.8733 17.9949L25.2444 20.294L22.8733 22.5931L20.5021 20.294L22.8733 17.9949ZM22.4272 23.0257L20.3712 25.0192V21.0322L22.4272 23.0257ZM22.8733 23.4582L24.9292 25.4517H20.8125L22.8684 23.4582H22.8733ZM23.3194 23.0257L25.3753 21.0322V25.0192L23.3194 23.0257ZM25.3753 19.5559L23.3194 17.5624L25.3753 15.5689V19.5559ZM23.3194 12.0991L25.3753 10.1056V14.0926L23.3194 12.0991ZM27.1597 7.45859H26.0105V4.68933L27.1597 7.45859ZM20.3712 3.03906L22.4272 5.03255L20.3712 7.02604V3.04376V3.03906ZM25.3802 7.02604L23.3242 5.03255L25.3802 3.03906V7.02604ZM22.8781 4.6L20.8222 2.60651H24.9389L22.883 4.6H22.8781ZM22.8781 5.4651L24.9341 7.45859H20.8173L22.8733 5.4651H22.8781ZM19.7457 3.55624V7.46329H8.80651L19.736 3.55624H19.7457ZM2.98778 8.0745H27.7271V9.06655H2.98778V8.0745ZM26.7427 26.0676L27.3149 27.3888H18.4268L18.999 26.0676H26.7379H26.7427Z"
+                  fill="#015121"
+                />
+                <rect x="7.35742" y="9.67969" width="12.3867" height="1.53906" fill="#B0CCC2" />
+                <rect x="3.84766" y="20.145" width="6.39551" height="4.55908" fill="#B0CCC2" />
+              </svg>
+            </div>
+            Sinh viên
+            <svg
+              class="arrow-down-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="10"
+              viewBox="0 0 26 10"
+              fill="none"
+            >
+              <path d="M13.3574 10L2.53211 0.25L24.1827 0.249998L13.3574 10Z" fill="#015121" />
+            </svg>
+          </button>
+          <button class="btn-1 btn-1-building">
+            <div class="btn-1-icon-container">
+              <svg
+                class="btn-1-icon btn-1-icon-building"
+                width="31"
+                height="30"
+                viewBox="0 0 31 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_5691_85202)">
+                  <path
+                    d="M29.8574 29H26.8574V12.5C26.8574 12.3674 26.8047 12.2402 26.711 12.1464C26.6172 12.0527 26.49 12 26.3574 12H19.3574V0.5C19.3574 0.367392 19.3047 0.240215 19.211 0.146447C19.1172 0.0526784 18.99 0 18.8574 0L5.85742 0C5.72481 0 5.59764 0.0526784 5.50387 0.146447C5.4101 0.240215 5.35742 0.367392 5.35742 0.5V29H0.857422C0.724814 29 0.597637 29.0527 0.503868 29.1464C0.4101 29.2402 0.357422 29.3674 0.357422 29.5C0.357422 29.6326 0.4101 29.7598 0.503868 29.8536C0.597637 29.9473 0.724814 30 0.857422 30H29.8574C29.99 30 30.1172 29.9473 30.211 29.8536C30.3047 29.7598 30.3574 29.6326 30.3574 29.5C30.3574 29.3674 30.3047 29.2402 30.211 29.1464C30.1172 29.0527 29.99 29 29.8574 29ZM10.8574 29H8.85742V24.5C8.85742 24.3674 8.9101 24.2402 9.00387 24.1464C9.09764 24.0527 9.22481 24 9.35742 24H10.3574C10.49 24 10.6172 24.0527 10.711 24.1464C10.8047 24.2402 10.8574 24.3674 10.8574 24.5V29ZM12.8574 12.5V29H11.8574V24.5C11.8574 23.6716 11.1859 23 10.3574 23H9.35742C8.52898 23 7.85742 23.6716 7.85742 24.5V29H6.35742V1H18.3574V12H13.3574C13.2248 12 13.0976 12.0527 13.0039 12.1464C12.9101 12.2402 12.8574 12.3674 12.8574 12.5ZM25.8574 29H13.8574V13H25.8574V29Z"
+                    fill="#015121"
+                  />
+                  <path
+                    d="M16.3574 7H13.3574C13.2248 7 13.0976 7.05268 13.0039 7.14645C12.9101 7.24021 12.8574 7.36739 12.8574 7.5V10.5C12.8574 10.6326 12.9101 10.7598 13.0039 10.8536C13.0976 10.9473 13.2248 11 13.3574 11H16.3574C16.49 11 16.6172 10.9473 16.711 10.8536C16.8047 10.7598 16.8574 10.6326 16.8574 10.5V7.5C16.8574 7.36739 16.8047 7.24021 16.711 7.14645C16.6172 7.05268 16.49 7 16.3574 7ZM15.8574 10H13.8574V8H15.8574V10ZM16.3574 2H13.3574C13.2248 2 13.0976 2.05268 13.0039 2.14645C12.9101 2.24021 12.8574 2.36739 12.8574 2.5V5.5C12.8574 5.63261 12.9101 5.75979 13.0039 5.85355C13.0976 5.94732 13.2248 6 13.3574 6H16.3574C16.49 6 16.6172 5.94732 16.711 5.85355C16.8047 5.75979 16.8574 5.63261 16.8574 5.5V2.5C16.8574 2.36739 16.8047 2.24021 16.711 2.14645C16.6172 2.05268 16.49 2 16.3574 2ZM15.8574 5H13.8574V3H15.8574V5ZM11.3574 7H8.35742C8.22481 7 8.09764 7.05268 8.00387 7.14645C7.9101 7.24021 7.85742 7.36739 7.85742 7.5V10.5C7.85742 10.6326 7.9101 10.7598 8.00387 10.8536C8.09764 10.9473 8.22481 11 8.35742 11H11.3574C11.49 11 11.6172 10.9473 11.711 10.8536C11.8047 10.7598 11.8574 10.6326 11.8574 10.5V7.5C11.8574 7.36739 11.8047 7.24021 11.711 7.14645C11.6172 7.05268 11.49 7 11.3574 7ZM10.8574 10H8.85742V8H10.8574V10ZM11.3574 2H8.35742C8.22481 2 8.09764 2.05268 8.00387 2.14645C7.9101 2.24021 7.85742 2.36739 7.85742 2.5V5.5C7.85742 5.63261 7.9101 5.75979 8.00387 5.85355C8.09764 5.94732 8.22481 6 8.35742 6H11.3574C11.49 6 11.6172 5.94732 11.711 5.85355C11.8047 5.75979 11.8574 5.63261 11.8574 5.5V2.5C11.8574 2.36739 11.8047 2.24021 11.711 2.14645C11.6172 2.05268 11.49 2 11.3574 2ZM10.8574 5H8.85742V3H10.8574V5ZM11.3574 12H8.35742C8.22481 12 8.09764 12.0527 8.00387 12.1464C7.9101 12.2402 7.85742 12.3674 7.85742 12.5V15.5C7.85742 15.6326 7.9101 15.7598 8.00387 15.8536C8.09764 15.9473 8.22481 16 8.35742 16H11.3574C11.49 16 11.6172 15.9473 11.711 15.8536C11.8047 15.7598 11.8574 15.6326 11.8574 15.5V12.5C11.8574 12.3674 11.8047 12.2402 11.711 12.1464C11.6172 12.0527 11.49 12 11.3574 12ZM10.8574 15H8.85742V13H10.8574V15ZM11.3574 17H8.35742C8.22481 17 8.09764 17.0527 8.00387 17.1464C7.9101 17.2402 7.85742 17.3674 7.85742 17.5V20.5C7.85742 20.6326 7.9101 20.7598 8.00387 20.8536C8.09764 20.9473 8.22481 21 8.35742 21H11.3574C11.49 21 11.6172 20.9473 11.711 20.8536C11.8047 20.7598 11.8574 20.6326 11.8574 20.5V17.5C11.8574 17.3674 11.8047 17.2402 11.711 17.1464C11.6172 17.0527 11.49 17 11.3574 17ZM10.8574 20H8.85742V18H10.8574V20ZM20.8574 23H23.8574C23.99 23 24.1172 22.9473 24.211 22.8536C24.3047 22.7598 24.3574 22.6326 24.3574 22.5V19.5C24.3574 19.3674 24.3047 19.2402 24.211 19.1464C24.1172 19.0527 23.99 19 23.8574 19H20.8574C20.7248 19 20.5976 19.0527 20.5039 19.1464C20.4101 19.2402 20.3574 19.3674 20.3574 19.5V22.5C20.3574 22.6326 20.4101 22.7598 20.5039 22.8536C20.5976 22.9473 20.7248 23 20.8574 23ZM20.8574 18H23.8574C23.99 18 24.1172 17.9473 24.211 17.8536C24.3047 17.7598 24.3574 17.6326 24.3574 17.5V14.5C24.3574 14.3674 24.3047 14.2402 24.211 14.1464C24.1172 14.0527 23.99 14 23.8574 14H20.8574C20.7248 14 20.5976 14.0527 20.5039 14.1464C20.4101 14.2402 20.3574 14.3674 20.3574 14.5V17.5C20.3574 17.6326 20.4101 17.7598 20.5039 17.8536C20.5976 17.9473 20.7248 18 20.8574 18ZM20.8574 28H23.8574C23.99 28 24.1172 27.9473 24.211 27.8536C24.3047 27.7598 24.3574 27.6326 24.3574 27.5V24.5C24.3574 24.3674 24.3047 24.2402 24.211 24.1464C24.1172 24.0527 23.99 24 23.8574 24H20.8574C20.7248 24 20.5976 24.0527 20.5039 24.1464C20.4101 24.2402 20.3574 24.3674 20.3574 24.5V27.5C20.3574 27.6326 20.4101 27.7598 20.5039 27.8536C20.5976 27.9473 20.7248 28 20.8574 28ZM15.8574 23H18.8574C18.99 23 19.1172 22.9473 19.211 22.8536C19.3047 22.7598 19.3574 22.6326 19.3574 22.5V19.5C19.3574 19.3674 19.3047 19.2402 19.211 19.1464C19.1172 19.0527 18.99 19 18.8574 19H15.8574C15.7248 19 15.5976 19.0527 15.5039 19.1464C15.4101 19.2402 15.3574 19.3674 15.3574 19.5V22.5C15.3574 22.6326 15.4101 22.7598 15.5039 22.8536C15.5976 22.9473 15.7248 23 15.8574 23ZM15.8574 18H18.8574C18.99 18 19.1172 17.9473 19.211 17.8536C19.3047 17.7598 19.3574 17.6326 19.3574 17.5V14.5C19.3574 14.3674 19.3047 14.2402 19.211 14.1464C19.1172 14.0527 18.99 14 18.8574 14H15.8574C15.7248 14 15.5976 14.0527 15.5039 14.1464C15.4101 14.2402 15.3574 14.3674 15.3574 14.5V17.5C15.3574 17.6326 15.4101 17.7598 15.5039 17.8536C15.5976 17.9473 15.7248 18 15.8574 18ZM15.8574 28H18.8574C18.99 28 19.1172 27.9473 19.211 27.8536C19.3047 27.7598 19.3574 27.6326 19.3574 27.5V24.5C19.3574 24.3674 19.3047 24.2402 19.211 24.1464C19.1172 24.0527 18.99 24 18.8574 24H15.8574C15.7248 24 15.5976 24.0527 15.5039 24.1464C15.4101 24.2402 15.3574 24.3674 15.3574 24.5V27.5C15.3574 27.6326 15.4101 27.7598 15.5039 27.8536C15.5976 27.9473 15.7248 28 15.8574 28Z"
+                    fill="#B0CCC2"
+                  />
+                  <g clip-path="url(#clip1_5691_85202)">
+                    <path
+                      d="M16.3574 7H13.3574C13.2248 7 13.0976 7.05268 13.0039 7.14645C12.9101 7.24021 12.8574 7.36739 12.8574 7.5V10.5C12.8574 10.6326 12.9101 10.7598 13.0039 10.8536C13.0976 10.9473 13.2248 11 13.3574 11H16.3574C16.49 11 16.6172 10.9473 16.711 10.8536C16.8047 10.7598 16.8574 10.6326 16.8574 10.5V7.5C16.8574 7.36739 16.8047 7.24021 16.711 7.14645C16.6172 7.05268 16.49 7 16.3574 7ZM15.8574 10H13.8574V8H15.8574V10ZM16.3574 2H13.3574C13.2248 2 13.0976 2.05268 13.0039 2.14645C12.9101 2.24021 12.8574 2.36739 12.8574 2.5V5.5C12.8574 5.63261 12.9101 5.75979 13.0039 5.85355C13.0976 5.94732 13.2248 6 13.3574 6H16.3574C16.49 6 16.6172 5.94732 16.711 5.85355C16.8047 5.75979 16.8574 5.63261 16.8574 5.5V2.5C16.8574 2.36739 16.8047 2.24021 16.711 2.14645C16.6172 2.05268 16.49 2 16.3574 2ZM15.8574 5H13.8574V3H15.8574V5ZM11.3574 7H8.35742C8.22481 7 8.09764 7.05268 8.00387 7.14645C7.9101 7.24021 7.85742 7.36739 7.85742 7.5V10.5C7.85742 10.6326 7.9101 10.7598 8.00387 10.8536C8.09764 10.9473 8.22481 11 8.35742 11H11.3574C11.49 11 11.6172 10.9473 11.711 10.8536C11.8047 10.7598 11.8574 10.6326 11.8574 10.5V7.5C11.8574 7.36739 11.8047 7.24021 11.711 7.14645C11.6172 7.05268 11.49 7 11.3574 7ZM10.8574 10H8.85742V8H10.8574V10ZM11.3574 2H8.35742C8.22481 2 8.09764 2.05268 8.00387 2.14645C7.9101 2.24021 7.85742 2.36739 7.85742 2.5V5.5C7.85742 5.63261 7.9101 5.75979 8.00387 5.85355C8.09764 5.94732 8.22481 6 8.35742 6H11.3574C11.49 6 11.6172 5.94732 11.711 5.85355C11.8047 5.75979 11.8574 5.63261 11.8574 5.5V2.5C11.8574 2.36739 11.8047 2.24021 11.711 2.14645C11.6172 2.05268 11.49 2 11.3574 2ZM10.8574 5H8.85742V3H10.8574V5ZM11.3574 12H8.35742C8.22481 12 8.09764 12.0527 8.00387 12.1464C7.9101 12.2402 7.85742 12.3674 7.85742 12.5V15.5C7.85742 15.6326 7.9101 15.7598 8.00387 15.8536C8.09764 15.9473 8.22481 16 8.35742 16H11.3574C11.49 16 11.6172 15.9473 11.711 15.8536C11.8047 15.7598 11.8574 15.6326 11.8574 15.5V12.5C11.8574 12.3674 11.8047 12.2402 11.711 12.1464C11.6172 12.0527 11.49 12 11.3574 12ZM10.8574 15H8.85742V13H10.8574V15ZM11.3574 17H8.35742C8.22481 17 8.09764 17.0527 8.00387 17.1464C7.9101 17.2402 7.85742 17.3674 7.85742 17.5V20.5C7.85742 20.6326 7.9101 20.7598 8.00387 20.8536C8.09764 20.9473 8.22481 21 8.35742 21H11.3574C11.49 21 11.6172 20.9473 11.711 20.8536C11.8047 20.7598 11.8574 20.6326 11.8574 20.5V17.5C11.8574 17.3674 11.8047 17.2402 11.711 17.1464C11.6172 17.0527 11.49 17 11.3574 17ZM10.8574 20H8.85742V18H10.8574V20ZM20.8574 23H23.8574C23.99 23 24.1172 22.9473 24.211 22.8536C24.3047 22.7598 24.3574 22.6326 24.3574 22.5V19.5C24.3574 19.3674 24.3047 19.2402 24.211 19.1464C24.1172 19.0527 23.99 19 23.8574 19H20.8574C20.7248 19 20.5976 19.0527 20.5039 19.1464C20.4101 19.2402 20.3574 19.3674 20.3574 19.5V22.5C20.3574 22.6326 20.4101 22.7598 20.5039 22.8536C20.5976 22.9473 20.7248 23 20.8574 23ZM20.8574 18H23.8574C23.99 18 24.1172 17.9473 24.211 17.8536C24.3047 17.7598 24.3574 17.6326 24.3574 17.5V14.5C24.3574 14.3674 24.3047 14.2402 24.211 14.1464C24.1172 14.0527 23.99 14 23.8574 14H20.8574C20.7248 14 20.5976 14.0527 20.5039 14.1464C20.4101 14.2402 20.3574 14.3674 20.3574 14.5V17.5C20.3574 17.6326 20.4101 17.7598 20.5039 17.8536C20.5976 17.9473 20.7248 18 20.8574 18ZM20.8574 28H23.8574C23.99 28 24.1172 27.9473 24.211 27.8536C24.3047 27.7598 24.3574 27.6326 24.3574 27.5V24.5C24.3574 24.3674 24.3047 24.2402 24.211 24.1464C24.1172 24.0527 23.99 24 23.8574 24H20.8574C20.7248 24 20.5976 24.0527 20.5039 24.1464C20.4101 24.2402 20.3574 24.3674 20.3574 24.5V27.5C20.3574 27.6326 20.4101 27.7598 20.5039 27.8536C20.5976 27.9473 20.7248 28 20.8574 28ZM15.8574 23H18.8574C18.99 23 19.1172 22.9473 19.211 22.8536C19.3047 22.7598 19.3574 22.6326 19.3574 22.5V19.5C19.3574 19.3674 19.3047 19.2402 19.211 19.1464C19.1172 19.0527 18.99 19 18.8574 19H15.8574C15.7248 19 15.5976 19.0527 15.5039 19.1464C15.4101 19.2402 15.3574 19.3674 15.3574 19.5V22.5C15.3574 22.6326 15.4101 22.7598 15.5039 22.8536C15.5976 22.9473 15.7248 23 15.8574 23ZM15.8574 18H18.8574C18.99 18 19.1172 17.9473 19.211 17.8536C19.3047 17.7598 19.3574 17.6326 19.3574 17.5V14.5C19.3574 14.3674 19.3047 14.2402 19.211 14.1464C19.1172 14.0527 18.99 14 18.8574 14H15.8574C15.7248 14 15.5976 14.0527 15.5039 14.1464C15.4101 14.2402 15.3574 14.3674 15.3574 14.5V17.5C15.3574 17.6326 15.4101 17.7598 15.5039 17.8536C15.5976 17.9473 15.7248 18 15.8574 18ZM15.8574 28H18.8574C18.99 28 19.1172 27.9473 19.211 27.8536C19.3047 27.7598 19.3574 27.6326 19.3574 27.5V24.5C19.3574 24.3674 19.3047 24.2402 19.211 24.1464C19.1172 24.0527 18.99 24 18.8574 24H15.8574C15.7248 24 15.5976 24.0527 15.5039 24.1464C15.4101 24.2402 15.3574 24.3674 15.3574 24.5V27.5C15.3574 27.6326 15.4101 27.7598 15.5039 27.8536C15.5976 27.9473 15.7248 28 15.8574 28Z"
+                      fill="#D5E5E0"
+                    />
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_5691_85202">
+                    <rect width="30" height="30" fill="white" transform="translate(0.357422)" />
+                  </clipPath>
+                  <clipPath id="clip1_5691_85202">
+                    <rect width="10" height="16" fill="white" transform="translate(14.3574 12)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            Bảo tồn
+            <svg
+              class="arrow-down-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="10"
+              viewBox="0 0 26 10"
+              fill="none"
+            >
+              <path d="M13.3574 10L2.53211 0.25L24.1827 0.249998L13.3574 10Z" fill="#015121" />
+            </svg>
+          </button>
+        </div>
+        <div class="btn-2-container">
+          <button class="btn-2 btn-2-active">
+            <p>Tài liệu pháp lý</p>
+            <div class="btn-2-deco"></div>
+          </button>
+          <button class="btn-2">
+            <p>Tài liệu kĩ thuật</p>
+            <div class="btn-2-deco"></div>
+          </button>
+          <button class="btn-2">
+            <p>Tài liệu đào tạo</p>
+            <div class="btn-2-deco"></div>
+          </button>
+          <button class="btn-2">
+            <p>Khóa học</p>
+            <div class="btn-2-deco"></div>
+          </button>
+          <div class="btn-2-container-deco"></div>
+        </div>
+        <div class="documents-container">
+          <a href="/" class="document-item">
+            <div class="image-container">
+              <img src="./assets/image/trang-chu/document-1.jpg" alt="" />
+            </div>
+            <p class="download-count">300+ lượt tải xuống</p>
+            <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
+            <button class="download-btn">
+              Tải xuống
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                <path
+                  d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
+                  stroke="#0B4523"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </a>
+          <a href="/" class="document-item">
+            <div class="image-container">
+              <img src="./assets/image/trang-chu/document-1.jpg" alt="" />
+            </div>
+            <p class="download-count">300+ lượt tải xuống</p>
+            <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
+            <button class="download-btn">
+              Tải xuống
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                <path
+                  d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
+                  stroke="#0B4523"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </a>
+          <a href="/" class="document-item">
+            <div class="image-container">
+              <img src="./assets/image/trang-chu/document-1.jpg" alt="" />
+            </div>
+            <p class="download-count">300+ lượt tải xuống</p>
+            <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
+            <button class="download-btn">
+              Tải xuống
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                <path
+                  d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
+                  stroke="#0B4523"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </a>
+          <a href="/" class="document-item">
+            <div class="image-container">
+              <img src="./assets/image/trang-chu/document-1.jpg" alt="" />
+            </div>
+            <p class="download-count">300+ lượt tải xuống</p>
+            <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
+            <button class="download-btn">
+              Tải xuống
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                <path
+                  d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
+                  stroke="#0B4523"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </a>
+          <a href="/" class="document-item">
+            <div class="image-container">
+              <img src="./assets/image/trang-chu/document-1.jpg" alt="" />
+            </div>
+            <p class="download-count">300+ lượt tải xuống</p>
+            <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
+            <button class="download-btn">
+              Tải xuống
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                <path
+                  d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
+                  stroke="#0B4523"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </a>
+          <a href="/" class="document-item">
+            <div class="image-container">
+              <img src="./assets/image/trang-chu/document-1.jpg" alt="" />
+            </div>
+            <p class="download-count">300+ lượt tải xuống</p>
+            <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
+            <button class="download-btn">
+              Tải xuống
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                <path
+                  d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
+                  stroke="#0B4523"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </a>
+          <a href="/" class="document-item">
+            <div class="image-container">
+              <img src="./assets/image/trang-chu/document-1.jpg" alt="" />
+            </div>
+            <p class="download-count">300+ lượt tải xuống</p>
+            <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
+            <button class="download-btn">
+              Tải xuống
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                <path
+                  d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
+                  stroke="#0B4523"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </a>
+          <a href="/" class="document-item">
+            <div class="image-container">
+              <img src="./assets/image/trang-chu/document-1.jpg" alt="" />
+            </div>
+            <p class="download-count">300+ lượt tải xuống</p>
+            <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
+            <button class="download-btn">
+              Tải xuống
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                <path
+                  d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
+                  stroke="#0B4523"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </a>
+          <a href="/" class="document-item">
+            <div class="image-container">
+              <img src="./assets/image/trang-chu/document-1.jpg" alt="" />
+            </div>
+            <p class="download-count">300+ lượt tải xuống</p>
+            <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
+            <button class="download-btn">
+              Tải xuống
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                <path
+                  d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
+                  stroke="#0B4523"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </a>
+          <a href="/" class="document-item">
+            <div class="image-container">
+              <img src="./assets/image/trang-chu/document-1.jpg" alt="" />
+            </div>
+            <p class="download-count">300+ lượt tải xuống</p>
+            <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
+            <button class="download-btn">
+              Tải xuống
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                <path
+                  d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
+                  stroke="#0B4523"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </a>
+          <a href="/" class="document-item">
+            <div class="image-container">
+              <img src="./assets/image/trang-chu/document-1.jpg" alt="" />
+            </div>
+            <p class="download-count">300+ lượt tải xuống</p>
+            <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
+            <button class="download-btn">
+              Tải xuống
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                <path
+                  d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
+                  stroke="#0B4523"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </a>
+          <a href="/" class="document-item">
+            <div class="image-container">
+              <img src="./assets/image/trang-chu/document-1.jpg" alt="" />
+            </div>
+            <p class="download-count">300+ lượt tải xuống</p>
+            <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
+            <button class="download-btn">
+              Tải xuống
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                <path
+                  d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
+                  stroke="#0B4523"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </a>
+          <a href="/" class="document-item">
+            <div class="image-container">
+              <img src="./assets/image/trang-chu/document-1.jpg" alt="" />
+            </div>
+            <p class="download-count">300+ lượt tải xuống</p>
+            <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
+            <button class="download-btn">
+              Tải xuống
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                <path
+                  d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
+                  stroke="#0B4523"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </a>
+          <a href="/" class="document-item">
+            <div class="image-container">
+              <img src="./assets/image/trang-chu/document-1.jpg" alt="" />
+            </div>
+            <p class="download-count">300+ lượt tải xuống</p>
+            <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
+            <button class="download-btn">
+              Tải xuống
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                <path
+                  d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
+                  stroke="#0B4523"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </a>
+          <a href="/" class="document-item">
+            <div class="image-container">
+              <img src="./assets/image/trang-chu/document-1.jpg" alt="" />
+            </div>
+            <p class="download-count">300+ lượt tải xuống</p>
+            <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
+            <button class="download-btn">
+              Tải xuống
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                <path
+                  d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
+                  stroke="#0B4523"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </a>
+        </div>
+        <div class="pagination-container">
+          <button class="pagination-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+              <path d="M4.9143 0.875L0.583008 5L4.9143 9.125" stroke="#1D1D1D" stroke-width="0.525002" />
+            </svg>
+          </button>
+          <button class="pagination-btn pagination-btn-active">
+            <p>1</p>
+          </button>
+          <button class="pagination-btn">
+            <p>2</p>
+          </button>
+          <button class="pagination-btn pagination-btn-dot">
+            <svg xmlns="http://www.w3.org/2000/svg" width="5" height="4" viewBox="0 0 5 4" fill="none">
+              <ellipse cx="2.50002" cy="2" rx="1.75002" ry="1.75" fill="#1D1D1D" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="5" height="4" viewBox="0 0 5 4" fill="none">
+              <ellipse cx="2.50002" cy="2" rx="1.75002" ry="1.75" fill="#1D1D1D" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="5" height="4" viewBox="0 0 5 4" fill="none">
+              <ellipse cx="2.50002" cy="2" rx="1.75002" ry="1.75" fill="#1D1D1D" />
+            </svg>
+          </button>
+          <button class="pagination-btn">
+            <p>10</p>
+          </button>
+          <button class="pagination-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+              <path d="M1.08398 9.125L5.41527 5L1.08398 0.875" stroke="#1D1D1D" stroke-width="0.525002" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: footer -->
+    <footer class="footer">
+      <div class="container">
+        <nav class="footer-link-container">
+          <a href="/" class="footer-link"
+            >Trang chủ
+            <div class="footer-link-deco"></div>
+          </a>
+          <a href="/" class="footer-link">Tài nguyên</a>
+          <a href="/" class="footer-link">Nhãn hàng</a>
+          <a href="/" class="footer-link">Tài liệu</a>
+          <a href="/" class="footer-link">Điều khoản</a>
+        </nav>
+        <div class="info-container">
+          <div class="info-item">
+            <img src="./assets/svg/footer/email.svg" alt="" />
+            <div class="info-content">
+              <h4>E-MAIL US</h4>
+              <p>info@vienkientruc.vn</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <img src="./assets/svg/footer/support.svg" alt="" />
+            <div class="info-content">
+              <h4>SUPPORT 27/7</h4>
+              <p>02438262179</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <img src="./assets/svg/footer/location.svg" alt="" />
+            <div class="info-content">
+              <h4>ĐỊA CHỈ</h4>
+              <p>40 P. Tăng Bạt Hổ, Phạm Đình Hổ, Hai Bà Trưng, Hà Nội</p>
+            </div>
+          </div>
+        </div>
+        <p class="dev-team">@2024 VKT | Designed by OKHUB Agency</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <script src="./utils/kKao4PaginationSwapSwiper.js"></script>
+    <script src="./components/header/index.js"></script>
+    <script src="./components/danh-sach-tai-lieu/index.js"></script>
+    <script src="./components/trang-chu/banner/index.js"></script>
+  </body>
+</html>

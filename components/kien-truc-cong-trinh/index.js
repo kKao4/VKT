@@ -3,7 +3,7 @@ function init() {
   const swiperGreatPartner = new Swiper(".swiper-great-partner", {
     slidesPerView: 8,
     slidesPerGroup: 1,
-    speed: 600,
+    speed: 800,
     spaceBetween: (window.innerWidth / 100) * 0.87,
     loop: true,
     navigation: {
@@ -15,7 +15,7 @@ function init() {
   const swiperInterestProject = new Swiper(".swiper-interest-project", {
     slidesPerView: 4,
     slidesPerGroup: 1,
-    speed: 600,
+    speed: 800,
     spaceBetween: (window.innerWidth / 100) * 1,
     loop: true,
     navigation: {

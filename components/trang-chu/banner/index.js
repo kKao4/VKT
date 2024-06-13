@@ -7,7 +7,7 @@ function init() {
       normalStyle: { backgroundColor: "#ececec" },
     },
     {
-      speed: 600,
+      speed: 800,
       slidesPerView: 4,
       spaceBetween: (window.innerWidth / 100) * 1.17,
       slidesPerGroup: 4,

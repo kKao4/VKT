@@ -205,3 +205,48 @@ main {
 .document-item .download-btn:hover {
   background: rgba(19, 115, 58, 0.4);
 }
+
+@media (max-width: 768px) {
+  main {
+    padding: 4.5rem 0 3.75rem 0;
+    background-color: #fff;
+  }
+  .search-container {
+    flex-direction: column;
+    width: 100%;
+    margin-right: 0;
+    padding-top: 1.5rem;
+  }
+  .filter-container {
+    padding: 0;
+    width: 100%;
+    position: relative;
+  }
+  .search-result-container {
+    padding: 0;
+    padding-top: 3rem;
+  }
+  .collections-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 0.75rem;
+    row-gap: 1.25rem;
+  }
+  .collection-item .image-container {
+    height: 10rem;
+  }
+  .collections-result-container {
+    padding-bottom: 2.5rem;
+  }
+  .filter-container-divider {
+    margin: 0.75rem 0;
+  }
+  .documents-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 0.75rem;
+    row-gap: 1.25rem;
+  }
+  .document-item .image-container {
+    height: 14rem;
+    padding: 0;
+  }
+}

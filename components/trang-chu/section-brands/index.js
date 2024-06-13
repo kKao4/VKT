@@ -11,7 +11,7 @@ function init() {
     {
       slidesPerView: 3,
       slidesPerGroup: 3,
-      speed: 600,
+      speed: 800,
       loop: true,
       spaceBetween: (window.innerWidth / 100) * 1.5,
       navigation: {

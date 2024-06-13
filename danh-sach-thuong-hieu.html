@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="./global.css" />
     <link rel="stylesheet" href="./components/header/index.css" />
     <link rel="stylesheet" href="./components/footer/index.css" />
-    <link rel="stylesheet" href="./components/tim-thay-ket-qua/index.css" />
+    <link rel="stylesheet" href="./components/trang-chu/banner/index.css" />
+    <link rel="stylesheet" href="./components/danh-sach-thuong-hieu/index.css" />
     <title>VKT</title>
   </head>
   <body>
     <!-- header -->
-    <header class="desktop-header">
+    <header>
       <!-- secondary header -->
       <div class="secondary-header-container">
         <nav>
@@ -68,22 +69,52 @@
           <p class="notification-content">3</p>
         </button>
         <!-- account -->
-        <!-- <div class="account-container">
+        <div class="account-container">
           <div class="avatar-container">
             <img src="./assets/image/header/someguy.jpg" alt="some guy" class="avatar" />
           </div>
           <div class="account-detail-container">
             <a href="/" class="account-name">Nguyễn Đạt</a>
             <div class="account-rank-container">
-              <img src="./assets/svg/header/trophy.svg" alt="" />
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path
+                  d="M5.9998 7.21875V9.84375H4.30293C4.19043 9.84375 4.14355 9.66563 4.24668 9.6L4.25605 9.59063C4.70605 9.29063 5.3248 8.70938 5.48418 8.325C5.63418 7.94063 5.6248 7.21875 5.6248 7.21875H5.9998ZM7.69668 9.85313H5.9998V7.21875H6.3748C6.3748 7.21875 6.35605 7.94063 6.51543 8.33438C6.66543 8.71875 7.29355 9.3 7.74355 9.6L7.75293 9.60938C7.84668 9.675 7.80918 9.85313 7.69668 9.85313Z"
+                  fill="#DCEAE1"
+                />
+                <path
+                  d="M8.57812 10.4613V10.5645C8.57812 10.6676 8.50313 10.752 8.41875 10.752H6V9.81445H7.97812C8.08125 9.81445 8.175 9.86133 8.24063 9.9457L8.50312 10.2551C8.55 10.3113 8.57812 10.3863 8.57812 10.4613ZM6 9.82383V10.7613H3.58125C3.4875 10.7613 3.42188 10.677 3.42188 10.5738V10.4707C3.42188 10.3957 3.45 10.3207 3.49687 10.2645L3.76875 9.95508C3.84375 9.8707 3.9375 9.82383 4.03125 9.82383H6Z"
+                  fill="#DCEAE1"
+                />
+                <path
+                  d="M4.43477 5.68086C4.41602 5.85898 4.25664 5.98086 4.08789 5.96211L1.72539 5.74648C0.928516 5.67148 0.319141 5.07148 0.319141 4.34961L0.150391 2.43711C0.150391 1.94023 0.609766 1.53711 1.18164 1.53711H2.85977C3.00977 1.53711 3.12227 1.65898 3.12227 1.79961V1.98711C3.12227 2.13711 3.00039 2.24961 2.85977 2.24961H1.73477C1.32227 2.24961 0.984766 2.54023 0.984766 2.90586L1.12539 3.99336C1.12539 4.54648 1.59414 5.00586 2.20352 5.06211L4.15352 5.24023C4.33164 5.25898 4.46289 5.41836 4.44414 5.59648L4.43477 5.68086Z"
+                  fill="#DCEAE1"
+                />
+                <path
+                  d="M7.56585 5.68086C7.5846 5.85898 7.74397 5.98086 7.91272 5.96211L10.2752 5.74648C11.0721 5.67148 11.6815 5.07148 11.6815 4.34961L11.8502 2.43711C11.8502 1.94023 11.3908 1.53711 10.819 1.53711H9.14085C8.99085 1.53711 8.87835 1.65898 8.87835 1.79961V1.98711C8.87835 2.13711 9.00022 2.24961 9.14085 2.24961H10.2658C10.6783 2.24961 11.0158 2.54023 11.0158 2.90586L10.8752 3.99336C10.8752 4.54648 10.4065 5.00586 9.7971 5.06211L7.8471 5.24023C7.66897 5.25898 7.53772 5.41836 7.55647 5.59648L7.56585 5.68086Z"
+                  fill="#DCEAE1"
+                />
+                <path
+                  d="M9.64688 1.22813V5.11875C9.64688 5.33438 9.5625 5.54063 9.4125 5.69063L7.5 7.6125L6.5625 8.55938C6.40312 8.71875 6.19687 8.79375 6 8.79375C5.79375 8.79375 5.5875 8.71875 5.4375 8.55938L4.5 7.6125L2.57812 5.69063C2.42812 5.54063 2.34375 5.33438 2.34375 5.11875V1.22813C2.34375 0.675 2.75625 0.20625 3.30937 0.15C3.40312 0.140625 3.49688 0.13125 3.6 0.121875C4.19063 0.05625 4.99688 0 5.99063 0C6.98438 0 7.79062 0.05625 8.39062 0.1125C8.49375 0.121875 8.5875 0.13125 8.68125 0.140625C9.225 0.20625 9.64688 0.665625 9.64688 1.22813Z"
+                  fill="#DCEAE1"
+                />
+                <path
+                  d="M8.39023 0.1125V4.99687C8.39023 5.12812 8.33398 5.25 8.24023 5.34375L6.98398 6.51562L6.36523 7.0875C6.26211 7.18125 6.13086 7.22812 5.99023 7.22812C5.85898 7.22812 5.71836 7.18125 5.61523 7.0875L4.99648 6.51562L3.74961 5.34375C3.65586 5.25 3.59961 5.12812 3.59961 4.99687V0.1125C4.19023 0.05625 4.99648 0 5.99023 0C6.98398 0 7.79023 0.05625 8.39023 0.1125Z"
+                  fill="white"
+                  fill-opacity="0.666667"
+                />
+                <path
+                  d="M8.39023 0.1125V4.99687C8.39023 5.12812 8.33398 5.25 8.24023 5.34375L6.98398 6.51562L6.36523 7.0875C6.26211 7.18125 6.13086 7.22812 5.99023 7.22812V0C6.98398 0 7.79023 0.05625 8.39023 0.1125Z"
+                  fill="white"
+                  fill-opacity="0.666667"
+                />
+                <path
+                  d="M9.79688 11.5676V11.7176C9.79688 11.8676 9.69375 11.9895 9.55313 11.9895H6V10.6113H8.90625C9.05625 10.6113 9.19688 10.677 9.3 10.7988L9.69375 11.2582C9.75938 11.352 9.79688 11.4551 9.79688 11.5676ZM6 10.6207V11.9988H2.44688C2.31563 11.9988 2.20312 11.877 2.20312 11.727V11.577C2.20312 11.4645 2.24063 11.3613 2.30625 11.277L2.7 10.8176C2.80312 10.6957 2.94375 10.6301 3.09375 10.6301H6V10.6207Z"
+                  fill="#DCEAE1"
+                />
+              </svg>
               Thành viên kim cương
             </div>
           </div>
-        </div> -->
-        <!-- sign in, sign up -->
-        <div class="sign-in-up-container-btn">
-          <button class="outlined-btn">Đăng nhập</button>
-          <button class="contained-btn">Đăng ký</button>
         </div>
       </div>
     </header>
@@ -891,1166 +922,702 @@
       <div class="notification-tab-overlay"></div>
     </div>
 
-    <header class="mobile-header">
-      <button class="open-modal-menu-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-          <path
-            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
-          />
-        </svg>
-      </button>
-      <a href="/" class="logo">
-        <img src="./assets/image/header/logo.png" alt="" />
-      </a>
-    </header>
-
-    <div class="modal-menu">
-      <div class="first-row">
-        <button class="close-modal-menu-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-            <path
-              d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
-            />
-          </svg>
-        </button>
-        <a href="/" class="logo">
-          <img src="./assets/image/header/logo.png" alt="" />
-        </a>
-      </div>
-      <form>
-        <input type="text" class="search-bar" placeholder="Tìm kiếm" />
-        <button type="submit" class="submit-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
-            <path
-              d="M22.75 22.75L18.0375 18.0375M20.5833 11.9167C20.5833 16.7031 16.7031 20.5833 11.9167 20.5833C7.1302 20.5833 3.25 16.7031 3.25 11.9167C3.25 7.1302 7.1302 3.25 11.9167 3.25C16.7031 3.25 20.5833 7.1302 20.5833 11.9167Z"
-              stroke="white"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </button>
-      </form>
-      <div class="second-row">
-        <a href="/">Nhãn hàng</a>
-        <a href="/">Tài liệu</a>
-        <a href="/">Về chúng tôi</a>
-      </div>
-      <strong>Danh mục</strong>
-      <div class="accordions-container">
-        <div class="accordion-container">
-          <button class="accordion-trigger-btn">
-            <p>Kiến trúc công trình</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-              <path
-                d="M8.51192 12.9946C8.27795 13.3774 7.72205 13.3774 7.48808 12.9946L3.36194 6.24498C3.11753 5.84517 3.40527 5.33203 3.87387 5.33203L12.1261 5.33203C12.5947 5.33203 12.8825 5.84517 12.6381 6.24498L8.51192 12.9946Z"
-                fill="#116834"
-              />
-            </svg>
-          </button>
-          <ul class="accordion-content">
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-          </ul>
-        </div>
-        <div class="accordion-container">
-          <button class="accordion-trigger-btn">
-            <p>Nội thất</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-              <path
-                d="M8.51192 12.9946C8.27795 13.3774 7.72205 13.3774 7.48808 12.9946L3.36194 6.24498C3.11753 5.84517 3.40527 5.33203 3.87387 5.33203L12.1261 5.33203C12.5947 5.33203 12.8825 5.84517 12.6381 6.24498L8.51192 12.9946Z"
-                fill="#116834"
-              />
-            </svg>
-          </button>
-          <ul class="accordion-content">
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-          </ul>
-        </div>
-        <div class="accordion-container">
-          <button class="accordion-trigger-btn">
-            <p>Quy hoạch</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-              <path
-                d="M8.51192 12.9946C8.27795 13.3774 7.72205 13.3774 7.48808 12.9946L3.36194 6.24498C3.11753 5.84517 3.40527 5.33203 3.87387 5.33203L12.1261 5.33203C12.5947 5.33203 12.8825 5.84517 12.6381 6.24498L8.51192 12.9946Z"
-                fill="#116834"
-              />
-            </svg>
-          </button>
-          <ul class="accordion-content">
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-          </ul>
-        </div>
-        <div class="accordion-container">
-          <button class="accordion-trigger-btn">
-            <p>Sinh viên</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-              <path
-                d="M8.51192 12.9946C8.27795 13.3774 7.72205 13.3774 7.48808 12.9946L3.36194 6.24498C3.11753 5.84517 3.40527 5.33203 3.87387 5.33203L12.1261 5.33203C12.5947 5.33203 12.8825 5.84517 12.6381 6.24498L8.51192 12.9946Z"
-                fill="#116834"
-              />
-            </svg>
-          </button>
-          <ul class="accordion-content">
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-          </ul>
-        </div>
-        <div class="accordion-container">
-          <button class="accordion-trigger-btn">
-            <p>Bảo tồn</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-              <path
-                d="M8.51192 12.9946C8.27795 13.3774 7.72205 13.3774 7.48808 12.9946L3.36194 6.24498C3.11753 5.84517 3.40527 5.33203 3.87387 5.33203L12.1261 5.33203C12.5947 5.33203 12.8825 5.84517 12.6381 6.24498L8.51192 12.9946Z"
-                fill="#116834"
-              />
-            </svg>
-          </button>
-          <ul class="accordion-content">
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-          </ul>
-        </div>
-        <div class="accordion-container">
-          <button class="accordion-trigger-btn">
-            <p>Cảnh quan</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-              <path
-                d="M8.51192 12.9946C8.27795 13.3774 7.72205 13.3774 7.48808 12.9946L3.36194 6.24498C3.11753 5.84517 3.40527 5.33203 3.87387 5.33203L12.1261 5.33203C12.5947 5.33203 12.8825 5.84517 12.6381 6.24498L8.51192 12.9946Z"
-                fill="#116834"
-              />
-            </svg>
-          </button>
-          <ul class="accordion-content">
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-          </ul>
-        </div>
-        <div class="accordion-container">
-          <button class="accordion-trigger-btn">
-            <p>Đối tác kinh doanh</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-              <path
-                d="M8.51192 12.9946C8.27795 13.3774 7.72205 13.3774 7.48808 12.9946L3.36194 6.24498C3.11753 5.84517 3.40527 5.33203 3.87387 5.33203L12.1261 5.33203C12.5947 5.33203 12.8825 5.84517 12.6381 6.24498L8.51192 12.9946Z"
-                fill="#116834"
-              />
-            </svg>
-          </button>
-          <ul class="accordion-content">
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-          </ul>
-        </div>
-        <div class="accordion-container">
-          <button class="accordion-trigger-btn">
-            <p>Quản lí nhà nước</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-              <path
-                d="M8.51192 12.9946C8.27795 13.3774 7.72205 13.3774 7.48808 12.9946L3.36194 6.24498C3.11753 5.84517 3.40527 5.33203 3.87387 5.33203L12.1261 5.33203C12.5947 5.33203 12.8825 5.84517 12.6381 6.24498L8.51192 12.9946Z"
-                fill="#116834"
-              />
-            </svg>
-          </button>
-          <ul class="accordion-content">
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-            <li><a href="/">Triển khai kiến trúc</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="modal-menu-divider"></div>
-      <strong>Lĩnh vực</strong>
-      <div class="field-containers">
-        <a href="/">Kiến trúc công trình</a>
-        <a href="/">Nội thất</a>
-        <a href="/">Quy hoạch</a>
-        <a href="/">Sinh viên</a>
-        <a href="/">Bảo tồn</a>
-        <a href="/">Cảnh quan</a>
-        <a href="/">Đối tác kinh doanh</a>
-        <a href="/">Quản lí nhà nước</a>
-      </div>
-      <!-- <div class="btn-container">
-        <button class="contained-btn">Đăng nhập</button>
-        <button class="outlined-btn">Đăng ký</button>
-      </div> -->
-      <div class="account-container">
-        <div class="avatar-container">
-          <img src="./assets/image/header/someguy.jpg" alt="" />
-        </div>
-        <div class="account-content-container">
-          <p class="account-name">Nguyễn Đạt</p>
-          <div class="account-rank-container">
-            <img src="./assets/svg/header/trophy.svg" alt="" />
-            <p>Thành viên kim cương</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- TODO: restore body -->
-    <!-- SECTION: body -->
-    <main>
+    <!-- SECTION: banner -->
+    <section class="banner smaller-banner">
       <div class="container">
-        <div class="breadcrumb-container breadcrumb-container-black">
+        <img src="./assets/image/trang-chu/banner-background.jpg" alt="" class="banner-background" />
+        <div class="breadcrumb-container">
           <a href="/" class="breadcrumb-link">TRANG CHỦ /</a>
-          <a href="/kien-truc-cong-trinh" class="breadcrumb-link breadcrumb-link-active">BỘ VÒI NƯỚC COSMOPOLITA</a>
+          <a href="/kien-truc-cong-trinh" class="breadcrumb-link breadcrumb-link-active">CÁC NHẪN HÀNG UY TÍN</a>
         </div>
-        <div class="search-container">
-          <div class="filter-container">
-            <div class="accordion-container">
-              <button class="accordion-trigger-btn">
-                <h3>Loại công trình</h3>
-                <svg
-                  class="accordion-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="17"
-                  viewBox="0 0 16 17"
-                  fill="none"
-                >
-                  <path
-                    d="M8.51192 12.9961C8.27795 13.3788 7.72205 13.3788 7.48808 12.9961L3.36194 6.24644C3.11753 5.84663 3.40527 5.3335 3.87387 5.3335L12.1261 5.3335C12.5947 5.3335 12.8825 5.84663 12.6381 6.24644L8.51192 12.9961Z"
-                    fill="#116834"
-                  />
-                </svg>
-              </button>
-              <ul class="accordion-dropdown">
-                <li class="accordion-item">
-                  <button class="checkbox checkbox-active">
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox-active.svg" alt="" class="checkbox-active-icon" />
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox.svg" alt="" class="checkbox-icon" />
-                  </button>
-                  <p class="title">Nhà ở cao tầng</p>
-                  <p class="count">(120.789)</p>
-                </li>
-                <li class="accordion-item">
-                  <button class="checkbox">
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox-active.svg" alt="" class="checkbox-active-icon" />
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox.svg" alt="" class="checkbox-icon" />
-                  </button>
-                  <p class="title">Nhà ở thấp tầng</p>
-                  <p class="count">(120.789)</p>
-                </li>
-                <li class="accordion-item">
-                  <button class="checkbox">
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox-active.svg" alt="" class="checkbox-active-icon" />
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox.svg" alt="" class="checkbox-icon" />
-                  </button>
-                  <p class="title">Văn phòng</p>
-                  <p class="count">(120.789)</p>
-                </li>
-                <li class="accordion-item">
-                  <button class="checkbox">
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox-active.svg" alt="" class="checkbox-active-icon" />
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox.svg" alt="" class="checkbox-icon" />
-                  </button>
-                  <p class="title">Khách sạn</p>
-                  <p class="count">(120.789)</p>
-                </li>
-                <li class="accordion-item">
-                  <button class="checkbox">
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox-active.svg" alt="" class="checkbox-active-icon" />
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox.svg" alt="" class="checkbox-icon" />
-                  </button>
-                  <p class="title">Hỗn hợp</p>
-                  <p class="count">(120.789)</p>
-                </li>
-              </ul>
-            </div>
-            <div class="filter-container-divider"></div>
-            <div class="accordion-container">
-              <button class="accordion-trigger-btn">
-                <h3>BIM/CAD</h3>
-                <svg
-                  class="accordion-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="17"
-                  viewBox="0 0 16 17"
-                  fill="none"
-                >
-                  <path
-                    d="M8.51192 12.9961C8.27795 13.3788 7.72205 13.3788 7.48808 12.9961L3.36194 6.24644C3.11753 5.84663 3.40527 5.3335 3.87387 5.3335L12.1261 5.3335C12.5947 5.3335 12.8825 5.84663 12.6381 6.24644L8.51192 12.9961Z"
-                    fill="#116834"
-                  />
-                </svg>
-              </button>
-              <ul class="accordion-dropdown">
-                <li class="accordion-item">
-                  <button class="checkbox checkbox-active">
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox-active.svg" alt="" class="checkbox-active-icon" />
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox.svg" alt="" class="checkbox-icon" />
-                  </button>
-                  <p class="title">Nhà ở cao tầng</p>
-                  <p class="count">(120.789)</p>
-                </li>
-                <li class="accordion-item">
-                  <button class="checkbox">
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox-active.svg" alt="" class="checkbox-active-icon" />
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox.svg" alt="" class="checkbox-icon" />
-                  </button>
-                  <p class="title">Nhà ở thấp tầng</p>
-                  <p class="count">(120.789)</p>
-                </li>
-                <li class="accordion-item">
-                  <button class="checkbox">
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox-active.svg" alt="" class="checkbox-active-icon" />
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox.svg" alt="" class="checkbox-icon" />
-                  </button>
-                  <p class="title">Văn phòng</p>
-                  <p class="count">(120.789)</p>
-                </li>
-                <li class="accordion-item">
-                  <button class="checkbox">
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox-active.svg" alt="" class="checkbox-active-icon" />
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox.svg" alt="" class="checkbox-icon" />
-                  </button>
-                  <p class="title">Khách sạn</p>
-                  <p class="count">(120.789)</p>
-                </li>
-                <li class="accordion-item">
-                  <button class="checkbox">
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox-active.svg" alt="" class="checkbox-active-icon" />
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox.svg" alt="" class="checkbox-icon" />
-                  </button>
-                  <p class="title">Hỗn hợp</p>
-                  <p class="count">(120.789)</p>
-                </li>
-              </ul>
-            </div>
-            <div class="filter-container-divider"></div>
-            <div class="accordion-container">
-              <button class="accordion-trigger-btn">
-                <h3>Bộ lọc 1</h3>
-                <svg
-                  class="accordion-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="17"
-                  viewBox="0 0 16 17"
-                  fill="none"
-                >
-                  <path
-                    d="M8.51192 12.9961C8.27795 13.3788 7.72205 13.3788 7.48808 12.9961L3.36194 6.24644C3.11753 5.84663 3.40527 5.3335 3.87387 5.3335L12.1261 5.3335C12.5947 5.3335 12.8825 5.84663 12.6381 6.24644L8.51192 12.9961Z"
-                    fill="#116834"
-                  />
-                </svg>
-              </button>
-              <ul class="accordion-dropdown">
-                <li class="accordion-item">
-                  <button class="checkbox checkbox-active">
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox-active.svg" alt="" class="checkbox-active-icon" />
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox.svg" alt="" class="checkbox-icon" />
-                  </button>
-                  <p class="title">Nhà ở cao tầng</p>
-                  <p class="count">(120.789)</p>
-                </li>
-                <li class="accordion-item">
-                  <button class="checkbox">
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox-active.svg" alt="" class="checkbox-active-icon" />
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox.svg" alt="" class="checkbox-icon" />
-                  </button>
-                  <p class="title">Nhà ở thấp tầng</p>
-                  <p class="count">(120.789)</p>
-                </li>
-                <li class="accordion-item">
-                  <button class="checkbox">
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox-active.svg" alt="" class="checkbox-active-icon" />
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox.svg" alt="" class="checkbox-icon" />
-                  </button>
-                  <p class="title">Văn phòng</p>
-                  <p class="count">(120.789)</p>
-                </li>
-                <li class="accordion-item">
-                  <button class="checkbox">
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox-active.svg" alt="" class="checkbox-active-icon" />
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox.svg" alt="" class="checkbox-icon" />
-                  </button>
-                  <p class="title">Khách sạn</p>
-                  <p class="count">(120.789)</p>
-                </li>
-                <li class="accordion-item">
-                  <button class="checkbox">
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox-active.svg" alt="" class="checkbox-active-icon" />
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox.svg" alt="" class="checkbox-icon" />
-                  </button>
-                  <p class="title">Hỗn hợp</p>
-                  <p class="count">(120.789)</p>
-                </li>
-              </ul>
-            </div>
-            <div class="filter-container-divider"></div>
-            <div class="accordion-container">
-              <button class="accordion-trigger-btn">
-                <h3>Bộ lọc 2</h3>
-                <svg
-                  class="accordion-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="17"
-                  viewBox="0 0 16 17"
-                  fill="none"
-                >
-                  <path
-                    d="M8.51192 12.9961C8.27795 13.3788 7.72205 13.3788 7.48808 12.9961L3.36194 6.24644C3.11753 5.84663 3.40527 5.3335 3.87387 5.3335L12.1261 5.3335C12.5947 5.3335 12.8825 5.84663 12.6381 6.24644L8.51192 12.9961Z"
-                    fill="#116834"
-                  />
-                </svg>
-              </button>
-              <ul class="accordion-dropdown">
-                <li class="accordion-item">
-                  <button class="checkbox checkbox-active">
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox-active.svg" alt="" class="checkbox-active-icon" />
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox.svg" alt="" class="checkbox-icon" />
-                  </button>
-                  <p class="title">Nhà ở cao tầng</p>
-                  <p class="count">(120.789)</p>
-                </li>
-                <li class="accordion-item">
-                  <button class="checkbox">
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox-active.svg" alt="" class="checkbox-active-icon" />
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox.svg" alt="" class="checkbox-icon" />
-                  </button>
-                  <p class="title">Nhà ở thấp tầng</p>
-                  <p class="count">(120.789)</p>
-                </li>
-                <li class="accordion-item">
-                  <button class="checkbox">
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox-active.svg" alt="" class="checkbox-active-icon" />
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox.svg" alt="" class="checkbox-icon" />
-                  </button>
-                  <p class="title">Văn phòng</p>
-                  <p class="count">(120.789)</p>
-                </li>
-                <li class="accordion-item">
-                  <button class="checkbox">
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox-active.svg" alt="" class="checkbox-active-icon" />
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox.svg" alt="" class="checkbox-icon" />
-                  </button>
-                  <p class="title">Khách sạn</p>
-                  <p class="count">(120.789)</p>
-                </li>
-                <li class="accordion-item">
-                  <button class="checkbox">
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox-active.svg" alt="" class="checkbox-active-icon" />
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox.svg" alt="" class="checkbox-icon" />
-                  </button>
-                  <p class="title">Hỗn hợp</p>
-                  <p class="count">(120.789)</p>
-                </li>
-              </ul>
-            </div>
-            <div class="filter-container-divider"></div>
-            <div class="accordion-container">
-              <button class="accordion-trigger-btn">
-                <h3>Bộ lọc 3</h3>
-                <svg
-                  class="accordion-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="17"
-                  viewBox="0 0 16 17"
-                  fill="none"
-                >
-                  <path
-                    d="M8.51192 12.9961C8.27795 13.3788 7.72205 13.3788 7.48808 12.9961L3.36194 6.24644C3.11753 5.84663 3.40527 5.3335 3.87387 5.3335L12.1261 5.3335C12.5947 5.3335 12.8825 5.84663 12.6381 6.24644L8.51192 12.9961Z"
-                    fill="#116834"
-                  />
-                </svg>
-              </button>
-              <ul class="accordion-dropdown">
-                <li class="accordion-item">
-                  <button class="checkbox checkbox-active">
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox-active.svg" alt="" class="checkbox-active-icon" />
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox.svg" alt="" class="checkbox-icon" />
-                  </button>
-                  <p class="title">Nhà ở cao tầng</p>
-                  <p class="count">(120.789)</p>
-                </li>
-                <li class="accordion-item">
-                  <button class="checkbox">
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox-active.svg" alt="" class="checkbox-active-icon" />
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox.svg" alt="" class="checkbox-icon" />
-                  </button>
-                  <p class="title">Nhà ở thấp tầng</p>
-                  <p class="count">(120.789)</p>
-                </li>
-                <li class="accordion-item">
-                  <button class="checkbox">
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox-active.svg" alt="" class="checkbox-active-icon" />
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox.svg" alt="" class="checkbox-icon" />
-                  </button>
-                  <p class="title">Văn phòng</p>
-                  <p class="count">(120.789)</p>
-                </li>
-                <li class="accordion-item">
-                  <button class="checkbox">
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox-active.svg" alt="" class="checkbox-active-icon" />
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox.svg" alt="" class="checkbox-icon" />
-                  </button>
-                  <p class="title">Khách sạn</p>
-                  <p class="count">(120.789)</p>
-                </li>
-                <li class="accordion-item">
-                  <button class="checkbox">
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox-active.svg" alt="" class="checkbox-active-icon" />
-                    <img src="./assets/svg/tim-thay-ket-qua/checkbox.svg" alt="" class="checkbox-icon" />
-                  </button>
-                  <p class="title">Hỗn hợp</p>
-                  <p class="count">(120.789)</p>
-                </li>
-              </ul>
+        <div class="banner-text-container banner-text-container-right">
+          <h1>Các nhãn hàng uy tín</h1>
+          <p>
+            Duyệt qua hơn 2.000 thương hiệu của nhà sản xuất sản phẩm xây dựng với nội dung ở các loại tệp cho tất cả
+            các chương trình phần mềm và thiết kế phổ biến trên hàng trăm danh mục và phục vụ thị trường toàn cầu. Hãy
+            tìm thương hiệu và sản phẩm hoàn hảo cho dự án của bạn ngay bây giờ!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: section 2 -->
+    <section class="section-toi-tac-uy-tin-noi-bat">
+      <div class="container">
+        <div class="heading-container">
+          <h2>Bộ sưu tập tiêu biểu</h2>
+        </div>
+        <div class="swiper-outstanding-brand-container">
+          <div class="swiper swiper-outstanding-brand">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="/">
+                  <div class="image-container">
+                    <img src="./assets/image/kien-truc-cong-trinh/great-partner-1.jpg" alt="" />
+                  </div>
+                  <h4>Northboun Construction</h4>
+                  <div class="rate-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path
+                        d="M7 0.5L9.0161 4.72507L13.6574 5.33688L10.2621 8.55993L11.1145 13.1631L7 10.93L2.8855 13.1631L3.73788 8.55993L0.342604 5.33688L4.9839 4.72507L7 0.5Z"
+                        fill="#FF6B00"
+                      />
+                    </svg>
+                    <p class="star">4.8</p>
+                    <p class="review">(20 lượt đánh giá)</p>
+                  </div>
+                  <button class="contact-btn">Liên hệ</button>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="/">
+                  <div class="image-container">
+                    <img src="./assets/image/kien-truc-cong-trinh/great-partner-2.jpg" alt="" />
+                  </div>
+                  <h4>Northboun Construction</h4>
+                  <div class="rate-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path
+                        d="M7 0.5L9.0161 4.72507L13.6574 5.33688L10.2621 8.55993L11.1145 13.1631L7 10.93L2.8855 13.1631L3.73788 8.55993L0.342604 5.33688L4.9839 4.72507L7 0.5Z"
+                        fill="#FF6B00"
+                      />
+                    </svg>
+                    <p class="star">4.8</p>
+                    <p class="review">(20 lượt đánh giá)</p>
+                  </div>
+                  <button class="contact-btn">Liên hệ</button>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="/">
+                  <div class="image-container">
+                    <img src="./assets/image/kien-truc-cong-trinh/great-partner-3.jpg" alt="" />
+                  </div>
+                  <h4>Northboun Construction</h4>
+                  <div class="rate-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path
+                        d="M7 0.5L9.0161 4.72507L13.6574 5.33688L10.2621 8.55993L11.1145 13.1631L7 10.93L2.8855 13.1631L3.73788 8.55993L0.342604 5.33688L4.9839 4.72507L7 0.5Z"
+                        fill="#FF6B00"
+                      />
+                    </svg>
+                    <p class="star">4.8</p>
+                    <p class="review">(20 lượt đánh giá)</p>
+                  </div>
+                  <button class="contact-btn">Liên hệ</button>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="/">
+                  <div class="image-container">
+                    <img src="./assets/image/kien-truc-cong-trinh/great-partner-4.jpg" alt="" />
+                  </div>
+                  <h4>Northboun Construction</h4>
+                  <div class="rate-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path
+                        d="M7 0.5L9.0161 4.72507L13.6574 5.33688L10.2621 8.55993L11.1145 13.1631L7 10.93L2.8855 13.1631L3.73788 8.55993L0.342604 5.33688L4.9839 4.72507L7 0.5Z"
+                        fill="#FF6B00"
+                      />
+                    </svg>
+                    <p class="star">4.8</p>
+                    <p class="review">(20 lượt đánh giá)</p>
+                  </div>
+                  <button class="contact-btn">Liên hệ</button>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="/">
+                  <div class="image-container">
+                    <img src="./assets/image/kien-truc-cong-trinh/great-partner-5.jpg" alt="" />
+                  </div>
+                  <h4>Northboun Construction</h4>
+                  <div class="rate-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path
+                        d="M7 0.5L9.0161 4.72507L13.6574 5.33688L10.2621 8.55993L11.1145 13.1631L7 10.93L2.8855 13.1631L3.73788 8.55993L0.342604 5.33688L4.9839 4.72507L7 0.5Z"
+                        fill="#FF6B00"
+                      />
+                    </svg>
+                    <p class="star">4.8</p>
+                    <p class="review">(20 lượt đánh giá)</p>
+                  </div>
+                  <button class="contact-btn">Liên hệ</button>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="/">
+                  <div class="image-container">
+                    <img src="./assets/image/kien-truc-cong-trinh/great-partner-6.jpg" alt="" />
+                  </div>
+                  <h4>Northboun Construction</h4>
+                  <div class="rate-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path
+                        d="M7 0.5L9.0161 4.72507L13.6574 5.33688L10.2621 8.55993L11.1145 13.1631L7 10.93L2.8855 13.1631L3.73788 8.55993L0.342604 5.33688L4.9839 4.72507L7 0.5Z"
+                        fill="#FF6B00"
+                      />
+                    </svg>
+                    <p class="star">4.8</p>
+                    <p class="review">(20 lượt đánh giá)</p>
+                  </div>
+                  <button class="contact-btn">Liên hệ</button>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="/">
+                  <div class="image-container">
+                    <img src="./assets/image/kien-truc-cong-trinh/great-partner-7.jpg" alt="" />
+                  </div>
+                  <h4>Northboun Construction</h4>
+                  <div class="rate-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path
+                        d="M7 0.5L9.0161 4.72507L13.6574 5.33688L10.2621 8.55993L11.1145 13.1631L7 10.93L2.8855 13.1631L3.73788 8.55993L0.342604 5.33688L4.9839 4.72507L7 0.5Z"
+                        fill="#FF6B00"
+                      />
+                    </svg>
+                    <p class="star">4.8</p>
+                    <p class="review">(20 lượt đánh giá)</p>
+                  </div>
+                  <button class="contact-btn">Liên hệ</button>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="/">
+                  <div class="image-container">
+                    <img src="./assets/image/kien-truc-cong-trinh/great-partner-8.jpg" alt="" />
+                  </div>
+                  <h4>Northboun Construction</h4>
+                  <div class="rate-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path
+                        d="M7 0.5L9.0161 4.72507L13.6574 5.33688L10.2621 8.55993L11.1145 13.1631L7 10.93L2.8855 13.1631L3.73788 8.55993L0.342604 5.33688L4.9839 4.72507L7 0.5Z"
+                        fill="#FF6B00"
+                      />
+                    </svg>
+                    <p class="star">4.8</p>
+                    <p class="review">(20 lượt đánh giá)</p>
+                  </div>
+                  <button class="contact-btn">Liên hệ</button>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="/">
+                  <div class="image-container">
+                    <img src="./assets/image/kien-truc-cong-trinh/great-partner-7.jpg" alt="" />
+                  </div>
+                  <h4>Northboun Construction</h4>
+                  <div class="rate-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path
+                        d="M7 0.5L9.0161 4.72507L13.6574 5.33688L10.2621 8.55993L11.1145 13.1631L7 10.93L2.8855 13.1631L3.73788 8.55993L0.342604 5.33688L4.9839 4.72507L7 0.5Z"
+                        fill="#FF6B00"
+                      />
+                    </svg>
+                    <p class="star">4.8</p>
+                    <p class="review">(20 lượt đánh giá)</p>
+                  </div>
+                  <button class="contact-btn">Liên hệ</button>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="/">
+                  <div class="image-container">
+                    <img src="./assets/image/kien-truc-cong-trinh/great-partner-8.jpg" alt="" />
+                  </div>
+                  <h4>Northboun Construction</h4>
+                  <div class="rate-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path
+                        d="M7 0.5L9.0161 4.72507L13.6574 5.33688L10.2621 8.55993L11.1145 13.1631L7 10.93L2.8855 13.1631L3.73788 8.55993L0.342604 5.33688L4.9839 4.72507L7 0.5Z"
+                        fill="#FF6B00"
+                      />
+                    </svg>
+                    <p class="star">4.8</p>
+                    <p class="review">(20 lượt đánh giá)</p>
+                  </div>
+                  <button class="contact-btn">Liên hệ</button>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="search-result-container">
-            <!-- SECTION: collections -->
-            <div class="collections-result-container">
-              <div class="collections-container">
-                <a href="/" class="collection-item">
-                  <div class="image-container">
-                    <img src="./assets/image/trang-chu/collection-1.jpg" alt="" />
-                  </div>
-                  <div class="rate-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                      <path
-                        d="M7 0.5L9.0161 4.72507L13.6574 5.33688L10.2621 8.55993L11.1145 13.1631L7 10.93L2.8855 13.1631L3.73788 8.55993L0.342604 5.33688L4.9839 4.72507L7 0.5Z"
-                        fill="#FF6B00"
-                      />
-                    </svg>
-                    <p class="star">4.8</p>
-                    <p class="review">(20 lượt đánh giá)</p>
-                  </div>
-                  <p class="download-count">300+ lượt tải xuống</p>
-                  <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
-                  <button class="download-btn">
-                    Tải xuống
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                      <path
-                        d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
-                        stroke="#0B4523"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </a>
-                <a href="/" class="collection-item">
-                  <div class="image-container">
-                    <img src="./assets/image/trang-chu/collection-2.jpg" alt="" />
-                  </div>
-                  <div class="rate-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                      <path
-                        d="M7 0.5L9.0161 4.72507L13.6574 5.33688L10.2621 8.55993L11.1145 13.1631L7 10.93L2.8855 13.1631L3.73788 8.55993L0.342604 5.33688L4.9839 4.72507L7 0.5Z"
-                        fill="#FF6B00"
-                      />
-                    </svg>
-                    <p class="star">4.8</p>
-                    <p class="review">(20 lượt đánh giá)</p>
-                  </div>
-                  <p class="download-count">300+ lượt tải xuống</p>
-                  <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
-                  <button class="download-btn">
-                    Tải xuống
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                      <path
-                        d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
-                        stroke="#0B4523"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </a>
-                <a href="/" class="collection-item">
-                  <div class="image-container">
-                    <img src="./assets/image/trang-chu/collection-3.jpg" alt="" />
-                  </div>
-                  <div class="rate-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                      <path
-                        d="M7 0.5L9.0161 4.72507L13.6574 5.33688L10.2621 8.55993L11.1145 13.1631L7 10.93L2.8855 13.1631L3.73788 8.55993L0.342604 5.33688L4.9839 4.72507L7 0.5Z"
-                        fill="#FF6B00"
-                      />
-                    </svg>
-                    <p class="star">4.8</p>
-                    <p class="review">(20 lượt đánh giá)</p>
-                  </div>
-                  <p class="download-count">300+ lượt tải xuống</p>
-                  <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
-                  <button class="download-btn">
-                    Tải xuống
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                      <path
-                        d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
-                        stroke="#0B4523"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </a>
-                <a href="/" class="collection-item">
-                  <div class="image-container">
-                    <img src="./assets/image/trang-chu/collection-3.jpg" alt="" />
-                  </div>
-                  <div class="rate-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                      <path
-                        d="M7 0.5L9.0161 4.72507L13.6574 5.33688L10.2621 8.55993L11.1145 13.1631L7 10.93L2.8855 13.1631L3.73788 8.55993L0.342604 5.33688L4.9839 4.72507L7 0.5Z"
-                        fill="#FF6B00"
-                      />
-                    </svg>
-                    <p class="star">4.8</p>
-                    <p class="review">(20 lượt đánh giá)</p>
-                  </div>
-                  <p class="download-count">300+ lượt tải xuống</p>
-                  <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
-                  <button class="download-btn">
-                    Tải xuống
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                      <path
-                        d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
-                        stroke="#0B4523"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </a>
-                <a href="/" class="collection-item">
-                  <div class="image-container">
-                    <img src="./assets/image/trang-chu/collection-3.jpg" alt="" />
-                  </div>
-                  <div class="rate-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                      <path
-                        d="M7 0.5L9.0161 4.72507L13.6574 5.33688L10.2621 8.55993L11.1145 13.1631L7 10.93L2.8855 13.1631L3.73788 8.55993L0.342604 5.33688L4.9839 4.72507L7 0.5Z"
-                        fill="#FF6B00"
-                      />
-                    </svg>
-                    <p class="star">4.8</p>
-                    <p class="review">(20 lượt đánh giá)</p>
-                  </div>
-                  <p class="download-count">300+ lượt tải xuống</p>
-                  <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
-                  <button class="download-btn">
-                    Tải xuống
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                      <path
-                        d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
-                        stroke="#0B4523"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </a>
-                <a href="/" class="collection-item">
-                  <div class="image-container">
-                    <img src="./assets/image/trang-chu/collection-3.jpg" alt="" />
-                  </div>
-                  <div class="rate-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                      <path
-                        d="M7 0.5L9.0161 4.72507L13.6574 5.33688L10.2621 8.55993L11.1145 13.1631L7 10.93L2.8855 13.1631L3.73788 8.55993L0.342604 5.33688L4.9839 4.72507L7 0.5Z"
-                        fill="#FF6B00"
-                      />
-                    </svg>
-                    <p class="star">4.8</p>
-                    <p class="review">(20 lượt đánh giá)</p>
-                  </div>
-                  <p class="download-count">300+ lượt tải xuống</p>
-                  <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
-                  <button class="download-btn">
-                    Tải xuống
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                      <path
-                        d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
-                        stroke="#0B4523"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </a>
-                <a href="/" class="collection-item">
-                  <div class="image-container">
-                    <img src="./assets/image/trang-chu/collection-3.jpg" alt="" />
-                  </div>
-                  <div class="rate-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                      <path
-                        d="M7 0.5L9.0161 4.72507L13.6574 5.33688L10.2621 8.55993L11.1145 13.1631L7 10.93L2.8855 13.1631L3.73788 8.55993L0.342604 5.33688L4.9839 4.72507L7 0.5Z"
-                        fill="#FF6B00"
-                      />
-                    </svg>
-                    <p class="star">4.8</p>
-                    <p class="review">(20 lượt đánh giá)</p>
-                  </div>
-                  <p class="download-count">300+ lượt tải xuống</p>
-                  <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
-                  <button class="download-btn">
-                    Tải xuống
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                      <path
-                        d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
-                        stroke="#0B4523"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </a>
-                <a href="/" class="collection-item">
-                  <div class="image-container">
-                    <img src="./assets/image/trang-chu/collection-3.jpg" alt="" />
-                  </div>
-                  <div class="rate-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                      <path
-                        d="M7 0.5L9.0161 4.72507L13.6574 5.33688L10.2621 8.55993L11.1145 13.1631L7 10.93L2.8855 13.1631L3.73788 8.55993L0.342604 5.33688L4.9839 4.72507L7 0.5Z"
-                        fill="#FF6B00"
-                      />
-                    </svg>
-                    <p class="star">4.8</p>
-                    <p class="review">(20 lượt đánh giá)</p>
-                  </div>
-                  <p class="download-count">300+ lượt tải xuống</p>
-                  <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
-                  <button class="download-btn">
-                    Tải xuống
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                      <path
-                        d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
-                        stroke="#0B4523"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </a>
-                <a href="/" class="collection-item">
-                  <div class="image-container">
-                    <img src="./assets/image/trang-chu/collection-3.jpg" alt="" />
-                  </div>
-                  <div class="rate-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                      <path
-                        d="M7 0.5L9.0161 4.72507L13.6574 5.33688L10.2621 8.55993L11.1145 13.1631L7 10.93L2.8855 13.1631L3.73788 8.55993L0.342604 5.33688L4.9839 4.72507L7 0.5Z"
-                        fill="#FF6B00"
-                      />
-                    </svg>
-                    <p class="star">4.8</p>
-                    <p class="review">(20 lượt đánh giá)</p>
-                  </div>
-                  <p class="download-count">300+ lượt tải xuống</p>
-                  <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
-                  <button class="download-btn">
-                    Tải xuống
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                      <path
-                        d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
-                        stroke="#0B4523"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </a>
-                <a href="/" class="collection-item">
-                  <div class="image-container">
-                    <img src="./assets/image/trang-chu/collection-3.jpg" alt="" />
-                  </div>
-                  <div class="rate-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                      <path
-                        d="M7 0.5L9.0161 4.72507L13.6574 5.33688L10.2621 8.55993L11.1145 13.1631L7 10.93L2.8855 13.1631L3.73788 8.55993L0.342604 5.33688L4.9839 4.72507L7 0.5Z"
-                        fill="#FF6B00"
-                      />
-                    </svg>
-                    <p class="star">4.8</p>
-                    <p class="review">(20 lượt đánh giá)</p>
-                  </div>
-                  <p class="download-count">300+ lượt tải xuống</p>
-                  <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
-                  <button class="download-btn">
-                    Tải xuống
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                      <path
-                        d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
-                        stroke="#0B4523"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </a>
-                <a href="/" class="collection-item">
-                  <div class="image-container">
-                    <img src="./assets/image/trang-chu/collection-3.jpg" alt="" />
-                  </div>
-                  <div class="rate-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                      <path
-                        d="M7 0.5L9.0161 4.72507L13.6574 5.33688L10.2621 8.55993L11.1145 13.1631L7 10.93L2.8855 13.1631L3.73788 8.55993L0.342604 5.33688L4.9839 4.72507L7 0.5Z"
-                        fill="#FF6B00"
-                      />
-                    </svg>
-                    <p class="star">4.8</p>
-                    <p class="review">(20 lượt đánh giá)</p>
-                  </div>
-                  <p class="download-count">300+ lượt tải xuống</p>
-                  <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
-                  <button class="download-btn">
-                    Tải xuống
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                      <path
-                        d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
-                        stroke="#0B4523"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </a>
-                <a href="/" class="collection-item">
-                  <div class="image-container">
-                    <img src="./assets/image/trang-chu/collection-3.jpg" alt="" />
-                  </div>
-                  <div class="rate-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                      <path
-                        d="M7 0.5L9.0161 4.72507L13.6574 5.33688L10.2621 8.55993L11.1145 13.1631L7 10.93L2.8855 13.1631L3.73788 8.55993L0.342604 5.33688L4.9839 4.72507L7 0.5Z"
-                        fill="#FF6B00"
-                      />
-                    </svg>
-                    <p class="star">4.8</p>
-                    <p class="review">(20 lượt đánh giá)</p>
-                  </div>
-                  <p class="download-count">300+ lượt tải xuống</p>
-                  <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
-                  <button class="download-btn">
-                    Tải xuống
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                      <path
-                        d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
-                        stroke="#0B4523"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </a>
-              </div>
-              <button class="show-more-btn">
-                Xem nhiều hơn
-                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                  <rect x="4" width="2" height="10" fill="#0C482F" />
-                  <rect y="6" width="2" height="10" transform="rotate(-90 0 6)" fill="#0C482F" />
-                </svg>
-              </button>
+          <button class="swiper-prev-btn swiper-outstanding-brand-prev-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path
+                d="M12.5003 15.8332L6.66699 9.99984L12.5003 4.1665"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button class="swiper-next-btn swiper-outstanding-brand-next-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path
+                d="M7.49967 15.8332L13.333 9.99984L7.49967 4.1665"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: section 3 -->
+    <section class="section-nhan-hang-khac">
+      <div class="container bigger-container">
+        <div class="heading-container">
+          <h2>Nhãn hàng khác</h2>
+        </div>
+        <div class="btn-1-container">
+          <button class="btn-1 btn-1-active">
+            <svg
+              class="btn-1-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="83"
+              height="83"
+              viewBox="0 0 83 83"
+              fill="none"
+            >
+              <path
+                d="M5.47475 77.0318C5.47475 76.8979 5.47475 76.8 5.47475 76.702C5.47475 72.1414 5.47475 67.5827 5.46875 63.0221C5.46875 62.8022 5.53676 62.6563 5.68879 62.5064C21.0577 47.2876 36.4226 32.0667 51.7875 16.8459C51.8575 16.7779 51.9295 16.712 51.9795 16.666C56.6204 21.3026 61.2492 25.9272 65.8941 30.5678C65.8461 30.6198 65.7741 30.6997 65.6981 30.7757C50.4772 46.1144 35.2564 61.4512 20.0375 76.792C19.8615 76.9698 19.6874 77.0378 19.4414 77.0378C14.9165 77.0318 10.3917 77.0318 5.86883 77.0318H5.47275H5.47475Z"
+                fill="#fff"
+              />
+              <path
+                d="M0 25.3234C8.42559 16.9076 16.8972 8.44182 25.3468 0C31.5519 6.19746 37.7731 12.4109 43.9683 18.6004C42.1499 20.415 40.3036 22.2577 38.4492 24.1083C37.445 23.1031 36.3988 22.0578 35.3647 21.0226C32.9682 23.4168 30.5958 25.7891 28.2513 28.1294C26.353 26.2328 24.5086 24.3901 22.6583 22.5415C24.9847 20.2172 27.3571 17.8469 29.7036 15.5046C28.2273 14.0297 26.783 12.5868 25.3668 11.1718C20.6499 15.8844 15.887 20.6429 11.1141 25.4114C15.4369 29.7302 19.8017 34.091 24.1485 38.4338C22.2842 40.2985 20.4438 42.1391 18.6355 43.9478C12.4383 37.7563 6.22117 31.5409 0 25.3234Z"
+                fill="#fff"
+              />
+              <path
+                d="M60.0093 59.9143C58.149 58.0557 56.3086 56.217 54.4743 54.3844C56.8267 52.0341 59.1992 49.6638 61.6056 47.2616C60.5034 46.2963 59.4532 45.377 58.421 44.4736C60.2774 42.621 62.1177 40.7804 63.9281 38.9717C70.1312 45.1691 76.3564 51.3886 82.5936 57.62C74.158 65.9159 65.6844 74.2498 57.2288 82.5637C50.9936 76.3363 44.7725 70.1229 38.5713 63.9294C40.4016 62.1027 42.248 60.2601 44.1183 58.3934C48.4531 62.7263 52.818 67.0851 57.1988 71.4639C61.9697 66.8293 66.7306 62.2067 71.5115 57.5621C70.0492 55.9692 68.6009 54.3904 67.1387 52.7956C64.7422 55.1898 62.3678 57.5621 60.0093 59.9183V59.9143Z"
+                fill="#fff"
+              />
+              <path
+                d="M55.9766 12.5928C56.0706 12.5249 56.1686 12.4709 56.2446 12.395C58.095 10.5503 59.9473 8.70568 61.7897 6.85304C62.1297 6.51129 62.3858 6.0916 62.8479 5.86976C63.816 5.4061 64.7682 5.36813 65.7364 5.86376C66.5386 6.27346 67.2507 6.78309 67.8908 7.42862C70.5813 10.1486 73.2958 12.8446 76.0043 15.5467C76.2004 15.7425 76.4164 15.9224 76.6104 16.1202C77.6146 17.1435 77.7667 18.7403 76.9685 20.0853C76.7685 20.4231 76.5204 20.7469 76.2444 21.0247C74.328 22.9572 72.3977 24.8778 70.4693 26.8024C70.4213 26.8504 70.3673 26.8944 70.3253 26.9303C65.5604 22.1698 60.8015 17.4153 55.9766 12.5948V12.5928Z"
+                fill="#fff"
+              />
+            </svg>
+            Nhãn hàng nội thất
+            <svg
+              class="arrow-down-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="10"
+              viewBox="0 0 26 10"
+              fill="none"
+            >
+              <path d="M13.3574 10L2.53211 0.25L24.1827 0.249998L13.3574 10Z" fill="#015121" />
+            </svg>
+          </button>
+          <button class="btn-1">
+            <svg
+              class="btn-1-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="63"
+              height="128"
+              viewBox="0 0 63 128"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M15 0H48C56.2843 0 63 6.71573 63 15V113C63 121.284 56.2843 128 48 128H15C6.71573 128 0 121.284 0 113V15C0 6.71572 6.71573 0 15 0ZM15 12C13.3431 12 12 13.3431 12 15V113C12 114.657 13.3431 116 15 116H48C49.6569 116 51 114.657 51 113V15C51 13.3431 49.6569 12 48 12H15Z"
+                fill="#008435"
+              />
+            </svg>
+            Nhãn hàng ngoại thất
+            <svg
+              class="arrow-down-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="10"
+              viewBox="0 0 26 10"
+              fill="none"
+            >
+              <path d="M13.3574 10L2.53211 0.25L24.1827 0.249998L13.3574 10Z" fill="#015121" />
+            </svg>
+          </button>
+          <button class="btn-1">
+            <div class="btn-1-icon-container">
+              <svg
+                class="btn-1-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="31"
+                height="30"
+                viewBox="0 0 31 30"
+                fill="none"
+              >
+                <path
+                  d="M18.9414 9.875V3H11.4414V9.875L15.1914 13.625L18.9414 9.875ZM9.56641 11.75H2.69141V19.25H9.56641L13.3164 15.5L9.56641 11.75ZM11.4414 21.125V28H18.9414V21.125L15.1914 17.375L11.4414 21.125ZM20.8164 11.75L17.0664 15.5L20.8164 19.25H27.6914V11.75H20.8164Z"
+                  fill="#008435"
+                />
+              </svg>
             </div>
-            <!-- SECTION: documents -->
-            <div class="documents-result-container">
-              <div class="documents-container">
-                <a href="/" class="document-item">
-                  <div class="image-container">
-                    <img src="./assets/image/trang-chu/document-1.jpg" alt="" />
-                  </div>
-                  <p class="download-count">300+ lượt tải xuống</p>
-                  <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
-                  <button class="download-btn">
-                    Tải xuống
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+            Nhãn hàng thiết bị hạ tầng, cảnh quan
+            <svg
+              class="arrow-down-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="10"
+              viewBox="0 0 26 10"
+              fill="none"
+            >
+              <path d="M13.3574 10L2.53211 0.25L24.1827 0.249998L13.3574 10Z" fill="#015121" />
+            </svg>
+          </button>
+        </div>
+        <div class="background-container">
+          <div class="brands-container">
+            <div class="brand-item">
+              <img src="./assets/image/kien-truc-cong-trinh/great-partner-1.jpg" alt="" />
+              <div class="brand-item-text-container">
+                <h4>Northboun Construction</h4>
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+                    <g clip-path="url(#clip0_6115_21864)">
                       <path
-                        d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
-                        stroke="#0B4523"
-                        stroke-width="1.5"
+                        d="M1.28516 4.49944H4.49944M4.49944 4.49944H7.71373M4.49944 4.49944V7.71373M4.49944 4.49944V1.28516"
+                        stroke="white"
+                        stroke-width="1.3"
                         stroke-linecap="round"
                         stroke-linejoin="round"
                       />
-                    </svg>
-                  </button>
-                </a>
-                <a href="/" class="document-item">
-                  <div class="image-container">
-                    <img src="./assets/image/trang-chu/document-2.jpg" alt="" />
-                  </div>
-                  <p class="download-count">300+ lượt tải xuống</p>
-                  <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
-                  <button class="download-btn">
-                    Tải xuống
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                      <path
-                        d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
-                        stroke="#0B4523"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </a>
-                <a href="/" class="document-item">
-                  <div class="image-container">
-                    <img src="./assets/image/trang-chu/document-3.jpg" alt="" />
-                  </div>
-                  <p class="download-count">300+ lượt tải xuống</p>
-                  <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
-                  <button class="download-btn">
-                    Tải xuống
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                      <path
-                        d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
-                        stroke="#0B4523"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </a>
-                <a href="/" class="document-item">
-                  <div class="image-container">
-                    <img src="./assets/image/trang-chu/document-4.jpg" alt="" />
-                  </div>
-                  <p class="download-count">300+ lượt tải xuống</p>
-                  <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
-                  <button class="download-btn">
-                    Tải xuống
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                      <path
-                        d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
-                        stroke="#0B4523"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </a>
-                <a href="/" class="document-item">
-                  <div class="image-container">
-                    <img src="./assets/image/trang-chu/document-4.jpg" alt="" />
-                  </div>
-                  <p class="download-count">300+ lượt tải xuống</p>
-                  <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
-                  <button class="download-btn">
-                    Tải xuống
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                      <path
-                        d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
-                        stroke="#0B4523"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </a>
-                <a href="/" class="document-item">
-                  <div class="image-container">
-                    <img src="./assets/image/trang-chu/document-4.jpg" alt="" />
-                  </div>
-                  <p class="download-count">300+ lượt tải xuống</p>
-                  <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
-                  <button class="download-btn">
-                    Tải xuống
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                      <path
-                        d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
-                        stroke="#0B4523"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </a>
-                <a href="/" class="document-item">
-                  <div class="image-container">
-                    <img src="./assets/image/trang-chu/document-4.jpg" alt="" />
-                  </div>
-                  <p class="download-count">300+ lượt tải xuống</p>
-                  <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
-                  <button class="download-btn">
-                    Tải xuống
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                      <path
-                        d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
-                        stroke="#0B4523"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </a>
-                <a href="/" class="document-item">
-                  <div class="image-container">
-                    <img src="./assets/image/trang-chu/document-4.jpg" alt="" />
-                  </div>
-                  <p class="download-count">300+ lượt tải xuống</p>
-                  <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
-                  <button class="download-btn">
-                    Tải xuống
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                      <path
-                        d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
-                        stroke="#0B4523"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </a>
-                <a href="/" class="document-item">
-                  <div class="image-container">
-                    <img src="./assets/image/trang-chu/document-4.jpg" alt="" />
-                  </div>
-                  <p class="download-count">300+ lượt tải xuống</p>
-                  <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
-                  <button class="download-btn">
-                    Tải xuống
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                      <path
-                        d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
-                        stroke="#0B4523"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </a>
-                <a href="/" class="document-item">
-                  <div class="image-container">
-                    <img src="./assets/image/trang-chu/document-4.jpg" alt="" />
-                  </div>
-                  <p class="download-count">300+ lượt tải xuống</p>
-                  <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
-                  <button class="download-btn">
-                    Tải xuống
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                      <path
-                        d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
-                        stroke="#0B4523"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </a>
-                <a href="/" class="document-item">
-                  <div class="image-container">
-                    <img src="./assets/image/trang-chu/document-4.jpg" alt="" />
-                  </div>
-                  <p class="download-count">300+ lượt tải xuống</p>
-                  <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
-                  <button class="download-btn">
-                    Tải xuống
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                      <path
-                        d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
-                        stroke="#0B4523"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </a>
-                <a href="/" class="document-item">
-                  <div class="image-container">
-                    <img src="./assets/image/trang-chu/document-4.jpg" alt="" />
-                  </div>
-                  <p class="download-count">300+ lượt tải xuống</p>
-                  <h4>Thư viện bàn và ghế sofa tiếp khách văn phòng đầy đủ</h4>
-                  <button class="download-btn">
-                    Tải xuống
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                      <path
-                        d="M4 14.5H12M8 2.5V11.8333M8 11.8333L11.3333 8.5M8 11.8333L4.66667 8.5"
-                        stroke="#0B4523"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </a>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_6115_21864">
+                        <rect width="9" height="9" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Theo dõi
+                </button>
               </div>
-              <button class="show-more-btn">
-                Xem nhiều hơn
-                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                  <rect x="4" width="2" height="10" fill="#0C482F" />
-                  <rect y="6" width="2" height="10" transform="rotate(-90 0 6)" fill="#0C482F" />
-                </svg>
-              </button>
             </div>
+            <div class="brand-item">
+              <img src="./assets/image/kien-truc-cong-trinh/great-partner-1.jpg" alt="" />
+              <div class="brand-item-text-container">
+                <h4>INNO Arc</h4>
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+                    <g clip-path="url(#clip0_6115_21864)">
+                      <path
+                        d="M1.28516 4.49944H4.49944M4.49944 4.49944H7.71373M4.49944 4.49944V7.71373M4.49944 4.49944V1.28516"
+                        stroke="white"
+                        stroke-width="1.3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_6115_21864">
+                        <rect width="9" height="9" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Theo dõi
+                </button>
+              </div>
+            </div>
+            <div class="brand-item">
+              <img src="./assets/image/kien-truc-cong-trinh/great-partner-1.jpg" alt="" />
+              <div class="brand-item-text-container">
+                <h4>Northboun Construction</h4>
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+                    <g clip-path="url(#clip0_6115_21864)">
+                      <path
+                        d="M1.28516 4.49944H4.49944M4.49944 4.49944H7.71373M4.49944 4.49944V7.71373M4.49944 4.49944V1.28516"
+                        stroke="white"
+                        stroke-width="1.3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_6115_21864">
+                        <rect width="9" height="9" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Theo dõi
+                </button>
+              </div>
+            </div>
+            <div class="brand-item">
+              <img src="./assets/image/kien-truc-cong-trinh/great-partner-1.jpg" alt="" />
+              <div class="brand-item-text-container">
+                <h4>Northboun Construction</h4>
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+                    <g clip-path="url(#clip0_6115_21864)">
+                      <path
+                        d="M1.28516 4.49944H4.49944M4.49944 4.49944H7.71373M4.49944 4.49944V7.71373M4.49944 4.49944V1.28516"
+                        stroke="white"
+                        stroke-width="1.3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_6115_21864">
+                        <rect width="9" height="9" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Theo dõi
+                </button>
+              </div>
+            </div>
+            <div class="brand-item">
+              <img src="./assets/image/kien-truc-cong-trinh/great-partner-1.jpg" alt="" />
+              <div class="brand-item-text-container">
+                <h4>Northboun Construction</h4>
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+                    <g clip-path="url(#clip0_6115_21864)">
+                      <path
+                        d="M1.28516 4.49944H4.49944M4.49944 4.49944H7.71373M4.49944 4.49944V7.71373M4.49944 4.49944V1.28516"
+                        stroke="white"
+                        stroke-width="1.3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_6115_21864">
+                        <rect width="9" height="9" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Theo dõi
+                </button>
+              </div>
+            </div>
+            <div class="brand-item">
+              <img src="./assets/image/kien-truc-cong-trinh/great-partner-1.jpg" alt="" />
+              <div class="brand-item-text-container">
+                <h4>Northboun Construction</h4>
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+                    <g clip-path="url(#clip0_6115_21864)">
+                      <path
+                        d="M1.28516 4.49944H4.49944M4.49944 4.49944H7.71373M4.49944 4.49944V7.71373M4.49944 4.49944V1.28516"
+                        stroke="white"
+                        stroke-width="1.3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_6115_21864">
+                        <rect width="9" height="9" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Theo dõi
+                </button>
+              </div>
+            </div>
+            <div class="brand-item">
+              <img src="./assets/image/kien-truc-cong-trinh/great-partner-1.jpg" alt="" />
+              <div class="brand-item-text-container">
+                <h4>Northboun Construction</h4>
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+                    <g clip-path="url(#clip0_6115_21864)">
+                      <path
+                        d="M1.28516 4.49944H4.49944M4.49944 4.49944H7.71373M4.49944 4.49944V7.71373M4.49944 4.49944V1.28516"
+                        stroke="white"
+                        stroke-width="1.3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_6115_21864">
+                        <rect width="9" height="9" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Theo dõi
+                </button>
+              </div>
+            </div>
+            <div class="brand-item">
+              <img src="./assets/image/kien-truc-cong-trinh/great-partner-1.jpg" alt="" />
+              <div class="brand-item-text-container">
+                <h4>Northboun Construction</h4>
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+                    <g clip-path="url(#clip0_6115_21864)">
+                      <path
+                        d="M1.28516 4.49944H4.49944M4.49944 4.49944H7.71373M4.49944 4.49944V7.71373M4.49944 4.49944V1.28516"
+                        stroke="white"
+                        stroke-width="1.3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_6115_21864">
+                        <rect width="9" height="9" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Theo dõi
+                </button>
+              </div>
+            </div>
+            <div class="brand-item">
+              <img src="./assets/image/kien-truc-cong-trinh/great-partner-1.jpg" alt="" />
+              <div class="brand-item-text-container">
+                <h4>Northboun Construction</h4>
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+                    <g clip-path="url(#clip0_6115_21864)">
+                      <path
+                        d="M1.28516 4.49944H4.49944M4.49944 4.49944H7.71373M4.49944 4.49944V7.71373M4.49944 4.49944V1.28516"
+                        stroke="white"
+                        stroke-width="1.3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_6115_21864">
+                        <rect width="9" height="9" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Theo dõi
+                </button>
+              </div>
+            </div>
+            <div class="brand-item">
+              <img src="./assets/image/kien-truc-cong-trinh/great-partner-1.jpg" alt="" />
+              <div class="brand-item-text-container">
+                <h4>Northboun Construction</h4>
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+                    <g clip-path="url(#clip0_6115_21864)">
+                      <path
+                        d="M1.28516 4.49944H4.49944M4.49944 4.49944H7.71373M4.49944 4.49944V7.71373M4.49944 4.49944V1.28516"
+                        stroke="white"
+                        stroke-width="1.3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_6115_21864">
+                        <rect width="9" height="9" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Theo dõi
+                </button>
+              </div>
+            </div>
+            <div class="brand-item">
+              <img src="./assets/image/kien-truc-cong-trinh/great-partner-1.jpg" alt="" />
+              <div class="brand-item-text-container">
+                <h4>Northboun Construction</h4>
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+                    <g clip-path="url(#clip0_6115_21864)">
+                      <path
+                        d="M1.28516 4.49944H4.49944M4.49944 4.49944H7.71373M4.49944 4.49944V7.71373M4.49944 4.49944V1.28516"
+                        stroke="white"
+                        stroke-width="1.3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_6115_21864">
+                        <rect width="9" height="9" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Theo dõi
+                </button>
+              </div>
+            </div>
+            <div class="brand-item">
+              <img src="./assets/image/kien-truc-cong-trinh/great-partner-1.jpg" alt="" />
+              <div class="brand-item-text-container">
+                <h4>Northboun Construction</h4>
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+                    <g clip-path="url(#clip0_6115_21864)">
+                      <path
+                        d="M1.28516 4.49944H4.49944M4.49944 4.49944H7.71373M4.49944 4.49944V7.71373M4.49944 4.49944V1.28516"
+                        stroke="white"
+                        stroke-width="1.3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_6115_21864">
+                        <rect width="9" height="9" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Theo dõi
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="pagination-container">
+            <button class="pagination-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+                <path d="M4.9143 0.875L0.583008 5L4.9143 9.125" stroke="#1D1D1D" stroke-width="0.525002" />
+              </svg>
+            </button>
+            <button class="pagination-btn pagination-btn-active">
+              <p>1</p>
+            </button>
+            <button class="pagination-btn">
+              <p>2</p>
+            </button>
+            <button class="pagination-btn pagination-btn-dot">
+              <svg xmlns="http://www.w3.org/2000/svg" width="5" height="4" viewBox="0 0 5 4" fill="none">
+                <ellipse cx="2.50002" cy="2" rx="1.75002" ry="1.75" fill="#1D1D1D" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="5" height="4" viewBox="0 0 5 4" fill="none">
+                <ellipse cx="2.50002" cy="2" rx="1.75002" ry="1.75" fill="#1D1D1D" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="5" height="4" viewBox="0 0 5 4" fill="none">
+                <ellipse cx="2.50002" cy="2" rx="1.75002" ry="1.75" fill="#1D1D1D" />
+              </svg>
+            </button>
+            <button class="pagination-btn">
+              <p>10</p>
+            </button>
+            <button class="pagination-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+                <path d="M1.08398 9.125L5.41527 5L1.08398 0.875" stroke="#1D1D1D" stroke-width="0.525002" />
+              </svg>
+            </button>
           </div>
         </div>
       </div>
-    </main>
+    </section>
 
     <!-- SECTION: footer -->
     <footer class="footer">
       <div class="container">
         <nav class="footer-link-container">
-          <a href="/" class="footer-link">
-            Trang chủ
+          <a href="/" class="footer-link"
+            >Trang chủ
             <div class="footer-link-deco"></div>
           </a>
-          <a href="/" class="footer-link"> Tài nguyên </a>
+          <a href="/" class="footer-link">Tài nguyên</a>
           <a href="/" class="footer-link">Nhãn hàng</a>
           <a href="/" class="footer-link">Tài liệu</a>
           <a href="/" class="footer-link">Điều khoản</a>
@@ -2078,23 +1645,7 @@
             </div>
           </div>
         </div>
-        <div class="footer-last-content">
-          <p class="dev-team">@2024 VKT | Designed by OKHUB Agency</p>
-          <div class="footer-icons-container">
-            <a href="/" class="facebook">
-              <img src="./assets/svg/footer/facebook.svg" alt="facebook" />
-            </a>
-            <a href="/" class="zalo">
-              <img src="./assets/svg/footer/zalo.svg" alt="zalo" />
-            </a>
-            <a href="/" class="youtube">
-              <img src="./assets/svg/footer/youtube.svg" alt="youtube" />
-            </a>
-            <a href="/" class="messenger">
-              <img src="./assets/svg/footer/messenger.svg" alt="messenger" />
-            </a>
-          </div>
-        </div>
+        <p class="dev-team">@2024 VKT | Designed by OKHUB Agency</p>
       </div>
     </footer>
 
@@ -2102,6 +1653,6 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
     <script src="./components/header/index.js"></script>
-    <script src="./components/tim-thay-ket-qua/index.js"></script>
+    <script src="./components/danh-sach-thuong-hieu/index.js"></script>
   </body>
 </html>

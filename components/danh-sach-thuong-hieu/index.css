@@ -1,0 +1,139 @@
+.banner-text-container {
+  margin-bottom: 0;
+}
+
+.banner-text-container p {
+  margin-bottom: 0;
+}
+
+.banner {
+  padding-bottom: 3rem;
+}
+
+.section-toi-tac-uy-tin-noi-bat {
+  padding-top: 3.75rem;
+}
+
+.swiper-outstanding-brand-container {
+  position: relative;
+  padding-top: 1.38rem;
+}
+
+.swiper-outstanding-brand .swiper-slide {
+  display: flex;
+  flex-direction: column;
+}
+
+.swiper-outstanding-brand .swiper-slide .image-container {
+  height: 9.8rem;
+  border-radius: 0.5rem;
+  outline: 1px solid var(--grey-200);
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+}
+
+.swiper-outstanding-brand .swiper-slide .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-outstanding-brand .swiper-slide h4 {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  color: var(--grey-800);
+  margin-bottom: 0.5rem;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.125rem;
+  text-decoration-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.swiper-outstanding-brand .swiper-slide:hover h4 {
+  text-decoration-color: var(--library-title);
+  color: var(--library-title);
+}
+
+.swiper-outstanding-brand .contact-btn {
+  padding: 0.25rem 1rem;
+  border-radius: 9999px;
+  background-color: var(--library-title);
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  color: #fff;
+}
+
+.swiper-outstanding-brand .rate-container {
+  margin-bottom: 0.675rem;
+}
+
+.section-nhan-hang-khac {
+  padding-top: 4rem;
+}
+
+.btn-1-container {
+  padding-top: 1.25rem;
+}
+
+.section-nhan-hang-khac .background-container {
+  padding: 3rem;
+  background-color: #f3f6f4;
+  border-radius: 1rem;
+}
+
+.section-nhan-hang-khac .brands-container {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  column-gap: 2rem;
+  row-gap: 2.25rem;
+  margin-bottom: 2.25rem;
+}
+
+.section-nhan-hang-khac .brand-item {
+  display: flex;
+  align-items: center;
+}
+
+.section-nhan-hang-khac .brand-item img {
+  width: 5.92rem;
+  height: 5.92rem;
+  border-radius: 0.25rem;
+  margin-right: 0.5rem;
+}
+
+.section-nhan-hang-khac .brand-item h4 {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  color: var(--grey-800);
+  margin-bottom: 0.62rem;
+}
+
+.section-nhan-hang-khac .brand-item button {
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  color: #fff;
+  border-radius: 9999px;
+  background-color: var(--library-title);
+  padding: 0.25rem 0.875rem 0.25rem 0.625rem;
+}
+
+.section-nhan-hang-khac .brand-item button svg {
+  width: 0.5625rem;
+  height: 0.5625rem;
+  margin-right: 0.25rem;
+}
+
+.pagination-container {
+  padding-bottom: 0;
+}

@@ -2,7 +2,7 @@ function init() {
   const swiperDocument = new Swiper(".swiper-document", {
     slidesPerView: 5,
     slidesPerGroup: 1,
-    speed: 600,
+    speed: 800,
     spaceBetween: (window.innerWidth / 100) * 1.25,
     navigation: {
       prevEl: ".swiper-document-prev-btn",

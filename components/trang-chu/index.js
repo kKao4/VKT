@@ -6,7 +6,7 @@ function init() {
     slidesPerView: 8,
     spaceBetween: (window.innerWidth / 100) * 1,
     loop: true,
-    speed: 600,
+    speed: 800,
     navigation: {
       prevEl: ".swiper-resources-prev-btn",
       nextEl: ".swiper-resources-next-btn",
