@@ -1,12 +1,18 @@
 function init() {
+  const width = window.innerWidth;
   const swiperDocument = new Swiper(".swiper-document", {
-    slidesPerView: 5,
+    slidesPerView: 2.1,
     slidesPerGroup: 1,
     speed: 800,
-    spaceBetween: (window.innerWidth / 100) * 1.25,
+    spaceBetween: (window.innerWidth / 100) * (width < 768 ? 0.5 : 1.25) * (width < 768 ? 4.267 : 1),
     navigation: {
       prevEl: ".swiper-document-prev-btn",
       nextEl: ".swiper-document-next-btn",
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 5,
+      },
     },
   });
   // const swiperWrapperDocument = document.querySelector(".swiper-document").querySelector(".swiper-wrapper");

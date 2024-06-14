@@ -19,7 +19,7 @@
   </head>
   <body>
     <!-- header -->
-    <header>
+    <header class="desktop-header">
       <!-- secondary header -->
       <div class="secondary-header-container">
         <nav>
@@ -74,52 +74,22 @@
           <p class="notification-content">3</p>
         </button>
         <!-- account -->
-        <div class="account-container">
-          <div class="avatar-container">
-            <img src="./assets/image/header/someguy.jpg" alt="some guy" class="avatar" />
-          </div>
-          <div class="account-detail-container">
-            <a href="/" class="account-name">Nguyễn Đạt</a>
-            <div class="account-rank-container">
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                <path
-                  d="M5.9998 7.21875V9.84375H4.30293C4.19043 9.84375 4.14355 9.66563 4.24668 9.6L4.25605 9.59063C4.70605 9.29063 5.3248 8.70938 5.48418 8.325C5.63418 7.94063 5.6248 7.21875 5.6248 7.21875H5.9998ZM7.69668 9.85313H5.9998V7.21875H6.3748C6.3748 7.21875 6.35605 7.94063 6.51543 8.33438C6.66543 8.71875 7.29355 9.3 7.74355 9.6L7.75293 9.60938C7.84668 9.675 7.80918 9.85313 7.69668 9.85313Z"
-                  fill="#DCEAE1"
-                />
-                <path
-                  d="M8.57812 10.4613V10.5645C8.57812 10.6676 8.50313 10.752 8.41875 10.752H6V9.81445H7.97812C8.08125 9.81445 8.175 9.86133 8.24063 9.9457L8.50312 10.2551C8.55 10.3113 8.57812 10.3863 8.57812 10.4613ZM6 9.82383V10.7613H3.58125C3.4875 10.7613 3.42188 10.677 3.42188 10.5738V10.4707C3.42188 10.3957 3.45 10.3207 3.49687 10.2645L3.76875 9.95508C3.84375 9.8707 3.9375 9.82383 4.03125 9.82383H6Z"
-                  fill="#DCEAE1"
-                />
-                <path
-                  d="M4.43477 5.68086C4.41602 5.85898 4.25664 5.98086 4.08789 5.96211L1.72539 5.74648C0.928516 5.67148 0.319141 5.07148 0.319141 4.34961L0.150391 2.43711C0.150391 1.94023 0.609766 1.53711 1.18164 1.53711H2.85977C3.00977 1.53711 3.12227 1.65898 3.12227 1.79961V1.98711C3.12227 2.13711 3.00039 2.24961 2.85977 2.24961H1.73477C1.32227 2.24961 0.984766 2.54023 0.984766 2.90586L1.12539 3.99336C1.12539 4.54648 1.59414 5.00586 2.20352 5.06211L4.15352 5.24023C4.33164 5.25898 4.46289 5.41836 4.44414 5.59648L4.43477 5.68086Z"
-                  fill="#DCEAE1"
-                />
-                <path
-                  d="M7.56585 5.68086C7.5846 5.85898 7.74397 5.98086 7.91272 5.96211L10.2752 5.74648C11.0721 5.67148 11.6815 5.07148 11.6815 4.34961L11.8502 2.43711C11.8502 1.94023 11.3908 1.53711 10.819 1.53711H9.14085C8.99085 1.53711 8.87835 1.65898 8.87835 1.79961V1.98711C8.87835 2.13711 9.00022 2.24961 9.14085 2.24961H10.2658C10.6783 2.24961 11.0158 2.54023 11.0158 2.90586L10.8752 3.99336C10.8752 4.54648 10.4065 5.00586 9.7971 5.06211L7.8471 5.24023C7.66897 5.25898 7.53772 5.41836 7.55647 5.59648L7.56585 5.68086Z"
-                  fill="#DCEAE1"
-                />
-                <path
-                  d="M9.64688 1.22813V5.11875C9.64688 5.33438 9.5625 5.54063 9.4125 5.69063L7.5 7.6125L6.5625 8.55938C6.40312 8.71875 6.19687 8.79375 6 8.79375C5.79375 8.79375 5.5875 8.71875 5.4375 8.55938L4.5 7.6125L2.57812 5.69063C2.42812 5.54063 2.34375 5.33438 2.34375 5.11875V1.22813C2.34375 0.675 2.75625 0.20625 3.30937 0.15C3.40312 0.140625 3.49688 0.13125 3.6 0.121875C4.19063 0.05625 4.99688 0 5.99063 0C6.98438 0 7.79062 0.05625 8.39062 0.1125C8.49375 0.121875 8.5875 0.13125 8.68125 0.140625C9.225 0.20625 9.64688 0.665625 9.64688 1.22813Z"
-                  fill="#DCEAE1"
-                />
-                <path
-                  d="M8.39023 0.1125V4.99687C8.39023 5.12812 8.33398 5.25 8.24023 5.34375L6.98398 6.51562L6.36523 7.0875C6.26211 7.18125 6.13086 7.22812 5.99023 7.22812C5.85898 7.22812 5.71836 7.18125 5.61523 7.0875L4.99648 6.51562L3.74961 5.34375C3.65586 5.25 3.59961 5.12812 3.59961 4.99687V0.1125C4.19023 0.05625 4.99648 0 5.99023 0C6.98398 0 7.79023 0.05625 8.39023 0.1125Z"
-                  fill="white"
-                  fill-opacity="0.666667"
-                />
-                <path
-                  d="M8.39023 0.1125V4.99687C8.39023 5.12812 8.33398 5.25 8.24023 5.34375L6.98398 6.51562L6.36523 7.0875C6.26211 7.18125 6.13086 7.22812 5.99023 7.22812V0C6.98398 0 7.79023 0.05625 8.39023 0.1125Z"
-                  fill="white"
-                  fill-opacity="0.666667"
-                />
-                <path
-                  d="M9.79688 11.5676V11.7176C9.79688 11.8676 9.69375 11.9895 9.55313 11.9895H6V10.6113H8.90625C9.05625 10.6113 9.19688 10.677 9.3 10.7988L9.69375 11.2582C9.75938 11.352 9.79688 11.4551 9.79688 11.5676ZM6 10.6207V11.9988H2.44688C2.31563 11.9988 2.20312 11.877 2.20312 11.727V11.577C2.20312 11.4645 2.24063 11.3613 2.30625 11.277L2.7 10.8176C2.80312 10.6957 2.94375 10.6301 3.09375 10.6301H6V10.6207Z"
-                  fill="#DCEAE1"
-                />
-              </svg>
-              Thành viên kim cương
+        <!-- <div class="account-container">
+            <div class="avatar-container">
+              <img src="./assets/image/header/someguy.jpg" alt="some guy" class="avatar" />
             </div>
-          </div>
+            <div class="account-detail-container">
+              <a href="/" class="account-name">Nguyễn Đạt</a>
+              <div class="account-rank-container">
+                <img src="./assets/svg/header/trophy.svg" alt="" />
+                Thành viên kim cương
+              </div>
+            </div>
+          </div> -->
+        <!-- sign in, sign up -->
+        <div class="sign-in-up-container-btn">
+          <button class="outlined-btn">Đăng nhập</button>
+          <button class="contained-btn">Đăng ký</button>
         </div>
       </div>
     </header>
@@ -925,6 +895,236 @@
         </div>
       </div>
       <div class="notification-tab-overlay"></div>
+    </div>
+
+    <header class="mobile-header">
+      <button class="open-modal-menu-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path
+            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+          />
+        </svg>
+      </button>
+      <a href="/" class="logo">
+        <img src="./assets/image/header/logo.png" alt="" />
+      </a>
+    </header>
+
+    <div class="modal-menu">
+      <div class="first-row">
+        <button class="close-modal-menu-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+            <path
+              d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+            />
+          </svg>
+        </button>
+        <a href="/" class="logo">
+          <img src="./assets/image/header/logo.png" alt="" />
+        </a>
+      </div>
+      <form>
+        <input type="text" class="search-bar" placeholder="Tìm kiếm" />
+        <button type="submit" class="submit-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+            <path
+              d="M22.75 22.75L18.0375 18.0375M20.5833 11.9167C20.5833 16.7031 16.7031 20.5833 11.9167 20.5833C7.1302 20.5833 3.25 16.7031 3.25 11.9167C3.25 7.1302 7.1302 3.25 11.9167 3.25C16.7031 3.25 20.5833 7.1302 20.5833 11.9167Z"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </form>
+      <div class="second-row">
+        <a href="/">Nhãn hàng</a>
+        <a href="/">Tài liệu</a>
+        <a href="/">Về chúng tôi</a>
+      </div>
+      <strong>Danh mục</strong>
+      <div class="accordions-container">
+        <div class="accordion-container">
+          <button class="accordion-trigger-btn">
+            <p>Kiến trúc công trình</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+              <path
+                d="M8.51192 12.9946C8.27795 13.3774 7.72205 13.3774 7.48808 12.9946L3.36194 6.24498C3.11753 5.84517 3.40527 5.33203 3.87387 5.33203L12.1261 5.33203C12.5947 5.33203 12.8825 5.84517 12.6381 6.24498L8.51192 12.9946Z"
+                fill="#116834"
+              />
+            </svg>
+          </button>
+          <ul class="accordion-content">
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+          </ul>
+        </div>
+        <div class="accordion-container">
+          <button class="accordion-trigger-btn">
+            <p>Nội thất</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+              <path
+                d="M8.51192 12.9946C8.27795 13.3774 7.72205 13.3774 7.48808 12.9946L3.36194 6.24498C3.11753 5.84517 3.40527 5.33203 3.87387 5.33203L12.1261 5.33203C12.5947 5.33203 12.8825 5.84517 12.6381 6.24498L8.51192 12.9946Z"
+                fill="#116834"
+              />
+            </svg>
+          </button>
+          <ul class="accordion-content">
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+          </ul>
+        </div>
+        <div class="accordion-container">
+          <button class="accordion-trigger-btn">
+            <p>Quy hoạch</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+              <path
+                d="M8.51192 12.9946C8.27795 13.3774 7.72205 13.3774 7.48808 12.9946L3.36194 6.24498C3.11753 5.84517 3.40527 5.33203 3.87387 5.33203L12.1261 5.33203C12.5947 5.33203 12.8825 5.84517 12.6381 6.24498L8.51192 12.9946Z"
+                fill="#116834"
+              />
+            </svg>
+          </button>
+          <ul class="accordion-content">
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+          </ul>
+        </div>
+        <div class="accordion-container">
+          <button class="accordion-trigger-btn">
+            <p>Sinh viên</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+              <path
+                d="M8.51192 12.9946C8.27795 13.3774 7.72205 13.3774 7.48808 12.9946L3.36194 6.24498C3.11753 5.84517 3.40527 5.33203 3.87387 5.33203L12.1261 5.33203C12.5947 5.33203 12.8825 5.84517 12.6381 6.24498L8.51192 12.9946Z"
+                fill="#116834"
+              />
+            </svg>
+          </button>
+          <ul class="accordion-content">
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+          </ul>
+        </div>
+        <div class="accordion-container">
+          <button class="accordion-trigger-btn">
+            <p>Bảo tồn</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+              <path
+                d="M8.51192 12.9946C8.27795 13.3774 7.72205 13.3774 7.48808 12.9946L3.36194 6.24498C3.11753 5.84517 3.40527 5.33203 3.87387 5.33203L12.1261 5.33203C12.5947 5.33203 12.8825 5.84517 12.6381 6.24498L8.51192 12.9946Z"
+                fill="#116834"
+              />
+            </svg>
+          </button>
+          <ul class="accordion-content">
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+          </ul>
+        </div>
+        <div class="accordion-container">
+          <button class="accordion-trigger-btn">
+            <p>Cảnh quan</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+              <path
+                d="M8.51192 12.9946C8.27795 13.3774 7.72205 13.3774 7.48808 12.9946L3.36194 6.24498C3.11753 5.84517 3.40527 5.33203 3.87387 5.33203L12.1261 5.33203C12.5947 5.33203 12.8825 5.84517 12.6381 6.24498L8.51192 12.9946Z"
+                fill="#116834"
+              />
+            </svg>
+          </button>
+          <ul class="accordion-content">
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+          </ul>
+        </div>
+        <div class="accordion-container">
+          <button class="accordion-trigger-btn">
+            <p>Đối tác kinh doanh</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+              <path
+                d="M8.51192 12.9946C8.27795 13.3774 7.72205 13.3774 7.48808 12.9946L3.36194 6.24498C3.11753 5.84517 3.40527 5.33203 3.87387 5.33203L12.1261 5.33203C12.5947 5.33203 12.8825 5.84517 12.6381 6.24498L8.51192 12.9946Z"
+                fill="#116834"
+              />
+            </svg>
+          </button>
+          <ul class="accordion-content">
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+          </ul>
+        </div>
+        <div class="accordion-container">
+          <button class="accordion-trigger-btn">
+            <p>Quản lí nhà nước</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+              <path
+                d="M8.51192 12.9946C8.27795 13.3774 7.72205 13.3774 7.48808 12.9946L3.36194 6.24498C3.11753 5.84517 3.40527 5.33203 3.87387 5.33203L12.1261 5.33203C12.5947 5.33203 12.8825 5.84517 12.6381 6.24498L8.51192 12.9946Z"
+                fill="#116834"
+              />
+            </svg>
+          </button>
+          <ul class="accordion-content">
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+            <li><a href="/">Triển khai kiến trúc</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal-menu-divider"></div>
+      <strong>Lĩnh vực</strong>
+      <div class="field-containers">
+        <a href="/">Kiến trúc công trình</a>
+        <a href="/">Nội thất</a>
+        <a href="/">Quy hoạch</a>
+        <a href="/">Sinh viên</a>
+        <a href="/">Bảo tồn</a>
+        <a href="/">Cảnh quan</a>
+        <a href="/">Đối tác kinh doanh</a>
+        <a href="/">Quản lí nhà nước</a>
+      </div>
+      <!-- <div class="btn-container">
+          <button class="contained-btn">Đăng nhập</button>
+          <button class="outlined-btn">Đăng ký</button>
+        </div> -->
+      <div class="account-container">
+        <div class="avatar-container">
+          <img src="./assets/image/header/someguy.jpg" alt="" />
+        </div>
+        <div class="account-content-container">
+          <p class="account-name">Nguyễn Đạt</p>
+          <div class="account-rank-container">
+            <img src="./assets/svg/header/trophy.svg" alt="" />
+            <p>Thành viên kim cương</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- SECTION: banner -->
@@ -2598,15 +2798,6 @@
       <div class="container">
         <div class="heading-container">
           <h2>Tài liệu đào tạo</h2>
-          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
-            <path
-              d="M20.125 11.5002L15.3333 6.7085M20.125 11.5002L15.3333 16.2918M20.125 11.5002H2.875"
-              stroke="#1D1D1D"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
         </div>
         <p class="heading-description">Thu nạp kiến thức từ kho tài liệu khổng lồ</p>
         <!-- NOTE: loop -->

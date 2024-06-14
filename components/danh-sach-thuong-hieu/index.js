@@ -1,6 +1,6 @@
 function init() {
   const swiperGreatPartner = new Swiper(".swiper-outstanding-brand", {
-    slidesPerView: 8,
+    slidesPerView: 2.2,
     slidesPerGroup: 1,
     speed: 800,
     spaceBetween: (window.innerWidth / 100) * 0.87,
@@ -8,6 +8,11 @@ function init() {
     navigation: {
       prevEl: ".swiper-outstanding-brand-prev-btn",
       nextEl: ".swiper-outstanding-brand-next-btn",
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 8,
+      },
     },
   });
 }

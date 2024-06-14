@@ -72,21 +72,21 @@
   margin-bottom: 0.675rem;
 }
 
-.section-nhan-hang-khac {
-  padding-top: 4rem;
+.section-doi-tac-khac {
+  padding-top: 2rem;
 }
 
 .btn-1-container {
   padding-top: 1.25rem;
 }
 
-.section-nhan-hang-khac .background-container {
+.section-doi-tac-khac .background-container {
   padding: 3rem;
   background-color: #f3f6f4;
   border-radius: 1rem;
 }
 
-.section-nhan-hang-khac .brands-container {
+.section-doi-tac-khac .brands-container {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
   column-gap: 2rem;
@@ -94,19 +94,19 @@
   margin-bottom: 2.25rem;
 }
 
-.section-nhan-hang-khac .brand-item {
+.section-doi-tac-khac .brand-item {
   display: flex;
   align-items: center;
 }
 
-.section-nhan-hang-khac .brand-item img {
+.section-doi-tac-khac .brand-item img {
   width: 5.92rem;
   height: 5.92rem;
   border-radius: 0.25rem;
   margin-right: 0.5rem;
 }
 
-.section-nhan-hang-khac .brand-item h4 {
+.section-doi-tac-khac .brand-item h4 {
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 600;
@@ -115,7 +115,7 @@
   margin-bottom: 0.62rem;
 }
 
-.section-nhan-hang-khac .brand-item button {
+.section-doi-tac-khac .brand-item button {
   display: flex;
   align-items: center;
   font-size: 0.75rem;
@@ -128,7 +128,7 @@
   padding: 0.25rem 0.875rem 0.25rem 0.625rem;
 }
 
-.section-nhan-hang-khac .brand-item button svg {
+.section-doi-tac-khac .brand-item button svg {
   width: 0.5625rem;
   height: 0.5625rem;
   margin-right: 0.25rem;
@@ -140,4 +140,30 @@
 
 .btn-2-container {
   margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .section-doi-tac-khac .brands-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 1rem;
+    row-gap: 1.5rem;
+  }
+  .section-doi-tac-khac .background-container {
+    padding: 1rem;
+    margin: 0 -0;
+    background-color: #fff;
+    padding: 0;
+  }
+  .section-doi-tac-khac .brand-item {
+    flex-direction: column;
+  }
+  .section-doi-tac-khac .brand-item img {
+    height: 8.5rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    margin-right: 0;
+  }
+  .section-doi-tac-khac .brand-item-text-container {
+    width: 100%;
+  }
 }

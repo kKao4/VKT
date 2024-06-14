@@ -73,7 +73,7 @@
 }
 
 .section-nhan-hang-khac {
-  padding-top: 4rem;
+            padding-top: 2rem;
 }
 
 .btn-1-container {
@@ -136,4 +136,30 @@
 
 .pagination-container {
   padding-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .section-nhan-hang-khac .brands-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 1rem;
+    row-gap: 1.5rem;
+  }
+  .section-nhan-hang-khac .background-container {
+    padding: 1rem;
+    margin: 0 -0.;
+    background-color: #fff;
+    padding: 0;
+  }
+  .section-nhan-hang-khac .brand-item {
+    flex-direction: column;
+  }
+  .section-nhan-hang-khac .brand-item img {
+    height: 8.5rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    margin-right: 0;
+  }
+  .section-nhan-hang-khac .brand-item-text-container {
+    width: 100%;
+  }
 }

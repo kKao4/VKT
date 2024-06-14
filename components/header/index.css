@@ -161,7 +161,7 @@ header {
 .notification-tab-container > svg {
   position: absolute;
   top: 8.5rem;
-  left: 72.5rem;
+  left: 71rem;
   width: 1.625rem;
   height: 1.25rem;
   transform: translateY(-60%);
@@ -170,7 +170,7 @@ header {
 .notification-tab {
   position: absolute;
   top: 0;
-  left: 69rem;
+  left: 68rem;
   width: fit-content;
   height: fit-content;
   padding-top: 8.5rem;
@@ -478,6 +478,7 @@ header {
   display: flex;
   align-items: center;
   overflow: hidden;
+  margin-bottom: 0;
 }
 
 .field-menu-btn {
@@ -545,7 +546,7 @@ header {
 .notification-btn {
   width: 1.4375rem;
   height: 1.56319rem;
-  margin-left: auto;
+  margin-left: 6.5rem;
   position: relative;
 }
 
@@ -570,7 +571,7 @@ header {
 }
 
 .account-container {
-  margin-left: 5rem;
+  margin-left: auto;
   display: flex;
   align-items: center;
 }
@@ -714,7 +715,7 @@ header {
 .suggest-search-container {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
-  row-gap: 1rem;
+  row-gap: 1.25rem;
 }
 
 .suggest-search-item {

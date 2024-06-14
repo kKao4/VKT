@@ -1,5 +1,5 @@
 function init() {
-  const accordions = document.querySelectorAll(".accordion-container");
+  const accordions = document.querySelector("main").querySelectorAll(".accordion-container");
   accordions.forEach((accordion) => {
     accordion.querySelector(".accordion-trigger-btn").addEventListener("click", () => {
       const accordionDropdown = accordion.querySelector(".accordion-dropdown");

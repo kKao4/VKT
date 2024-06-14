@@ -104,17 +104,10 @@ body {
   margin: auto;
 }
 
-@media (max-width: 768px) {
-  .container {
-    width: 92%;
-    margin: auto;
-  }
-}
-
 .bigger-container {
   width: 92.5rem;
   margin: auto;
-  padding: 3rem 3rem;
+  padding: 3rem;
 }
 
 html::-webkit-scrollbar {
@@ -189,6 +182,7 @@ p.heading-description {
 }
 
 .btn-1 {
+  flex: none;
   padding: 0.5625rem 1.3125rem 0.5625rem 1.5rem;
   display: flex;
   align-items: center;
@@ -262,6 +256,7 @@ p.heading-description {
   display: flex;
   align-items: center;
   position: relative;
+  overflow: auto;
 }
 
 .btn-2-container > * + * {
@@ -269,6 +264,7 @@ p.heading-description {
 }
 
 .btn-2 {
+  flex: none;
   font-size: 1rem;
   font-style: normal;
   font-weight: 600;
@@ -391,6 +387,7 @@ p.heading-description {
 .breadcrumb-container {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .breadcrumb-container > * + * {
@@ -573,4 +570,63 @@ p.heading-description {
 
 .pagination-btn > * + * {
   margin-left: 0.29rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 94%;
+    margin: auto;
+  }
+  .bigger-container {
+    width: 100%;
+    margin: auto;
+    padding: 3rem 0.7rem;
+  }
+
+  .heading-container svg {
+    display: none;
+  }
+  .heading-container {
+    margin-bottom: 0.25rem;
+  }
+  p.heading-description {
+    margin-bottom: 1.75rem;
+  }
+  .swiper-prev-btn,
+  .swiper-next-btn {
+    display: none;
+  }
+  .btn-1-icon {
+    display: none;
+  }
+  .btn-1 {
+    padding: 0.5625rem 1rem 0.5625rem 1rem;
+  }
+  .btn-1-container {
+    margin-bottom: 1.5rem;
+    overflow-x: auto;
+    padding: 0.25rem 0;
+  }
+  .btn-1-container > * + * {
+    margin-left: 0.5rem;
+  }
+  .btn-1 .arrow-down-icon {
+    display: none;
+  }
+  .btn-1-container::-webkit-scrollbar {
+    display: none;
+  }
+  .btn-2-container::-webkit-scrollbar {
+    display: none;
+  }
+  .btn-2-container > * + * {
+    margin-left: 1.5rem;
+  }
+  .btn-2-container-deco {
+    width: 100%;
+    display: none;
+  }
+  .collection-item .image-container {
+    height: 10rem;
+  }
 }

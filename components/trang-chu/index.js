@@ -2,14 +2,20 @@ function init() {
   gsap.registerPlugin(ScrollToPlugin);
 
   // SECTION: section 2
+  const width = window.innerWidth;
   const swiperResources = new Swiper(".swiper-resources", {
-    slidesPerView: 8,
-    spaceBetween: (window.innerWidth / 100) * 1,
+    slidesPerView: 2.3,
+    spaceBetween: (window.innerWidth / 100) * (width < 768 ? 0.5 : 1) * (width < 768 ? 4.267 : 1),
     loop: true,
     speed: 800,
     navigation: {
       prevEl: ".swiper-resources-prev-btn",
       nextEl: ".swiper-resources-next-btn",
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 8,
+      },
     },
   });
   // const slideResources = document.querySelector(".swiper-resources").querySelector(".swiper-wrapper");

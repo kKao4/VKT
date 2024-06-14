@@ -21,3 +21,26 @@
   text-align: center;
   margin-bottom: 1.75rem;
 }
+
+@media (max-width: 768px) {
+  .nothing-found-container {
+    padding: 4.5rem 0 3.75rem 0;
+    width: 100%;
+  }
+  .nothing-found-container img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    margin: auto;
+    margin-bottom: 1.25rem;
+  }
+  .nothing-found-container h4 {
+    color: var(--grey-900);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    text-align: center;
+    margin-bottom: 1.25rem;
+  }
+}

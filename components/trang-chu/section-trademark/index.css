@@ -83,3 +83,13 @@
 .trademark-container-one-item img {
   height: 11.5rem;
 }
+
+@media (max-width: 768px) {
+  .trademarks-container {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    row-gap: 2rem;
+  }
+  .trademark-images-container {
+    padding: 0;
+  }
+}

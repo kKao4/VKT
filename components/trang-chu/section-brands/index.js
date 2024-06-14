@@ -1,19 +1,20 @@
 function init() {
+  const width = window.innerWidth;
   const activeIndexElement = document.querySelector(".swiper-active-slide");
   const totalIndexElement = document.querySelector(".swiper-total-slide");
   const swiperBrand = new kKao4PaginationSwapSwiper(
     ".swiper-brand",
     {
-      slidesPerViewAndGroup: 3,
-      activeStyle: { backgroundColor: "#262626" },
+      slidesPerViewAndGroup: width < 768 ? 1 : 3,
+      activeStyle: { backgroundColor: "#262626", zIndex: 1 },
       normalStyle: { backgroundColor: "#ececec" },
     },
     {
-      slidesPerView: 3,
-      slidesPerGroup: 3,
+      slidesPerView: width < 768 ? 1 : 3,
+      slidesPerGroup: width < 768 ? 1 : 3,
       speed: 800,
       loop: true,
-      spaceBetween: (window.innerWidth / 100) * 1.5,
+      spaceBetween: (window.innerWidth / 100) * (width < 768 ? 0.75 : 1.5) * (width < 768 ? 4.267 : 1),
       navigation: {
         prevEl: ".swiper-brand-prev-btn",
         nextEl: ".swiper-brand-next-btn",

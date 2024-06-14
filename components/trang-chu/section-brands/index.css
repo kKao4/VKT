@@ -5,6 +5,7 @@
 
 .swiper-brand-container {
   position: relative;
+  height: fit-content;
 }
 
 .swiper-brand-container .swiper-slide .images-container {
@@ -39,7 +40,7 @@
 
 .swiper-info-container {
   position: absolute;
-  top: -0.75rem;
+  top: -0.7rem;
   right: 0;
   transform: translateY(-100%);
   display: flex;
@@ -81,4 +82,28 @@
   width: 2rem;
   height: 0.25rem;
   background-color: #ececec;
+}
+
+@media (max-width: 768px) {
+  .section-brands {
+    padding-bottom: 3rem;
+  }
+  .swiper-info-container {
+    display: none;
+  }
+  .swiper-brand-container .swiper-slide .images-container {
+    gap: 0.75rem;
+  }
+  .swiper-brand {
+    margin: 0 -0.3rem;
+  }
+  .swiper-brand-pagination-container {
+    margin-top: 1.5rem;
+  }
+  .swiper-brand-pagination-container > * + * {
+    margin-left: 0.25rem;
+  }
+  .swiper-brand-pagination-bar {
+    width: 1.5rem;
+  }
 }

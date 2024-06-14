@@ -1,26 +1,37 @@
 function init() {
+  const width = window.innerWidth;
   /* SECTION: section các đối tác tuyệt vời của chúng tôi */
   const swiperGreatPartner = new Swiper(".swiper-great-partner", {
-    slidesPerView: 8,
+    slidesPerView: 2.2,
     slidesPerGroup: 1,
     speed: 800,
-    spaceBetween: (window.innerWidth / 100) * 0.87,
+    spaceBetween: (window.innerWidth / 100) * (width < 768 ? 0.5 : 0.87) * (width < 768 ? 4.267 : 1),
     loop: true,
     navigation: {
       prevEl: ".swiper-great-partner-prev-btn",
       nextEl: ".swiper-great-partner-next-btn",
     },
+    breakpoints: {
+      768: {
+        slidesPerView: 8,
+      },
+    },
   });
   /* SECTION: section thể loại công trình được quan tâm nhất */
   const swiperInterestProject = new Swiper(".swiper-interest-project", {
-    slidesPerView: 4,
+    slidesPerView: 1.1,
     slidesPerGroup: 1,
     speed: 800,
-    spaceBetween: (window.innerWidth / 100) * 1,
+    spaceBetween: (window.innerWidth / 100) * (width < 768 ? 0.75 : 1) * (width < 768 ? 4.267 : 1),
     loop: true,
     navigation: {
       prevEl: ".swiper-interest-project-prev-btn",
       nextEl: ".swiper-interest-project-next-btn",
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 4,
+      },
     },
   });
   // SECTION: section thương hiệu uy tín trên thị trường

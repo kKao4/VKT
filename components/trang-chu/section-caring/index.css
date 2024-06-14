@@ -29,6 +29,10 @@
   text-align: center;
 }
 
+.swiper-resources .swiper-wrapper {
+  height: fit-content;
+}
+
 .swiper-resources .swiper-slide {
   padding: 0.31rem 0.31rem 1.31rem 0.31rem;
   border: 1.5px solid transparent;
@@ -571,4 +575,38 @@
   right: 1rem;
   width: 2.3125rem;
   height: 2.3125rem;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    margin-bottom: 1.5rem;
+  }
+  .section-caring .section-title h3 {
+    text-align: start;
+    width: 80%;
+    margin-bottom: 0.25rem;
+  }
+  .section-caring .section-title p {
+    text-align: start;
+  }
+  .swiper-resources-container {
+    margin: 0 -0.5rem;
+  }
+  .what-you-care-container {
+    padding-top: 2.75rem;
+  }
+  .what-you-care-container .heading-container-with-deco .left-deco,
+  .what-you-care-container .heading-container-with-deco .right-deco {
+    display: none;
+  }
+  .what-you-care-container .heading-container-with-deco h3 {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+  .major-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+    padding: 1.5rem 0 2rem 0;
+  }
+  
 }
