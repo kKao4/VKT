@@ -1,25 +1,9 @@
 // Author: kKao4
-// P/s: Nếu code chạy xin đừng động vào, chỉ nên custom parameters ( ͡° ͜ʖ ͡° )
-
-// Parameters:
-
-// Name           | Type           | Default           | Description
-// duration       | number         | 12                | thời gian bằng s để scroll hết từ đầu xuống cuối trang
-// delay          | number         | 0.8               | thời gian delay trước khi scroll bắt đầu scroll lại
-// once           | boolean        | false             | nếu true sẽ chỉ chạy 1 lần
-
-// Usage:
-
-// function init() {
-//   kKao4AutoScrollElement(".trademark-images-container-scroll-noi-that");
-//   kKao4AutoScrollElement(".trademark-images-container-scroll-ngoai-that");
-//   kKao4AutoScrollElement(".trademark-images-container-scroll-noi-tang-canh-quan");
-// }
-// window.addEventListener("DOMContentLoaded", init);
 
 function kKao4AutoScrollElement(className, { duration = 12, delay = 0.8, once = false } = {}) {
   gsap.registerPlugin(ScrollToPlugin);
 
+  const width = window.innerWidth;
   // select element
   const element = document.querySelector(className);
 
@@ -60,14 +44,14 @@ function kKao4AutoScrollElement(className, { duration = 12, delay = 0.8, once = 
     );
   };
 
+  // first run autoscroll
   autoScrollElement();
 
-  element.addEventListener("mouseenter", () => {
+  element.addEventListener(width < 768 ? "touchstart" : "mouseenter", () => {
     gsap.killTweensOf(element);
   });
-  element.addEventListener("mouseleave", () => {
+  element.addEventListener(width < 768 ? "touchend" : "mouseleave", () => {
     const progress = Math.max(Math.min(parseFloat(element.scrollTop) / parseFloat(element.offsetHeight), 1), 0);
     autoScrollElement({ progress, directionScroll });
   });
 }
-

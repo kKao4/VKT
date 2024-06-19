@@ -45,7 +45,7 @@
   height: 1rem;
 }
 
-main {
+.section-danh-sach-san-pham {
   background-color: #f5f5f5;
 }
 
@@ -322,7 +322,7 @@ main {
     flex-flow: 50%;
     flex-grow: 1;
   }
-  main {
+  .section-danh-sach-san-pham {
     padding: 1rem 0 3.75rem 0;
     background-color: #fff;
   }
